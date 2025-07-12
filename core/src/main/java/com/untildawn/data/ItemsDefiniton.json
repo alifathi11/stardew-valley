@@ -1,0 +1,5334 @@
+[
+  {
+    "itemId": "VOID",
+    "name": "",
+    "type": "floor",
+    "baseAttributes": {
+      "quality": "regular"
+    }
+  },
+  {
+    "itemId": "base_hoe",
+    "name": "Base Hoe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 1,
+      "energyCost": 5,
+      "durability": -1,
+      "upgradeCost": 0
+    }
+  },
+  {
+    "itemId": "copper_hoe",
+    "name": "Copper Hoe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 2,
+      "energyCost": 4,
+      "durability": 25,
+      "upgradeCost": 10
+    }
+  },
+  {
+    "itemId": "iron_hoe",
+    "name": "Iron Hoe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 3,
+      "energyCost": 3,
+      "durability": 50,
+      "upgradeCost": 20
+    }
+  },
+  {
+    "itemId": "golden_hoe",
+    "name": "Golden Hoe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 4,
+      "energyCost": 2,
+      "durability": 75,
+      "upgradeCost": 30
+    }
+  },
+  {
+    "itemId": "iridium_hoe",
+    "name": "Iridium Hoe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 5,
+      "energyCost": 1,
+      "durability": 100,
+      "upgradeCost": 40
+    }
+  },
+  {
+    "itemId": "base_pickaxe",
+    "name": "Base Pickaxe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 1,
+      "energyCost": 5,
+      "durability": -1,
+      "upgradeCost": 0
+    }
+  },
+  {
+    "itemId": "copper_pickaxe",
+    "name": "Copper Pickaxe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 2,
+      "energyCost": 4,
+      "durability": 25,
+      "upgradeCost": 10
+    }
+  },
+  {
+    "itemId": "iron_pickaxe",
+    "name": "Iron Pickaxe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 3,
+      "energyCost": 3,
+      "durability": 50,
+      "upgradeCost": 20
+    }
+  },
+  {
+    "itemId": "golden_pickaxe",
+    "name": "Golden Pickaxe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 4,
+      "energyCost": 2,
+      "durability": 75,
+      "upgradeCost": 30
+    }
+  },
+  {
+    "itemId": "iridium_pickaxe",
+    "name": "Iridium Pickaxe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 5,
+      "energyCost": 1,
+      "durability": 100,
+      "upgradeCost": 40
+    }
+  },
+  {
+    "itemId": "base_axe",
+    "name": "Base Axe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 1,
+      "energyCost": 5,
+      "durability": -1,
+      "upgradeCost": 0
+    }
+  },
+  {
+    "itemId": "copper_axe",
+    "name": "Copper Axe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 2,
+      "energyCost": 4,
+      "durability": 25,
+      "upgradeCost": 10
+    }
+  },
+  {
+    "itemId": "iron_axe",
+    "name": "Iron Axe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 3,
+      "energyCost": 3,
+      "durability": 50,
+      "upgradeCost": 20
+    }
+  },
+  {
+    "itemId": "golden_axe",
+    "name": "Golden Axe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 4,
+      "energyCost": 2,
+      "durability": 75,
+      "upgradeCost": 30
+    }
+  },
+  {
+    "itemId": "iridium_axe",
+    "name": "Iridium Axe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "damage": 5,
+      "energyCost": 1,
+      "durability": 100,
+      "upgradeCost": 40
+    }
+  },
+  {
+    "itemId": "base_watering_can",
+    "name": "Base Watering Can",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "durability": 0,
+      "capacity": 40,
+      "energyCost": 5,
+      "upgradeCost": 0
+    }
+  },
+  {
+    "itemId": "copper_watering_can",
+    "name": "Copper Watering Can",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "durability": 0,
+      "capacity": 55,
+      "energyCost": 4,
+      "upgradeCost": 10
+    }
+  },
+  {
+    "itemId": "iron_watering_can",
+    "name": "Iron Watering Can",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "durability": 0,
+      "capacity": 70,
+      "energyCost": 3,
+      "upgradeCost": 20
+    }
+  },
+  {
+    "itemId": "golden_watering_can",
+    "name": "Golden Watering Can",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "durability": 0,
+      "capacity": 85,
+      "energyCost": 2,
+      "upgradeCost": 30
+    }
+  },
+  {
+    "itemId": "iridium_watering_can",
+    "name": "Iridium Watering Can",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "durability": 0,
+      "capacity": 100,
+      "energyCost": 1,
+      "upgradeCost": 40
+    }
+  },
+  {
+    "itemId": "training_fishing_pole",
+    "name": "Training Fishing Pole",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 25,
+      "energyCost": 8
+    }
+  },
+  {
+    "itemId": "bamboo_fishing_pole",
+    "name": "Bamboo Fishing Pole",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 500,
+      "energyCost": 8
+    }
+  },
+  {
+    "itemId": "fiber_glass_fishing_pole",
+    "name": "Fiber Glass Fishing Pole",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 1800,
+      "energyCost": 6
+    }
+  },
+  {
+    "itemId": "iridium_fishing_pole",
+    "name": "Iridium Fishing Pole",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 7500,
+      "energyCost": 4
+    }
+  },
+  {
+    "itemId": "scythe",
+    "name": "Scythe",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "energyCost": 2
+    }
+  },
+  {
+    "itemId": "milk_pale",
+    "name": "Milk Pale",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 1000,
+      "energyCost": 4,
+      "isFull": false
+    }
+  },
+  {
+    "itemId": "shear",
+    "name": "Shear",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "energyCost": 4,
+      "price": 1000
+    }
+  },
+  {
+    "itemId": "base_backpack",
+    "name": "Base Backpack",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "capacity": 12,
+      "upgradeCost": 10000
+
+    }
+  },
+  {
+    "itemId": "big_backpack",
+    "name": "Big Backpack",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "capacity": 24,
+      "upgradeCost": 10000
+
+    }
+  },
+  {
+    "itemId": "deluxe_backpack",
+    "name": "Deluxe Backpack",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "capacity": -1
+    }
+  },
+  {
+    "itemId": "base_trash_can",
+    "name": "Base Trash Can",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "percentage": 0
+    }
+  },
+  {
+    "itemId": "copper_trash_can",
+    "name": "Copper Trash Can",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "percentage": 15,
+      "upgradeCost": 2500
+
+    }
+  },
+  {
+    "itemId": "iron_trash_can",
+    "name": "Iron Trash Can",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "percentage": 30
+    }
+  },
+  {
+    "itemId": "golden_trash_can",
+    "name": "Golden Trash Can",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "percentage": 45
+    }
+  },
+  {
+    "itemId": "iridium_trash_can",
+    "name": "Iridium Trash Can",
+    "type": "tool",
+    "baseAttributes": {
+      "quality": "regular",
+      "percentage": 60
+    }
+  },
+  {
+    "itemId": "cherry_bomb",
+    "name": "Cherry Bomb",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "mining": 1
+      },
+      "ingredients": {
+        "copper_ore": 4,
+        "coal": 1
+      },
+      "price": 50
+    }
+  },
+  {
+    "itemId": "bomb",
+    "name": "Bomb",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "mining": 2
+      },
+      "ingredients": {
+        "iron_ore": 4,
+        "coal": 1
+      },
+      "price": 50
+    }
+  },
+  {
+    "itemId": "mega_bomb",
+    "name": "Mega Bomb",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "mining": 3
+      },
+      "ingredients": {
+        "gold_ore": 4,
+        "coal": 1
+      },
+      "price": 50
+    }
+  },
+  {
+    "itemId": "sprinkler",
+    "name": "Sprinkler",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "farming": 1
+      },
+      "ingredients": {
+        "copper_bar": 1,
+        "iron_bar": 1
+      }
+    }
+  },
+  {
+    "itemId": "quality_sprinkler",
+    "name": "Quality Sprinkler",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "farming": 2
+      },
+      "ingredients": {
+        "gold_bar": 1,
+        "iron_bar": 1
+      }
+    }
+  },
+  {
+    "itemId": "iridium_sprinkler",
+    "name": "Iridium Sprinkler",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "farming": 3
+      },
+      "ingredients": {
+        "gold_bar": 1,
+        "iridium_bar": 1
+      }
+    }
+  },
+  {
+    "itemId": "charcoal_klin",
+    "name": "Charcoal Klin",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "foraging": 1
+      },
+      "ingredients": {
+        "wood": 20,
+        "copper_bar": 2
+      }
+    }
+  },
+  {
+    "itemId": "furnace",
+    "name": "Furnace",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "copper_ore": 20,
+        "stone": 25
+      }
+    }
+  },
+  {
+    "itemId": "scarecrow",
+    "name": "Scarecrow",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "wood": 50,
+        "coal": 1,
+        "fiber": 20
+      }
+    }
+  },
+  {
+    "itemId": "deluxe_scarecrow",
+    "name": "Deluxe Scarecrow",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "farming": 2
+      },
+      "ingredients": {
+        "wood": 50,
+        "coal": 1,
+        "fiber": 20,
+        "iridium_ore": 1
+      }
+    }
+  },
+  {
+    "itemId": "bee_house",
+    "name": "Bee House",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "farming": 1
+      },
+      "ingredients": {
+        "wood": 40,
+        "coal": 8,
+        "iron_bar": 1
+      }
+    }
+  },
+  {
+    "itemId": "cheese_press",
+    "name": "Cheese Press",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "farming": 2
+      },
+      "ingredients": {
+        "wood": 45,
+        "stone": 45,
+        "copper_bar": 1
+      }
+    }
+  },
+  {
+    "itemId": "keg",
+    "name": "Keg",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "farming": 3
+      },
+      "ingredients": {
+        "wood": 30,
+        "copper_bar": 1,
+        "iron_bar": 1
+      }
+    }
+  },
+  {
+    "itemId": "loom",
+    "name": "Loom",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "farming": 3
+      },
+      "ingredients": {
+        "wood": 60,
+        "fiber": 30
+      }
+    }
+  },
+  {
+    "itemId": "mayonnaise_machine",
+    "name": "Mayonnaise Machine",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "wood": 15,
+        "stone": 15,
+        "copper_bar": 1
+      }
+    }
+  },
+  {
+    "itemId": "oil_maker",
+    "name": "Oil Maker",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "farming": 2
+      },
+      "ingredients": {
+        "wood": 100,
+        "iron_bar": 1,
+        "gold_bar": 1
+      }
+    }
+  },
+  {
+    "itemId": "preserves_jar",
+    "name": "Preserves Jar",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "farming": 2
+      },
+      "ingredients": {
+        "wood": 50,
+        "stone": 40,
+        "coal": 8
+      }
+    }
+  },
+  {
+    "itemId": "dehydrator",
+    "name": "Dehydrator",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "Pierre's General Store": -1
+      },
+      "ingredients": {
+        "wood": 30,
+        "stone": 20,
+        "fiber": 30
+      }
+    }
+  },
+  {
+    "itemId": "fish_smoker",
+    "name": "Fish Smoker",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "Fish Shop": -1
+      },
+      "ingredients": {
+        "wood": 50,
+        "iron_bar": 3,
+        "coal": 10
+      }
+    }
+  },
+  {
+    "itemId": "mystic_tree_seed",
+    "name": "Mystic Tree Seed",
+    "type": "crafting",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": {
+        "foraging": 4
+      },
+      "ingredients": {
+        "acorn": 5,
+        "maple_seed": 5,
+        "pine_cone": 5,
+        "mahogany_seed": 5
+      },
+      "price": 100
+    }
+  },
+  {
+    "itemId": "hen",
+    "name": "Hen",
+    "type": "coop_animal",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 800,
+      "products": {
+        "egg": 50,
+        "big_egg": 95
+      }
+    }
+  },
+  {
+    "itemId": "duck",
+    "name": "Duck",
+    "type": "coop_animal",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 1200,
+      "products": {
+        "duck_egg": 95,
+        "duck_feather": 250
+      }
+    }
+  },
+  {
+    "itemId": "rabbit",
+    "name": "Rabbit",
+    "type": "coop_animal",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 8000,
+      "products": {
+        "wool": 340,
+        "rabbit_foot": 565
+      }
+    }
+  },
+  {
+    "itemId": "dinosaur",
+    "name": "Dinosaur",
+    "type": "coop_animal",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 14000,
+      "products": {
+        "dinosaur_egg": 350
+      }
+    }
+  },
+  {
+    "itemId": "cow",
+    "name": "Cow",
+    "type": "barn_animal",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 1500,
+      "products": {
+        "milk": 125,
+        "big_milk": 190
+      }
+    }
+  },
+  {
+    "itemId": "goat",
+    "name": "Goat",
+    "type": "barn_animal",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 4000,
+      "products": {
+        "goat_milk": 225,
+        "big_goat_milk": 345
+      }
+    }
+  },
+  {
+    "itemId": "sheep",
+    "name": "Sheep",
+    "type": "barn_animal",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 8000,
+      "isCut": false,
+      "products": {
+        "wool": 340
+      }
+    }
+  },
+  {
+    "itemId": "pig",
+    "name": "Pig",
+    "type": "barn_animal",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 16000,
+      "products": {
+        "truffle": 625
+      }
+    }
+  },
+  {
+    "itemId": "salmon",
+    "name": "Salmon",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 75,
+      "season": "fall",
+      "energy": 100,
+      "day": 1
+    }
+  },
+  {
+    "itemId": "sardine",
+    "name": "Sardine",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 40,
+      "season": "fall",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "shad",
+    "name": "Shad",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 60,
+      "season": "fall",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "blue_discus",
+    "name": "Blue Discus",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 120,
+      "season": "fall",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "midnight_carp",
+    "name": "Midnight Carp",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 150,
+      "season": "winter",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "squid",
+    "name": "Squid",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 80,
+      "season": "winter",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "tuna",
+    "name": "Tuna",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 100,
+      "season": "winter",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "perch",
+    "name": "Perch",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 55,
+      "season": "winter",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "flounder",
+    "name": "Flounder",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 100,
+      "season": "spring",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "lionfish",
+    "name": "Lionfish",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 100,
+      "season": "spring",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "herring",
+    "name": "Herring",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 30,
+      "season": "spring",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "ghost_fish",
+    "name": "Ghost Fish",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 45,
+      "season": "spring",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "tilapia",
+    "name": "Tilapia",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 75,
+      "season": "summer",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "dorado",
+    "name": "Dorado",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 100,
+      "season": "summer",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "sunfish",
+    "name": "Sunfish",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 30,
+      "season": "summer",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "rainbow_trout",
+    "name": "Rainbow Trout",
+    "type": "fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 65,
+      "season": "summer",
+      "energy": 100
+
+    }
+  },
+  {
+    "itemId": "legend",
+    "name": "Legend",
+    "type": "legendary_fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 5000,
+      "season": "spring",
+      "energy": 300
+    }
+  },
+  {
+    "itemId": "glacier_fish",
+    "name": "Glacier Fish",
+    "type": "legendary_fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 1000,
+      "season": "summer",
+      "energy": 300
+
+    }
+  },
+  {
+    "itemId": "angler",
+    "name": "Angler",
+    "type": "legendary_fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 900,
+      "season": "fall",
+      "energy": 300
+
+    }
+  },
+  {
+    "itemId": "crimson_fish",
+    "name": "Crimson Fish",
+    "type": "legendary_fish",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 1500,
+      "season": "winter",
+      "energy": 300
+
+    }
+  },
+  {
+    "itemId": "home",
+    "name": "Home",
+    "type": "home",
+    "baseAttributes": {
+      "quality": "regular"
+    }
+  },
+  {
+    "itemId": "cottage",
+    "name": "Cottage",
+    "type": "cottage",
+    "baseAttributes": {
+      "quality": "regular"
+    }
+  },
+  {
+    "itemId": "shop",
+    "name": "Shop",
+    "type": "shop",
+    "baseAttributes": {
+      "quality": "regular"
+    }
+  },
+  {
+    "itemId": "quarry",
+    "name": "Quarry",
+    "type": "quarry",
+    "baseAttributes": {
+      "quality": "regular"
+    }
+  },
+  {
+    "itemId": "lake",
+    "name": "Lake",
+    "type": "lake",
+    "baseAttributes": {
+      "quality": "regular"
+    }
+  },
+  {
+    "itemId": "cottage",
+    "name": "Cottage",
+    "type": "cottage",
+    "baseAttributes": {
+      "quality": "regular"
+    }
+  },
+  {
+    "itemId": "greenhouse",
+    "name": "Green House",
+    "type": "greenhouse",
+    "baseAttributes": {
+      "quality": "regular"
+    }
+  },
+  {
+    "itemId": "fried_egg",
+    "name": "Fried Egg",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "egg": 1
+      },
+      "energy": 50,
+      "source": {
+        "starter": -1
+      },
+      "price": 35
+    }
+  },
+  {
+    "itemId": "baked_fish",
+    "name": "Baked Fish",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "sardine": 1,
+        "salmon": 1,
+        "wheat": 1
+      },
+      "energy": 75,
+      "source": {
+        "starter": -1
+      },
+      "price": 100
+    }
+  },
+  {
+    "itemId": "salad",
+    "name": "Salad",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "leek": 1,
+        "dandelion": 1
+      },
+      "energy": 113,
+      "source": {
+        "starter": -1
+      },
+      "price": 110
+    }
+  },
+  {
+    "itemId": "omelet",
+    "name": "Omelet",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "egg": 1,
+        "milk": 1
+      },
+      "energy": 100,
+      "source": {
+        "stardrop_saloon": -1
+      },
+      "price": 125
+    }
+  },
+  {
+    "itemId": "pumpkin_pie",
+    "name": "Pumpkin Pie",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "pumpking": 1,
+        "wheat_flour": 1,
+        "milk": 1,
+        "suger": 1
+      },
+      "energy": 225,
+      "source": {
+        "stardrop_saloon": -1
+      },
+      "price": 385
+    }
+  },
+  {
+    "itemId": "spaghetti",
+    "name": "Spaghetti",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "wheat_flour": 1,
+        "tomato": 1
+      },
+      "energy": 75,
+      "source": {
+        "stardrop_saloon": -1
+      },
+      "price": 120
+    }
+  },
+  {
+    "itemId": "pizza",
+    "name": "Pizza",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "wheat_flour": 1,
+        "tomato": 1,
+        "cheese": 1
+      },
+      "energy": 150,
+      "source": {
+        "stardrop_saloon": -1
+      },
+      "price": 300
+    }
+  },
+  {
+    "itemId": "tortilla",
+    "name": "Tortilla",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "corn": 1
+      },
+      "energy": 50,
+      "source": {
+        "stardrop_saloon": -1
+      },
+      "price": 50
+    }
+  },
+  {
+    "itemId": "maki_roll",
+    "name": "Maki Roll",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "any_fish": 1,
+        "rice": 1,
+        "fiber": 1
+      },
+      "energy": 100,
+      "source": {
+        "stardrop_saloon": -1
+      },
+      "price": 220
+    }
+  },
+  {
+    "itemId": "triple_shot_espresso",
+    "name": "Triple Shot Espresso",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "coffee": 3
+      },
+      "energy": 200,
+      "source": {
+        "stardrop_saloon": -1
+      },
+      "price": 450
+    }
+  },
+  {
+    "itemId": "cookie",
+    "name": "Cookie",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "wheat_flour": 1,
+        "suger": 1,
+        "egg": 1
+      },
+      "energy": 90,
+      "source": {
+        "stardrop_saloon": -1
+      },
+      "price": 140
+    }
+  },
+  {
+    "itemId": "hash_brown",
+    "name": "Hash Brown",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "potato": 1,
+        "oil": 1
+      },
+      "energy": 90,
+      "source": {
+        "stardrop_saloon": -1
+      },
+      "price": 120
+    }
+  },
+  {
+    "itemId": "pancakes",
+    "name": "Pancakes",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "wheat_flour": 1,
+        "egg": 1
+      },
+      "energy": 90,
+      "source": {
+        "stardrop_saloon": -1
+      },
+      "price": 80
+    }
+  },
+  {
+    "itemId": "fruit_salad",
+    "name": "Fruit Salad",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "blueberry": 1,
+        "melon": 1,
+        "apricot": 1
+      },
+      "energy": 263,
+      "source": {
+        "stardrop_saloon": -1
+      },
+      "price": 450
+    }
+  },
+  {
+    "itemId": "red_plate",
+    "name": "Red Plate",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "red_cabbage": 1,
+        "radish": 1
+      },
+      "energy": 240,
+      "source": {
+        "stardrop_saloon": -1
+      },
+      "price": 400
+    }
+  },
+  {
+    "itemId": "bread",
+    "name": "Bread",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "wheat_flour": 1
+      },
+      "energy": 50,
+      "source": {
+        "stardrop_saloon": -1
+      },
+      "price": 60
+    }
+  },
+  {
+    "itemId": "salmon_dinner",
+    "name": "Salmon Dinner",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "salmon": 1,
+        "amaranth": 1,
+        "kale": 1
+      },
+      "energy": 125,
+      "source": {
+        "leah_reward": -1
+      },
+      "price": 300
+    }
+  },
+  {
+    "itemId": "vegetable_medley",
+    "name": "Vegetable Medley",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "tomato": 1,
+        "beet": 1
+      },
+      "energy": 165,
+      "source": {
+        "foraging": 2
+      },
+      "price": 120
+    }
+  },
+  {
+    "itemId": "farmers_lunch",
+    "name": "Farmers Lunch",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "omelet": 1,
+        "parsnip": 1
+      },
+      "energy": 200,
+      "source": {
+        "farming": 1
+      },
+      "price": 150
+    }
+  },
+  {
+    "itemId": "survival_burger",
+    "name": "Survival Burger",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "bread": 1,
+        "carrot": 1,
+        "eggplant": 1
+      },
+      "energy": 125,
+      "source": {
+        "foraging": 3
+      },
+      "price": 180
+    }
+  },
+  {
+    "itemId": "dish_O_the_sea",
+    "name": "Dish O The Sea",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "sardine": 2,
+        "hash_brown": 1
+      },
+      "energy": 150,
+      "source": {
+        "fishing": 2
+      },
+      "price": 220
+    }
+  },
+  {
+    "itemId": "seaform_pudding",
+    "name": "Seaform Pudding",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "flounder": 1,
+        "midnight_carp": 1
+      },
+      "energy": 175,
+      "source": {
+        "fishing": 3
+      },
+      "price": 300
+    }
+  },
+  {
+    "itemId": "miners_treat",
+    "name": "Miners Treat",
+    "type": "food",
+    "baseAttributes": {
+      "quality": "regular",
+      "ingredients": {
+        "carrot": 2,
+        "suger": 1,
+        "milk": 1
+      },
+      "energy": 125,
+      "source": {
+        "mining": 1
+      },
+      "price": 200
+    }
+  },
+  {
+    "itemId": "common_mushroom",
+    "name": "Common Mushroom",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "special"
+      ],
+      "baseSellPrice": 40,
+      "energy": 38
+    }
+  },
+  {
+    "itemId": "daffodil",
+    "name": "Daffodil",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ],
+      "baseSellPrice": 30,
+      "energy": 0
+    }
+  },
+  {
+    "itemId": "dandelion",
+    "name": "Dandelion",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ],
+      "baseSellPrice": 40,
+      "energy": 25
+    }
+  },
+  {
+    "itemId": "leek",
+    "name": "Leek",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ],
+      "baseSellPrice": 60,
+      "energy": 40
+    }
+  },
+  {
+    "itemId": "morel",
+    "name": "Morel",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ],
+      "baseSellPrice": 150,
+      "energy": 20
+    }
+  },
+  {
+    "itemId": "salmonberry",
+    "name": "Salmonberry",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ],
+      "baseSellPrice": 5,
+      "energy": 25
+    }
+  },
+  {
+    "itemId": "spring_onion",
+    "name": "Spring Onion",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ],
+      "baseSellPrice": 8,
+      "energy": 13
+    }
+  },
+  {
+    "itemId": "wild_horseradish",
+    "name": "Wild_Horseradish",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ],
+      "baseSellPrice": 50,
+      "energy": 13
+    }
+  },
+  {
+    "itemId": "fiddlehead_fern",
+    "name": "Fiddlehead Fern",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ],
+      "baseSellPrice": 90,
+      "energy": 25
+    }
+  },
+  {
+    "itemId": "grape",
+    "name": "Grape",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ],
+      "baseSellPrice": 80,
+      "energy": 38
+    }
+  },
+  {
+    "itemId": "red_mushroom",
+    "name": "Red Mushroom",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ],
+      "baseSellPrice": 75,
+      "energy": -50
+    }
+  },
+  {
+    "itemId": "spice_berry",
+    "name": "Spice Berry",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ],
+      "baseSellPrice": 80,
+      "energy": 25
+    }
+  },
+  {
+    "itemId": "sweet_pea",
+    "name": "Sweet Pea",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ],
+      "baseSellPrice": 50,
+      "energy": 0
+    }
+  },
+  {
+    "itemId": "blackberry",
+    "name": "Blackberry",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ],
+      "baseSellPrice": 25,
+      "energy": 25
+    }
+  },
+  {
+    "itemId": "chanterelle",
+    "name": "Chanterelle",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ],
+      "baseSellPrice": 160,
+      "energy": 75
+    }
+  },
+  {
+    "itemId": "hazelnut",
+    "name": "Hazelnut",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ],
+      "baseSellPrice": 40,
+      "energy": 38
+    }
+  },
+  {
+    "itemId": "purple_mushroom",
+    "name": "Purple Mushroom",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ],
+      "baseSellPrice": 90,
+      "energy": 30
+    }
+  },
+  {
+    "itemId": "wild_plum",
+    "name": "Wild Plum",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ],
+      "baseSellPrice": 80,
+      "energy": 25
+    }
+  },
+  {
+    "itemId": "crocus",
+    "name": "Crocus",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "winter"
+      ],
+      "baseSellPrice": 60,
+      "energy": 0
+    }
+  },
+  {
+    "itemId": "crystal_fruit",
+    "name": "Crystal Fruit",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "winter"
+      ],
+      "baseSellPrice": 150,
+      "energy": 63
+    }
+  },
+  {
+    "itemId": "holly",
+    "name": "Holly",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "winter"
+      ],
+      "baseSellPrice": 80,
+      "energy": -37
+    }
+  },
+  {
+    "itemId": "snow_yam",
+    "name": "Snow Yam",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "winter"
+      ],
+      "baseSellPrice": 100,
+      "energy": 30
+    }
+  },
+  {
+    "itemId": "winter_root",
+    "name": "Winter Root",
+    "type": "foraging_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "winter"
+      ],
+      "baseSellPrice": 70,
+      "energy": 25
+    }
+  },
+  {
+    "itemId": "jazz_seeds",
+    "name": "Jazz Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "carrot_seeds",
+    "name": "Carrot Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "cauliflower_seeds",
+    "name": "Cauliflower Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "coffee_bean",
+    "name": "Coffee Bean",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "garlic_seeds",
+    "name": "Garlic Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "bean_starter",
+    "name": "Bean Starter",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "kale_seeds",
+    "name": "Kale Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "parsnip_seeds",
+    "name": "Parsnip Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "potato_seeds",
+    "name": "Potato Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "rhubarb_seeds",
+    "name": "Rhubarb Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "strawberry_seeds",
+    "name": "Strawberry Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "tulip_bulb",
+    "name": "Tulip Bulb",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "rice_shoot",
+    "name": "Rice Shoot",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "blueberry_seeds",
+    "name": "Blueberry Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "corn_seeds",
+    "name": "Corn Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "hops_starter",
+    "name": "Hops Starter",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "pepper_seeds",
+    "name": "Pepper Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "melon_seeds",
+    "name": "Melon Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "poppy_seeds",
+    "name": "Poppy Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "radish_seeds",
+    "name": "Radish Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "red_cabbage_seeds",
+    "name": "Red Cabbage Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "starfruit_seeds",
+    "name": "Starfruit Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "spangle_seeds",
+    "name": "Spangle Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "summer_squash_seeds",
+    "name": "Summer Squash Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "sunflower_seeds",
+    "name": "Sunflower Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "tomato_seeds",
+    "name": "Tomato Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "wheat_seeds",
+    "name": "Wheat Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "amaranth_seeds",
+    "name": "Amaranth Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "artichoke_seeds",
+    "name": "Artichoke Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "beet_seeds",
+    "name": "Beet Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "bok_choy_seeds",
+    "name": "Bok Choy Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "broccoli_seeds",
+    "name": "Broccoli Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "cranberry_seeds",
+    "name": "Cranberry Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "eggplant_seeds",
+    "name": "Eggplant Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "fairy_seeds",
+    "name": "Fairy Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "grape_starter",
+    "name": "Grape Starter",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "pumpkin_seeds",
+    "name": "Pumpkin Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "yam_seeds",
+    "name": "Yam Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "rare_seeds",
+    "name": "Rare Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "powdermelon_seeds",
+    "name": "Powdermelon Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "winter"
+      ]
+    }
+  },
+  {
+    "itemId": "ancient_seeds",
+    "name": "Ancient Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "special"
+      ]
+    }
+  },
+  {
+    "itemId": "mixed_seeds",
+    "name": "Mixed Seeds",
+    "type": "foraging_seeds",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "special"
+      ]
+    }
+  },
+  {
+    "itemId": "acorns",
+    "name": "Acorns",
+    "type": "foraging_trees",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "special"
+      ]
+    }
+  },
+  {
+    "itemId": "maple_seeds",
+    "name": "Maple Seeds",
+    "type": "foraging_trees",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "special"
+      ]
+    }
+  },
+  {
+    "itemId": "pine_cones",
+    "name": "Pine Cones",
+    "type": "foraging_trees",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "special"
+      ]
+    }
+  },
+  {
+    "itemId": "mahogany_seeds",
+    "name": "Mahogany Seeds",
+    "type": "foraging_trees",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "special"
+      ]
+    }
+  },
+  {
+    "itemId": "mushroom_tree_seeds",
+    "name": "Mushroom Tree Seeds",
+    "type": "foraging_trees",
+    "baseAttributes": {
+      "quality": "regular",
+      "season": [
+        "special"
+      ]
+    }
+  },
+  {
+    "itemId": "quartz",
+    "name": "Quartz",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 25,
+      "description": "A clear crystal commonly found in caves and mines."
+    }
+  },
+  {
+    "itemId": "earth_crystal",
+    "name": "Earth Crystal",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 50,
+      "description": "A resinous substance found near the surface."
+    }
+  },
+  {
+    "itemId": "frozen_tear",
+    "name": "Frozen Tear",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 75,
+      "description": "A crystal fabled to be the frozen tears of a yeti."
+    }
+  },
+  {
+    "itemId": "fire_quartz",
+    "name": "Fire Quartz",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 100,
+      "description": "A glowing red crystal commonly found near hot lava."
+    }
+  },
+  {
+    "itemId": "emerald",
+    "name": "Emerald",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 250,
+      "description": "A precious stone with a brilliant green color."
+    }
+  },
+  {
+    "itemId": "aquamarine",
+    "name": "Aquamarine",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 180,
+      "description": "A shimmery blue-green gem."
+    }
+  },
+  {
+    "itemId": "ruby",
+    "name": "Ruby",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 250,
+      "description": "A precious stone that is sought after for its rich color and beautiful luster."
+    }
+  },
+  {
+    "itemId": "amethyst",
+    "name": "Amethyst",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 100,
+      "description": "A purple variant of quartz."
+    }
+  },
+  {
+    "itemId": "topaz",
+    "name": "Topaz",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 80,
+      "description": "Fairly common but still prized for its beauty."
+    }
+  },
+  {
+    "itemId": "jade",
+    "name": "Jade",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 200,
+      "description": "A pale green ornamental stone."
+    }
+  },
+  {
+    "itemId": "diamond",
+    "name": "Diamond",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 750,
+      "description": "A rare and valuable gem."
+    }
+  },
+  {
+    "itemId": "prismatic_shard",
+    "name": "Prismatic Shard",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 2000,
+      "description": "A very rare and powerful substance with unknown origins."
+    }
+  },
+  {
+    "itemId": "copper",
+    "name": "Copper",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 5,
+      "description": "A common ore that can be smelted into bars."
+    }
+  },
+  {
+    "itemId": "iron",
+    "name": "Iron",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 10,
+      "description": "A fairly common ore that can be smelted into bars."
+    }
+  },
+  {
+    "itemId": "gold",
+    "name": "Gold",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 25,
+      "description": "A precious ore that can be smelted into bars."
+    }
+  },
+  {
+    "itemId": "gold_coin",
+    "name": "Gold Coin",
+    "type": "money",
+    "baseAttributes": {
+    }
+  },
+  {
+    "itemId": "iriduim",
+    "name": "Iriduim",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "price": 100,
+      "description": "An exotic ore with many curious properties. Can be smelted into bars."
+    }
+  },
+  {
+    "itemId": "iriduim",
+    "name": "Iriduim",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 100,
+      "description": "An exotic ore with many curious properties. Can be smelted into bars."
+    }
+  },
+  {
+    "itemId": "coal",
+    "name": "Coal",
+    "type": "foraging_minerals",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 15,
+      "description": "A combustible rock that is useful for crafting and smelting."
+    }
+  },
+  {
+    "itemId": "apricot_tree",
+    "name": "Apricot Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "apricot_sapling",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "apricot",
+      "fruitHarvestCycle": 1,
+      "fruitBaseSellPrice": 59,
+      "isFruitEdible": true,
+      "fruitEnergy": 38,
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "apricot",
+    "name": "Apricot",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 59,
+      "isEdible": true,
+      "energy": 38
+    }
+  },
+  {
+    "itemId": "cherry_tree",
+    "name": "Cherry Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "cherry-sapling",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "cherry",
+      "fruitHarvestCycle": 1,
+      "fruitBaseSellPrice": 80,
+      "isFruitEdible": true,
+      "fruitEnergy": 38,
+      "season": [
+        "spring"
+      ]
+    }
+  },
+  {
+    "itemId": "cherry",
+    "name": "Cherry",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 80,
+      "isEdible": true,
+      "energy": 38
+    }
+  },
+  {
+    "itemId": "banana_tree",
+    "name": "Banana Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "banana-sapling",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "banana",
+      "fruitHarvestCycle": 1,
+      "fruitBaseSellPrice": 150,
+      "isFruitEdible": true,
+      "fruitEnergy": 75,
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "banana",
+    "name": "Banana",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 150,
+      "isEdible": true,
+      "energy": 75
+    }
+  },
+  {
+    "itemId": "mango_tree",
+    "name": "Mango Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "mango-sapling",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "mango",
+      "fruitHarvestCycle": 1,
+      "fruitBaseSellPrice": 130,
+      "isFruitEdible": true,
+      "fruitEnergy": 100,
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "mango",
+    "name": "Mango",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 130,
+      "isEdible": true,
+      "energy": 100
+    }
+  },
+  {
+    "itemId": "orange_tree",
+    "name": "Orange Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "orange-sapling",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "orange",
+      "fruitHarvestCycle": 1,
+      "fruitBaseSellPrice": 100,
+      "isFruitEdible": true,
+      "fruitEnergy": 38,
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "orange",
+    "name": "Orange",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 100,
+      "isEdible": true,
+      "energy": 38
+    }
+  },
+  {
+    "itemId": "peach_tree",
+    "name": "Peach Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "peach-sapling",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "peach",
+      "fruitHarvestCycle": 1,
+      "fruitBaseSellPrice": 140,
+      "isFruitEdible": true,
+      "fruitEnergy": 38,
+      "season": [
+        "summer"
+      ]
+    }
+  },
+  {
+    "itemId": "peach",
+    "name": "Peach",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 140,
+      "isEdible": true,
+      "energy": 38
+    }
+  },
+  {
+    "itemId": "apple_tree",
+    "name": "Apple Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "apple-sapling",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "apple",
+      "fruitHarvestCycle": 1,
+      "fruitBaseSellPrice": 100,
+      "isFruitEdible": true,
+      "fruitEnergy": 38,
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "apple",
+    "name": "Apple",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 100,
+      "isEdible": true,
+      "energy": 38
+    }
+  },
+  {
+    "itemId": "pomegranate_tree",
+    "name": "Pomegranate Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "pomegranate-sapling",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "pomegranate",
+      "fruitHarvestCycle": 1,
+      "fruitBaseSellPrice": 140,
+      "isFruitEdible": true,
+      "fruitEnergy": 38,
+      "season": [
+        "fall"
+      ]
+    }
+  },
+  {
+    "itemId": "pomegranate",
+    "name": "Pomegranate",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 140,
+      "isEdible": true,
+      "energy": 38
+    }
+  },
+  {
+    "itemId": "oak_tree",
+    "name": "Oak Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "acorns",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "oak_resin",
+      "fruitHarvestCycle": 7,
+      "fruitBaseSellPrice": 150,
+      "isFruitEdible": false,
+      "fruitEnergy": 0,
+      "season": [
+        "special"
+      ]
+    }
+  },
+  {
+    "itemId": "oak_resin",
+    "name": "Oak Resin",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 150,
+      "isEdible": false,
+      "energy": 0
+    }
+  },
+  {
+    "itemId": "maple_tree",
+    "name": "Maple Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "maple_seeds",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "maple_syrup",
+      "fruitHarvestCycle": 9,
+      "fruitBaseSellPrice": 200,
+      "isFruitEdible": false,
+      "fruitEnergy": 0,
+      "season": [
+        "special"
+      ]
+    }
+  },
+  {
+    "itemId": "maple_syrup",
+    "name": "Maple Syrup",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 200,
+      "isEdible": false,
+      "energy": 0
+    }
+  },
+  {
+    "itemId": "pine_tree",
+    "name": "Pine Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "pine_cones",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "pine_tar",
+      "fruitHarvestCycle": 5,
+      "fruitBaseSellPrice": 100,
+      "isFruitEdible": false,
+      "fruitEnergy": 0,
+      "season": [
+        "special"
+      ]
+    }
+  },
+  {
+    "itemId": "pine_tar",
+    "name": "Pine Tar",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 100,
+      "isEdible": false,
+      "energy": 0
+    }
+  },
+  {
+    "itemId": "mahogany_tree",
+    "name": "Mahogany Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "mahogany_seeds",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "sap",
+      "fruitHarvestCycle": 1,
+      "fruitBaseSellPrice": 2,
+      "isFruitEdible": true,
+      "fruitEnergy": -2,
+      "season": [
+        "special"
+      ]
+    }
+  },
+  {
+    "itemId": "sap",
+    "name": "Sap",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 2,
+      "isEdible": true,
+      "energy": -2
+    }
+  },
+  {
+    "itemId": "mushroom_tree",
+    "name": "Mushroom Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "mushroom_tree_seeds",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "common_mushroom",
+      "fruitHarvestCycle": 1,
+      "fruitBaseSellPrice": 40,
+      "isFruitEdible": true,
+      "fruitEnergy": 38,
+      "season": [
+        "special"
+      ]
+    }
+  },
+  {
+    "itemId": "common_mushroom",
+    "name": "Common Mushroom",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 40,
+      "isEdible": true,
+      "energy": 38
+    }
+  },
+  {
+    "itemId": "mystic_tree",
+    "name": "Mystic Tree",
+    "type": "tree",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "mystic_tree_seeds",
+      "stages": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "totalHarvestTime": 28,
+      "fruit": "mystic_syrup",
+      "fruitHarvestCycle": 7,
+      "fruitBaseSellPrice": 1000,
+      "isFruitEdible": true,
+      "fruitEnergy": 500,
+      "season": [
+        "special"
+      ]
+    }
+  },
+  {
+    "itemId": "mystic_syrup",
+    "name": "Mystic Syrup",
+    "type": "fruit",
+    "baseAttributes": {
+      "baseSellPrice": 1000,
+      "isEdible": true,
+      "energy": 500
+    }
+  },
+  {
+    "itemId": "blue_jazz",
+    "name": "Blue Jazz",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "jazz_seeds",
+      "stages": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "totalHarvestTime": 7,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 50,
+      "isEdible": true,
+      "energy": 45,
+      "season": [
+        "spring"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "carrot",
+    "name": "Carrot",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "carrot_seeds",
+      "stages": [
+        1,
+        1,
+        1
+      ],
+      "totalHarvestTime": 3,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 35,
+      "isEdible": true,
+      "energy": 75,
+      "season": [
+        "spring"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "cauliflower",
+    "name": "Cauliflower",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "cauliflower_seeds",
+      "stages": [
+        1,
+        2,
+        4,
+        4,
+        1
+      ],
+      "totalHarvestTime": 12,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 175,
+      "isEdible": true,
+      "energy": 75,
+      "season": [
+        "spring"
+      ],
+      "canBecomeGiant": "true"
+    }
+  },
+  {
+    "itemId": "coffee_bean",
+    "name": "Coffee Bean",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "coffee_bean",
+      "stages": [
+        1,
+        2,
+        2,
+        3,
+        2
+      ],
+      "totalHarvestTime": 10,
+      "oneTime": false,
+      "regrowthTime": 2,
+      "baseSellPrice": 15,
+      "isEdible": false,
+      "energy": 0,
+      "season": [
+        "spring",
+        "summer"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "garlic",
+    "name": "garlic",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "garlic_seeds",
+      "stages": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "totalHarvestTime": 4,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 60,
+      "isEdible": true,
+      "energy": 20,
+      "season": [
+        "spring"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "green_bean",
+    "name": "Green Bean",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "bean_starter",
+      "stages": [
+        1,
+        1,
+        1,
+        3,
+        4
+      ],
+      "totalHarvestTime": 10,
+      "oneTime": false,
+      "regrowthTime": 3,
+      "baseSellPrice": 40,
+      "isEdible": true,
+      "energy": 25,
+      "season": [
+        "spring"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "kale",
+    "name": "Kale",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "kale_seeds",
+      "stages": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "totalHarvestTime": 6,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 110,
+      "isEdible": true,
+      "energy": 50,
+      "season": [
+        "spring"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "parsnip",
+    "name": "Parsnip",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "parsnip_seeds",
+      "stages": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "totalHarvestTime": 4,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 35,
+      "isEdible": true,
+      "energy": 25,
+      "season": [
+        "spring"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "potato",
+    "name": "Potato",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "potato_seeds",
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "totalHarvestTime": 6,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 80,
+      "isEdible": true,
+      "energy": 25,
+      "season": [
+        "spring"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "rhubarb",
+    "name": "Rhubarb",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "rhubarb_seeds",
+      "stages": [
+        2,
+        2,
+        2,
+        3,
+        4
+      ],
+      "totalHarvestTime": 13,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 220,
+      "isEdible": false,
+      "energy": 0,
+      "season": [
+        "spring"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "strawberry",
+    "name": "Strawberry",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "strawberry_seeds",
+      "stages": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "totalHarvestTime": 8,
+      "oneTime": false,
+      "regrowthTime": 4,
+      "baseSellPrice": 120,
+      "isEdible": true,
+      "energy": 50,
+      "season": [
+        "spring"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "tulip",
+    "name": "Tulip",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "tulip_bulb",
+      "stages": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "totalHarvestTime": 6,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 30,
+      "isEdible": true,
+      "energy": 45,
+      "season": [
+        "spring"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "unmilled_rice",
+    "name": "Unmilled Rice",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "bean_starter",
+      "stages": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "totalHarvestTime": 8,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 30,
+      "isEdible": true,
+      "energy": 3,
+      "season": [
+        "spring"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "blueberry",
+    "name": "Blueberry",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "blueberry_seeds",
+      "stages": [
+        1,
+        3,
+        3,
+        4,
+        2
+      ],
+      "totalHarvestTime": 13,
+      "oneTime": false,
+      "regrowthTime": 4,
+      "baseSellPrice": 50,
+      "isEdible": true,
+      "energy": 25,
+      "season": [
+        "summer"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "corn",
+    "name": "Corn",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "corn_seeds",
+      "stages": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "totalHarvestTime": 14,
+      "oneTime": false,
+      "regrowthTime": 4,
+      "baseSellPrice": 50,
+      "isEdible": true,
+      "energy": 25,
+      "season": [
+        "summer",
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "hops",
+    "name": "Hops",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "hops_starter",
+      "stages": [
+        1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "totalHarvestTime": 11,
+      "oneTime": false,
+      "regrowthTime": 1,
+      "baseSellPrice": 25,
+      "isEdible": true,
+      "energy": 45,
+      "season": [
+        "summer"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "hot_pepper",
+    "name": "Hot Pepper",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "hops_starter",
+      "stages": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "totalHarvestTime": 5,
+      "oneTime": false,
+      "regrowthTime": 3,
+      "baseSellPrice": 40,
+      "isEdible": true,
+      "energy": 13,
+      "season": [
+        "summer"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "melon",
+    "name": "Melon",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "melon_seeds",
+      "stages": [
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      "totalHarvestTime": 12,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 250,
+      "isEdible": true,
+      "energy": 113,
+      "season": [
+        "summer"
+      ],
+      "canBecomeGiant": "true"
+    }
+  },
+  {
+    "itemId": "poppy",
+    "name": "Poppy",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "hops_starter",
+      "stages": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "totalHarvestTime": 7,
+      "oneTime": true,
+      "regrowthTime": 1,
+      "baseSellPrice": 140,
+      "isEdible": true,
+      "energy": 45,
+      "season": [
+        "summer"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "radish",
+    "name": "Radish",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "radish_seeds",
+      "stages": [
+        2,
+        1,
+        2,
+        1
+      ],
+      "totalHarvestTime": 6,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 90,
+      "isEdible": true,
+      "energy": 45,
+      "season": [
+        "summer"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "red_cabbage",
+    "name": "Red Cabbage",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "red_cabbage_seeds",
+      "stages": [
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "totalHarvestTime": 9,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 260,
+      "isEdible": true,
+      "energy": 75,
+      "season": [
+        "summer"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "starfruit",
+    "name": "Starfruit",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "starfruit_seeds",
+      "stages": [
+        2,
+        3,
+        2,
+        3,
+        3
+      ],
+      "totalHarvestTime": 13,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 750,
+      "isEdible": true,
+      "energy": 125,
+      "season": [
+        "summer"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "summer_spangle",
+    "name": "Summer Spangle",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "spangle_seeds",
+      "stages": [
+        1,
+        2,
+        3,
+        1
+      ],
+      "totalHarvestTime": 8,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 90,
+      "isEdible": true,
+      "energy": 45,
+      "season": [
+        "summer"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "summer_squash",
+    "name": "Summer Squash",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "summer_squash_seeds",
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "totalHarvestTime": 6,
+      "oneTime": false,
+      "regrowthTime": 3,
+      "baseSellPrice": 45,
+      "isEdible": true,
+      "energy": 63,
+      "season": [
+        "summer"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "sunflower",
+    "name": "Sunflower",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "sunflower_seeds",
+      "stages": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "totalHarvestTime": 8,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 80,
+      "isEdible": true,
+      "energy": 45,
+      "season": [
+        "summer",
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "tomato",
+    "name": "Tomato",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "tomato_seeds",
+      "stages": [
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "totalHarvestTime": 11,
+      "oneTime": false,
+      "regrowthTime": 4,
+      "baseSellPrice": 60,
+      "isEdible": true,
+      "energy": 20,
+      "season": [
+        "summer"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "wheat",
+    "name": "Wheat",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "wheat_seeds",
+      "stages": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "totalHarvestTime": 4,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 25,
+      "isEdible": false,
+      "energy": 0,
+      "season": [
+        "summer",
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "amaranth",
+    "name": "Amaranth",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "amaranth_seeds",
+      "stages": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "totalHarvestTime": 7,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 150,
+      "isEdible": true,
+      "energy": 50,
+      "season": [
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "artichoke",
+    "name": "Artichoke",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "artichoke_seeds",
+      "stages": [
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "totalHarvestTime": 8,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 160,
+      "isEdible": true,
+      "energy": 30,
+      "season": [
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "beet",
+    "name": "Beet",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "beet_seeds",
+      "stages": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "totalHarvestTime": 6,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 100,
+      "isEdible": true,
+      "energy": 30,
+      "season": [
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "bok_choy",
+    "name": "Bok Choy",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "bok_choy_seeds",
+      "stages": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "totalHarvestTime": 4,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 80,
+      "isEdible": true,
+      "energy": 25,
+      "season": [
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "broccoli",
+    "name": "Broccoli",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "broccoli_seeds",
+      "stages": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "totalHarvestTime": 8,
+      "oneTime": false,
+      "regrowthTime": 4,
+      "baseSellPrice": 70,
+      "isEdible": true,
+      "energy": 63,
+      "season": [
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "cranberries",
+    "name": "Cranberries",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "cranberry_seeds",
+      "stages": [
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "totalHarvestTime": 7,
+      "oneTime": false,
+      "regrowthTime": 5,
+      "baseSellPrice": 75,
+      "isEdible": true,
+      "energy": 38,
+      "season": [
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "eggplant",
+    "name": "Eggplant",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "cranberry_seeds",
+      "stages": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "totalHarvestTime": 5,
+      "oneTime": false,
+      "regrowthTime": 5,
+      "baseSellPrice": 60,
+      "isEdible": true,
+      "energy": 20,
+      "season": [
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "fairy_rose",
+    "name": "Fairy Rose",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "fairy_seeds",
+      "stages": [
+        1,
+        4,
+        4,
+        3
+      ],
+      "totalHarvestTime": 12,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 290,
+      "isEdible": true,
+      "energy": 45,
+      "season": [
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "grape",
+    "name": "Grape",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "grape_starter",
+      "stages": [
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "totalHarvestTime": 10,
+      "oneTime": false,
+      "regrowthTime": 3,
+      "baseSellPrice": 80,
+      "isEdible": true,
+      "energy": 38,
+      "season": [
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "pumpkin",
+    "name": "Pumpkin",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "pumpkin_seeds",
+      "stages": [
+        1,
+        2,
+        3,
+        4,
+        3
+      ],
+      "totalHarvestTime": 13,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 320,
+      "isEdible": false,
+      "energy": 0,
+      "season": [
+        "fall"
+      ],
+      "canBecomeGiant": "true"
+    }
+  },
+  {
+    "itemId": "yam",
+    "name": "Yam",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "yam_seeds",
+      "stages": [
+        1,
+        3,
+        3,
+        3
+      ],
+      "totalHarvestTime": 10,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 160,
+      "isEdible": true,
+      "energy": 45,
+      "season": [
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "sweet_gem_berry",
+    "name": "Sweet Gem Berry",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "rare_seed",
+      "stages": [
+        2,
+        4,
+        6,
+        6,
+        6
+      ],
+      "totalHarvestTime": 24,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 3000,
+      "isEdible": false,
+      "energy": 0,
+      "season": [
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "powdermelon",
+    "name": "Powdermelon",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "powdermelon_seeds",
+      "stages": [
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "totalHarvestTime": 7,
+      "oneTime": true,
+      "regrowthTime": -1,
+      "baseSellPrice": 60,
+      "isEdible": true,
+      "energy": 63,
+      "season": [
+        "winter"
+      ],
+      "canBecomeGiant": "true"
+    }
+  },
+  {
+    "itemId": "ancient_fruit",
+    "name": "Ancient Fruit",
+    "type": "all_crops",
+    "baseAttributes": {
+      "quality": "regular",
+      "source": "ancient_seeds",
+      "stages": [
+        2,
+        7,
+        7,
+        7,
+        5
+      ],
+      "totalHarvestTime": 28,
+      "oneTime": false,
+      "regrowthTime": 7,
+      "baseSellPrice": 550,
+      "isEdible": false,
+      "energy": 0,
+      "season": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "canBecomeGiant": "false"
+    }
+  },
+  {
+    "itemId": "wood",
+    "name": "Wood",
+    "type": "wood",
+    "baseAttributes": {
+      "quality": "regular"
+    }
+  },
+  {
+    "itemId": "fiber",
+    "name": "Fiber",
+    "type": "fiber",
+    "baseAttributes": {
+      "quality": "regular"
+    }
+  },
+  {
+    "itemId": "rock",
+    "name": "Rock",
+    "type": "rock",
+    "baseAttributes": {
+      "quality": "regular"
+    }
+  },
+  {
+    "itemId": "milk",
+    "name": "Milk",
+    "type": "animal_goods",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 125
+    }
+  },
+  {
+    "itemId": "wool",
+    "name": "Wool",
+    "type": "animal_goods",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 340
+    }
+  },
+  {
+    "itemId": "honey",
+    "name": "Honey",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 75,
+      "price": [
+        350
+      ],
+      "day": 4,
+      "machine": "bee_house"
+    }
+  },
+  {
+    "itemId": "cheese",
+    "name": "Cheese",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "hour": 3,
+      "price": [
+        230,
+        345
+      ],
+      "energy": 100,
+      "machine": "cheese_press"
+    }
+  },
+  {
+    "itemId": "goat_cheese",
+    "name": "Goat Cheese",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "hour": 3,
+      "price": [
+        400,
+        600
+      ],
+      "energy": 100,
+      "machine": "cheese_press"
+    }
+  },
+  {
+    "itemId": "beer",
+    "name": "Beer",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 50,
+      "price": [
+        200
+      ],
+      "day": 1,
+      "shopPrice": 400,
+      "dailyLimit": -1,
+      "machine": "keg"
+    }
+  },
+  {
+    "itemId": "vinegar",
+    "name": "Vinegar",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 13,
+      "price": [
+        100
+      ],
+      "hour": 10,
+      "machine": "keg"
+    }
+  },
+  {
+    "itemId": "coffee",
+    "name": "Coffee",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 75,
+      "price": [
+        150
+      ],
+      "hour": 2,
+      "machine": "keg"
+    }
+  },
+  {
+    "itemId": "juice",
+    "name": "Juice",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 0,
+      "price": [
+        0
+      ],
+      "day": 4,
+      "machine": "keg"
+    }
+  },
+  {
+    "itemId": "mead",
+    "name": "Mead",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 100,
+      "hour": 10,
+      "price": [
+        300
+      ],
+      "machine": "keg"
+    }
+  },
+  {
+    "itemId": "pale_ale",
+    "name": "Pale Ale",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 50,
+      "day": 3,
+      "price": [
+        300
+      ],
+      "machine": "keg"
+    }
+  },
+  {
+    "itemId": "wine",
+    "name": "Wine",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 0,
+      "price": [
+        0
+      ],
+      "day": 7,
+      "machine": "keg"
+    }
+  },
+  {
+    "itemId": "dried_mushrooms",
+    "name": "Dried Mushrooms",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 0,
+      "price": [
+        0
+      ],
+      "machine": "dehydrator"
+    }
+  },
+  {
+    "itemId": "dried_fruit",
+    "name": "Dried Fruit",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 0,
+      "price": [
+        0
+      ],
+      "machine": "dehydrator"
+    }
+  },
+  {
+    "itemId": "raisins",
+    "name": "Raisins",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 125,
+      "price": [
+        600
+      ],
+      "machine": "dehydrator"
+    }
+  },
+  {
+    "itemId": "cloth",
+    "name": "Cloth",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "hour": 4,
+      "energy": 0,
+      "price": [
+        0
+      ],
+      "machine": "loom"
+    }
+  },
+  {
+    "itemId": "mayonnaise",
+    "name": "Mayonnaise",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 50,
+      "hour": 3,
+      "price": [
+        190,
+        270
+      ],
+      "machine": "mayonnaise_machine"
+    }
+  },
+  {
+    "itemId": "duck_mayonnaise",
+    "name": "Duck Mayonnaise",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 75,
+      "hour": 3,
+      "price": [
+        37
+      ],
+      "machine": "mayonnaise_machine"
+    }
+  },
+  {
+    "itemId": "dinosaur_mayonnaise",
+    "name": "Dinosaur Mayonnaise",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 125,
+      "hour": 3,
+      "price": [
+        800
+      ],
+      "machine": "mayonnaise_machine"
+    }
+  },
+  {
+    "itemId": "truffle_oil",
+    "name": "Truffle Oil",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 38,
+      "hour": 6,
+      "price": [
+        1065
+      ],
+      "machine": "oil_maker"
+    }
+  },
+  {
+    "itemId": "oil",
+    "name": "Oil",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 13,
+      "price": [
+        100
+      ],
+      "machine": "oil_maker"
+    }
+  },
+  {
+    "itemId": "pickles",
+    "name": "Pickles",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 0,
+      "price": [
+        0
+      ],
+      "hour": 6,
+      "machine": "preserves_jar"
+    }
+  },
+  {
+    "itemId": "jelly",
+    "name": "Jelly",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 0,
+      "price": [
+        0
+      ],
+      "day": 3,
+      "machine": "preserves_jar"
+    }
+  },
+  {
+    "itemId": "smoked_fish",
+    "name": "Smoked Fish",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 0,
+      "price": [
+        0
+      ],
+      "hour": 1,
+      "machine": "fish_smoker"
+    }
+  },
+  {
+    "itemId": "copper_bar",
+    "name": "Copper Bar",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 0,
+      "price": [
+        0
+      ],
+      "hour": 4,
+      "machine": "furnace"
+    }
+  },
+  {
+    "itemId": "gold_bar",
+    "name": "Gold Bar",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 0,
+      "price": [
+        0
+      ],
+      "hour": 4,
+      "machine": "furnace"
+    }
+  },
+  {
+    "itemId": "iron_bar",
+    "name": "Iron Bar",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 0,
+      "price": [
+        0
+      ],
+      "hour": 4,
+      "machine": "furnace"
+    }
+  },
+  {
+    "itemId": "iridium_bar",
+    "name": "Iridium Bar",
+    "type": "artisan",
+    "baseAttributes": {
+      "quality": "regular",
+      "isReady": false,
+      "energy": 0,
+      "price": [
+        0
+      ],
+      "hour": 4,
+      "machine": "furnace"
+    }
+  },
+  {
+    "itemId": "large_milk",
+    "name": "Large Milk",
+    "type": "animal_goods",
+    "baseAttributes": {
+    }
+
+  },
+  {
+    "itemId": "friendship_level",
+    "name": "Friendship Level",
+    "type": "friendship_level",
+    "baseAttributes": {
+      "quality": "regular"
+    }
+  },
+  {
+    "itemId": "goat_milk",
+    "name": "Goat Milk",
+    "type": "animal_goods",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 225
+    }
+  },
+  {
+    "itemId": "large_goat_milk",
+    "name": "Large Goat Milk",
+    "type": "animal_goods",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 345
+    }
+  },
+  {
+    "itemId": "egg",
+    "name": "Egg",
+    "type": "animal_goods",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 50
+    }
+  },
+  {
+    "itemId": "large_egg",
+    "name": "Large Egg",
+    "type": "animal_goods",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 95
+    }
+  },
+  {
+    "itemId": "duck_egg",
+    "name": "Duck Egg",
+    "type": "animal_goods",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 95
+    }
+  },
+  {
+    "itemId": "dinosaur_egg",
+    "name": "Dinosaur Egg",
+    "type": "animal_goods",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 250
+    }
+  },
+  {
+    "itemId": "truffle",
+    "name": "Truffle",
+    "type": "animal_goods",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 625
+    }
+  },
+  {
+    "itemId": "rabbit_foot",
+    "name": "Rabbit Foot",
+    "type": "animal_goods",
+    "baseAttributes": {
+      "quality": "regular",
+      "price": 565
+    }
+  },
+  {
+    "itemId": "coop",
+    "name": "Coop",
+    "type": "building",
+    "baseAttributes": {
+      "quality": "regular",
+      "description": "Houses 4 coop-dwelling animals.",
+      "ingredients": {
+        "wood": 300,
+        "stone": 100,
+        "size": [
+          6,
+          3
+        ]
+      },
+      "shopPrice": 4000,
+      "dailyLimit": 1
+    }
+  },
+  {
+    "itemId": "big_coop",
+    "name": "Big Coop",
+    "type": "building",
+    "baseAttributes": {
+      "quality": "regular",
+      "description": "Houses 8 coop-dwelling animals. Unlocks ducks.",
+      "ingredients": {
+        "wood": 400,
+        "stone": 150,
+        "size": [
+          6,
+          3
+        ]
+      },
+      "shopPrice": 10000,
+      "dailyLimit": 1
+    }
+  },
+  {
+    "itemId": "deluxe_coop",
+    "name": "Deluxe Coop",
+    "type": "building",
+    "baseAttributes": {
+      "quality": "regular",
+      "description": "Houses 12 coop-dwelling animals. Unlocks rabbits.",
+      "ingredients": {
+        "wood": 500,
+        "stone": 200,
+        "size": [
+          6,
+          3
+        ]
+      },
+      "shopPrice": 20000,
+      "dailyLimit": 1
+    }
+  },
+  {
+    "itemId": "barn",
+    "name": "Barn",
+    "type": "building",
+    "baseAttributes": {
+      "quality": "regular",
+      "description": "Houses 4 barn-dwelling animals.",
+      "ingredients": {
+        "wood": 350,
+        "stone": 150,
+        "size": [
+          7,
+          4
+        ]
+      },
+      "shopPrice": 6000,
+      "dailyLimit": 1
+    }
+  },
+  {
+    "itemId": "big_barn",
+    "name": "Big Barn",
+    "type": "building",
+    "baseAttributes": {
+      "quality": "regular",
+      "description": "Houses 8 barn-dwelling animals. Unlocks goats.",
+      "ingredients": {
+        "wood": 450,
+        "stone": 200,
+        "size": [
+          7,
+          4
+        ]
+      },
+      "shopPrice": 12000,
+      "dailyLimit": 1
+    }
+  },
+  {
+    "itemId": "deluxe_barn",
+    "name": "Deluxe Barn",
+    "type": "building",
+    "baseAttributes": {
+      "quality": "regular",
+      "description": "Houses 12 barn-dwelling animals. Unlocks sheep and pigs.",
+      "ingredients": {
+        "wood": 550,
+        "stone": 300,
+        "size": [
+          7,
+          4
+        ]
+      },
+      "shopPrice": 25000,
+      "dailyLimit": 1
+    }
+  },
+  {
+    "itemId": "copper_ore",
+    "name": "Copper Ore",
+    "type": "ore",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 75,
+      "description": "A common ore that can be smelted into bars.",
+      "dailyLimit": -1
+    }
+  },
+  {
+    "itemId": "iron_ore",
+    "name": "Iron Ore",
+    "type": "ore",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 150,
+      "description": "A fairly common ore that can be smelted into bars.",
+      "dailyLimit": -1
+    }
+  },
+  {
+    "itemId": "gold_ore",
+    "name": "Gold Ore",
+    "type": "ore",
+    "baseAttributes": {
+      "quality": "regular",
+      "baseSellPrice": 400,
+      "description": "A precious ore that can be smelted into bars.",
+      "dailyLimit": -1
+    }
+  },
+  {
+    "itemId" : "copper_ore",
+    "name" : "Copper Ore",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "shopPrice" : 75,
+      "description":"A common ore that can be smelted into bars.",
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId" : "iron_ore",
+    "name" : "Iron Ore",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "shopPrice" : 150,
+      "description":"A fairly common ore that can be smelted into bars.",
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId" : "gold_ore",
+    "name" : "Gold Ore",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "shopPrice" : 400,
+      "description":"A precious ore that can be smelted into bars.",
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId" : "hay",
+    "name" : "Hay",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description": "Dried grass used as animal food.",
+      "shopPrice" : 50,
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId" : "milk_pail",
+    "name" : "Milk Pail",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description": "Gather milk from your animals.",
+      "shopPrice" : 1000,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId" : "shears",
+    "name" : "Shears",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description": "Use this to collect wool from sheep",
+      "shopPrice" : 1000,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId" : "chicken",
+    "name" : "Chicken",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description": "Well cared-for chickens lay eggs every day. Lives in the coop.",
+      "shopPrice" : 800,
+      "building" : "coop",
+      "dailyLimit" : 2
+    }
+  },
+  {
+    "itemId": "hashbrowns_recipe",
+    "name" : "Hashbrowns Recipe",
+    "type" : "shop_recipe",
+    "baseAttributes": {
+      "description" : "A recipe to make Hashbrowns",
+      "shopPrice" : 50,
+      "ingredients": {
+        "potato": 1,
+        "oil": 1
+      },
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "omelet_recipe",
+    "name" : "Omelet Recipe",
+    "type" : "shop_recipe",
+    "baseAttributes": {
+      "ingredients": {
+        "egg": 1,
+        "milk": 1
+      },
+      "description" : "A recipe to make Omelet",
+      "shopPrice" : 100,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "pancakes_recipe",
+    "name" : "Pancakes Recipe",
+    "type" : "shop_recipe",
+    "baseAttributes": {
+      "ingredients": {
+        "wheat_flour": 1,
+        "egg": 1
+      },
+      "description" : "A recipe to make Pancakes",
+      "shopPrice" : 100,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "bread_recipe",
+    "name" : "Bread Recipe",
+    "type" : "shop_recipe",
+    "baseAttributes": {
+      "ingredients": {
+        "wheat_flour": 1
+      },
+      "description" : "A recipe to make Bread",
+      "shopPrice" : 100,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "tortilla_recipe",
+    "name" : "Tortilla Recipe",
+    "type" : "shop_recipe",
+    "baseAttributes": {
+      "description" : "A recipe to make Tortilla",
+      "ingredients": {
+        "corn": 1
+      },
+      "shopPrice" : 100,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "pizza_recipe",
+    "name" : "Pizza Recipe",
+    "type" : "shop_recipe",
+    "baseAttributes": {
+      "description" : "A recipe to make Pizza",
+      "ingredients": {
+        "wheat_flour": 1,
+        "tomato": 1,
+        "cheese": 1
+      },
+      "shopPrice" : 150,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "maki_roll_recipe",
+    "name" : "Maki Roll Recipe",
+    "type" : "shop_recipe",
+    "baseAttributes": {
+      "description" : "A recipe to make Maki Roll",
+      "ingredients": {
+        "any_fish": 1,
+        "rice": 1,
+        "fiber": 1
+      },
+      "shopPrice" : 300,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "triple_shot_espresso_recipe",
+    "name" : "Triple Shot Espresso Recipe",
+    "type" : "shop_recipe",
+    "baseAttributes": {
+      "description" : "A recipe to make Triple Shot Espresso",
+      "ingredients": {
+        "coffee": 3
+      },
+      "shopPrice" : 5000,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "cookie_recipe",
+    "name" : "Cookie Recipe",
+    "type" : "shop_recipe",
+    "baseAttributes": {
+      "description" : "A recipe to make Cookie",
+      "ingredients": {
+        "wheat_flour": 1,
+        "sugar": 1,
+        "egg": 1
+      },
+      "shopPrice" : 300,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "wood",
+    "name" : "Wood",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "A sturdy, yet flexible plant material with a wide variety of uses.",
+      "shopPrice" : 10,
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "stone",
+    "name" : "Stone",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "A common material with many uses in crafting and building.",
+      "shopPrice" : 20,
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "barn",
+    "name" : "Barn",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Houses 4 barn-dwelling animals.",
+      "ingredients": {
+        "wood":350,
+        "stone":150,
+        "size": [7,4]
+      },
+      "shopPrice" : 6000,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "big_barn",
+    "name" : "Big Barn",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Houses 8 barn-dwelling animals. Unlocks goats.",
+      "ingredients": {
+        "wood":450,
+        "stone":200,
+        "size": [7,4]
+      },
+      "shopPrice" : 12000,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "deluxe_barn",
+    "name" : "Deluxe Barn",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Houses 12 barn-dwelling animals. Unlocks sheep and pigs.",
+      "ingredients": {
+        "wood":550,
+        "stone":300,
+        "size": [7,4]
+      },
+      "shopPrice" : 25000,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "coop",
+    "name" : "Coop",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Houses 4 coop-dwelling animals.",
+      "ingredients": {
+        "wood":300,
+        "stone":100,
+        "size": [6,3]
+      },
+      "shopPrice" : 4000,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "big_coop",
+    "name" : "Big Coop",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Houses 8 coop-dwelling animals. Unlocks ducks.",
+      "ingredients": {
+        "wood":400,
+        "stone":150,
+        "size": [6,3]
+      },
+      "shopPrice" : 10000,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "deluxe_coop",
+    "name" : "Deluxe Coop",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Houses 12 coop-dwelling animals. Unlocks rabbits.",
+      "ingredients": {
+        "wood":500,
+        "stone":200,
+        "size": [6,3]
+      },
+      "shopPrice" : 20000,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "well",
+    "name" : "Well",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Houses 12 coop-dwelling animals. Unlocks rabbits.",
+      "ingredients": {
+        "stone":75,
+        "size": [3,3]
+      },
+      "shopPrice" : 1000,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "shipping_bin",
+    "name" : "Shipping Bin",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Items placed in it will be included in the nightly shipment.",
+      "ingredients": {
+        "wood":150,
+        "size": [1,1]
+      },
+      "shopPrice" : 250,
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "fish_smoker_recipe",
+    "name" : "Fish Smoker Recipe",
+    "type" : "shop_recipe",
+    "baseAttributes": {
+      "description" : "A recipe to make Fish Smoker",
+      "ingredients": {
+        "wood": 50,
+        "iron_bar": 3,
+        "coal": 10
+      },
+      "shopPrice" : 10000,
+      "fishingSkill": 0,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "trout_soup",
+    "name" : "Trout Soup",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Pretty salty.",
+      "shopPrice" : 250,
+      "fishingSkill": 0,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "bamboo_pole",
+    "name" : "Bamboo Pole",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Use in the water to catch fish.",
+      "shopPrice" : 500,
+      "fishingSkill": 0,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "training_rod",
+    "name" : "Training Rod",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "It's a lot easier to use than other rods, but can only catch basic fish.",
+      "shopPrice" : 25,
+      "fishingSkill": 0,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "fiberglass_rod",
+    "name" : "Fiberglass Rod",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Use in the water to catch fish.",
+      "shopPrice" : 1800,
+      "fishingSkill": 2,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "iridium_rod",
+    "name" : "Iridium Rod",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Use in the water to catch fish.",
+      "shopPrice" : 7500,
+      "fishingSkill": 4,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "joja_cola",
+    "name" : "Joja Cola",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "The flagship product of Joja corporation.",
+      "shopPrice" : 75,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "sugar",
+    "name" : "Sugar",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Adds sweetness to pastries and candies. Too much can be unhealthy.",
+      "shopPrice" : 125,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "wheat_flour",
+    "name" : "Wheat Flour",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "A common cooking ingredient made from crushed wheat seeds.",
+      "shopPrice" : 125,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "rice",
+    "name" : "Rice",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "A basic grain often served under vegetables.",
+      "shopPrice" : 250,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "bouquet",
+    "name" : "Bouquet",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "A gift that shows your romantic interest.",
+      "shopPrice" : 1000,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : 2
+    }
+  },
+  {
+    "itemId": "wedding_ring",
+    "name" : "Wedding Ring",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "It's used to ask for another farmer's hand in marriage.",
+      "shopPrice" : 10000,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : 2
+    }
+  },
+  {
+    "itemId": "dehydrator_recipe",
+    "name" : "Dehydrator Recipe",
+    "type" : "shop_recipe",
+    "baseAttributes": {
+      "description" : "A recipe to make Dehydrator",
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "ingredients": {
+        "wood": 30,
+        "stone": 20,
+        "fiber": 30
+      },
+      "shopPrice" : 10000,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "grass_starter_recipe",
+    "name" : "Grape Starter Recipe",
+    "type" : "shop_recipe",
+    "baseAttributes": {
+      "description" : "A recipe to make Grass Starter",
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "ingredients": {
+        "wood": 1,
+        "fiber": 1
+      },
+      "shopPrice" : 1000,
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "deluxe_retaining_soil",
+    "name" : "Deluxe Retaining Soil",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "This soil has a 100% chance of staying watered overnight. Mix into tilled soil.",
+      "shopPrice" : 150,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+
+  {
+    "itemId": "speed_gro",
+    "name" : "Speed Gro",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Makes the plants grow 1 day earlier.",
+      "shopPrice" : 100,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "apple_sapling",
+    "name" : "Apple Sapling",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Takes 28 days to produce a mature Apple tree. Bears fruit in the fall. Only grows if the 8 surrounding \"tiles\" are empty.",
+      "shopPrice" : 4000,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "apricot_sapling",
+    "name" : "Apricot Sapling",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Takes 28 days to produce a mature Apricot tree. Bears fruit in the spring. Only grows if the 8 surrounding \"tiles\" are empty.",
+      "shopPrice" : 2000,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "cherry_sapling",
+    "name" : "Cherry Sapling",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Takes 28 days to produce a mature Cherry tree. Bears fruit in the spring. Only grows if the 8 surrounding \"tiles\" are empty.",
+      "shopPrice" : 3400,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "orange_sapling",
+    "name" : "Orange Sapling",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Takes 28 days to produce a mature Orange tree. Bears fruit in the spring. Only grows if the 8 surrounding \"tiles\" are empty.",
+      "shopPrice" : 4000,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "peach_sapling",
+    "name" : "Peach Sapling",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Takes 28 days to produce a mature Peach tree. Bears fruit in the summer. Only grows if the 8 surrounding \"tiles\" are empty.",
+      "shopPrice" : 6000,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "pomegranate_sapling",
+    "name" : "Pomegranate Sapling",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Takes 28 days to produce a mature Pomegranate tree. Bears fruit in the fall. Only grows if the 8 surrounding \"tiles\" are empty.",
+      "shopPrice" : 6000,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "basic_retaining_soil",
+    "name" : "Basic Retaining Soil",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "This soil has a chance of staying watered overnight. Mix into tilled soil.",
+      "shopPrice" : 100,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "quality_retaining_soil",
+    "name" : "Quality Retaining Soil",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "This soil has a good chance of staying watered overnight. Mix into tilled soil.",
+      "shopPrice" : 150,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : -1
+    }
+  },
+  {
+    "itemId": "large_pack",
+    "name" : "Large Pack",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Unlocks the 2nd row of inventory (12 more slots, total 24).",
+      "shopPrice" : 2000,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : 1
+    }
+  },
+  {
+    "itemId": "deluxe_pack",
+    "name" : "Deluxe Pack",
+    "type" : "shop_item",
+    "baseAttributes": {
+      "description" : "Unlocks the 3rd row of inventory (infinite slots).",
+      "shopPrice" : 10000,
+      "season" : ["spring" , "summer" , "fall" , "winter"],
+      "dailyLimit" : 1
+    }
+  }
+]
