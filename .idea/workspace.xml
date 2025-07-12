@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2ca16c3-bd77-4ce8-9a87-9ff706a514b9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/InGameControllers/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/InGameControllers/AnimalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/InGameControllers/ArtisanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/InGameControllers/ArtisanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/InGameControllers/CookingMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/InGameControllers/CookingMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/InGameControllers/CraftingMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/InGameControllers/CraftingMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/GameMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/GameMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/UpdateControllers/UpdateForaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/UpdateControllers/UpdateForaging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/models/Players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/models/Players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/models/Players/PlayerAbilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/models/Players/PlayerAbilities.java" afterDir="false" />
-    </list>
+    <list default="true" id="e2ca16c3-bd77-4ce8-9a87-9ff706a514b9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +140,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752070943779</updated>
-      <workItem from="1752327393408" duration="1363000" />
+      <workItem from="1752327393408" duration="1895000" />
     </task>
     <servers />
   </component>
