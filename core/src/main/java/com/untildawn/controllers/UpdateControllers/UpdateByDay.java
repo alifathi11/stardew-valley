@@ -5,13 +5,6 @@ import com.untildawn.models.Game;
 import com.untildawn.models.Items.ShippingBin;
 import com.untildawn.models.MapElements.Tile;
 import com.untildawn.models.Players.Player;
-import org.example.Controllers.InGameMenuController.AnimalController;
-import org.example.Enums.GameConsts.WeatherStates;
-import org.example.Models.Game;
-import org.example.Models.Item.ShippingBin;
-import org.example.Models.MapElements.Tile;
-import org.example.Models.Player.Player;
-
 import java.util.ArrayList;
 import java.util.Map;
 

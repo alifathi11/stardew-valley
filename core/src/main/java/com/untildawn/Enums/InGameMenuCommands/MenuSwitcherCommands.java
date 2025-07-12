@@ -1,6 +1,5 @@
 package com.untildawn.Enums.InGameMenuCommands;
 
-import org.example.Controllers.InGameMenuController.MenuSwitcher;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
