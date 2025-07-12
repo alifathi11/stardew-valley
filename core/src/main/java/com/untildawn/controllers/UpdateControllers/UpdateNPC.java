@@ -7,6 +7,13 @@ import com.untildawn.models.Items.ItemInstance;
 import com.untildawn.models.NPCs.NPC;
 import com.untildawn.models.NPCs.NPCRelation;
 import com.untildawn.models.Players.Player;
+import org.example.Controllers.InGameMenuController.GenerateRandomNumber;
+import org.example.Models.Game;
+import org.example.Models.Item.ItemDefinition;
+import org.example.Models.Item.ItemInstance;
+import org.example.Models.NPC.NPC;
+import org.example.Models.NPC.NPCRelation;
+import org.example.Models.Player.Player;
 
 import java.util.ArrayList;
 

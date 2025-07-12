@@ -2,6 +2,9 @@ package com.untildawn.models.Players;
 
 import com.untildawn.models.App;
 import com.untildawn.models.Game;
+import org.example.Models.App;
+import org.example.Models.Game;
+
 import java.util.ArrayList;
 
 public class MakePlayerRelations {

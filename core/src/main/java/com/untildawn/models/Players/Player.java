@@ -7,13 +7,27 @@ import com.untildawn.models.App;
 import com.untildawn.models.Game;
 import com.untildawn.models.Items.Inventory;
 import com.untildawn.models.Items.ItemInstance;
-import com.untildawn.models.Items.Refrigerator;
 import com.untildawn.models.MapElements.GameMap;
 import com.untildawn.models.MapElements.PlayerMap;
 import com.untildawn.models.MapElements.Position;
 import com.untildawn.models.MapElements.Tile;
 import com.untildawn.models.NPCs.Quest;
 import com.untildawn.models.User;
+import org.example.Enums.GameConsts.Gender;
+import org.example.Enums.GameConsts.WeatherStates;
+import org.example.Enums.ItemConsts.ItemAttributes;
+import org.example.Models.Animals.Animal;
+import org.example.Models.App;
+import org.example.Models.Game;
+import org.example.Models.Item.Inventory;
+import org.example.Models.Item.ItemInstance;
+import org.example.Models.MapElements.GameMap;
+import org.example.Models.MapElements.PlayerMap;
+import org.example.Models.MapElements.Position;
+import org.example.Models.MapElements.Tile;
+import org.example.Models.NPC.Quest;
+import org.example.Models.User;
+
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -43,12 +57,7 @@ public class Player {
     private Player spouse;
     private int rejectedDays;
     private ArrayList<Trade> trades;
-    private boolean fishingEnable;
-    private boolean miningEnable;
-    private boolean foragingEnable;
-    private boolean farmingEnable;
-    private boolean maxEnergyEnable;
-    private Refrigerator refrigerator;
+
     public Player(User user, String name, Gender gender, Position position) {
         this.user = user;
         this.name = name;
@@ -172,16 +181,13 @@ public class Player {
             this.isFainted = true;
         }
     }
-    public void increaseEnergy(int deltaEnergy) {
-        this.energy += deltaEnergy;
-    }
 
     public void reduceEnergy(int ability, ItemInstance tool, Player player,
                              boolean canBeDownGraded, Game game, int energyCost) {
         double rate = 1;
         if (game.getWeather().getCurrentWeather().equals(WeatherStates.SNOWY)) rate = 2;
         if (game.getWeather().getCurrentWeather().equals(WeatherStates.RAIN)
-            || game.getWeather().getCurrentWeather().equals(WeatherStates.STORM)) rate = 1.5;
+                || game.getWeather().getCurrentWeather().equals(WeatherStates.STORM)) rate = 1.5;
         if (ability == 4) {
             decreaseEnergy((int) rate * (energyCost - 1));
         } else {
@@ -306,51 +312,4 @@ public class Player {
     public ArrayList<Trade> getTrades() {
         return trades;
     }
-
-    public boolean isMaxEnergyEnable() {
-        return maxEnergyEnable;
-    }
-
-    public void setMaxEnergyEnable(boolean maxEnergyEnable) {
-        this.maxEnergyEnable = maxEnergyEnable;
-    }
-
-    public boolean isFarmingEnable() {
-        return farmingEnable;
-    }
-
-    public void setFarmingEnable(boolean farmingEnable) {
-        this.farmingEnable = farmingEnable;
-    }
-
-    public boolean isForagingEnable() {
-        return foragingEnable;
-    }
-
-    public void setForagingEnable(boolean foragingEnable) {
-        this.foragingEnable = foragingEnable;
-    }
-
-    public boolean isMiningEnable() {
-        return miningEnable;
-    }
-
-    public void setMiningEnable(boolean miningEnable) {
-        this.miningEnable = miningEnable;
-    }
-
-    public boolean isFishingEnable() {
-        return fishingEnable;
-    }
-
-    public void setFishingEnable(boolean fishingEnable) {
-        this.fishingEnable = fishingEnable;
-    }
-    public void reduceEnergyWhenCrafting(int amount) {
-        this.energy -= amount;
-    }
-    public Refrigerator getRefrigerator(){
-        return this.refrigerator;
-    }
 }
-

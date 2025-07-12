@@ -7,7 +7,6 @@ import com.untildawn.Enums.ItemConsts.ItemType;
 import com.untildawn.Enums.MapConsts.AnsiColors;
 import com.untildawn.Enums.MapConsts.MapSizes;
 import com.untildawn.controllers.UpdateControllers.UpdateForaging;
-import com.untildawn.controllers.UpdateControllers.spawnRandom;
 import com.untildawn.models.App;
 import com.untildawn.models.Game;
 import com.untildawn.models.Items.ItemLoader;

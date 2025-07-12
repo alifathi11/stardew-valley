@@ -53,20 +53,4 @@ public class PlayerAbilities {
     public int getFishingAbility() {
         return fishingAbility;
     }
-
-    public void increaseFishing(int amount) {
-        this.fishingAbility += amount;
-    }
-
-    public void increaseFarming(int amount) {
-        this.farmingAbility += amount;
-    }
-
-    public void increaseNature(int amount) {
-        this.natureAbility += amount;
-    }
-
-    public void increaseMining(int amount) {
-        this.miningAbility += amount;
-    }
 }

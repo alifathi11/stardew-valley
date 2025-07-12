@@ -6,7 +6,13 @@ import com.untildawn.models.App;
 import com.untildawn.models.Game;
 import com.untildawn.models.Items.ItemInstance;
 import com.untildawn.models.MapElements.Tile;
-
+import org.example.Enums.ItemConsts.ItemAttributes;
+import org.example.Enums.ItemConsts.ItemType;
+import org.example.Models.App;
+import org.example.Models.Game;
+import org.example.Models.Item.ItemDefinition;
+import org.example.Models.Item.ItemInstance;
+import org.example.Models.MapElements.Tile;
 
 import java.util.ArrayList;
 import java.util.Objects;

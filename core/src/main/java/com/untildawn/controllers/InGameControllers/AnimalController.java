@@ -61,15 +61,15 @@ public class AnimalController {
         for (ItemDefinition item : App.getItemDefinitions()) {
             if (skill != 4) {
                 if (item.getType().equals(ItemType.fish) &&
-                    item.getAttribute(ItemAttributes.season).toString().
-                        equals(game.getDateTime().getSeason().name().toLowerCase())) {
+                        item.getAttribute(ItemAttributes.season).toString().
+                                equals(game.getDateTime().getSeason().name().toLowerCase())) {
                     fish.add(item);
                 }
             } else {
                 if ((item.getType().equals(ItemType.fish)
-                    || item.getType().equals(ItemType.legendary_fish)) &&
-                    item.getAttribute(ItemAttributes.season).toString().
-                        equals(game.getDateTime().getSeason().name().toLowerCase())) {
+                        || item.getType().equals(ItemType.legendary_fish)) &&
+                        item.getAttribute(ItemAttributes.season).toString().
+                                equals(game.getDateTime().getSeason().name().toLowerCase())) {
                     fish.add(item);
                 }
             }
@@ -115,30 +115,30 @@ public class AnimalController {
         int x = player.getPosition().getX();
         int y = player.getPosition().getY();
         return gameMap.getTile(y, x - 1).getItem().getDefinition().getType().equals(ItemType.lake)
-            || gameMap.getTile(y, x + 1).getItem().getDefinition().getType().equals(ItemType.lake)
-            || gameMap.getTile(y + 1, x - 1).getItem().getDefinition().getType().equals(ItemType.lake)
-            || gameMap.getTile(y + 1, x).getItem().getDefinition().getType().equals(ItemType.lake)
-            || gameMap.getTile(y + 1, x + 1).getItem().getDefinition().getType().equals(ItemType.lake)
-            || gameMap.getTile(y - 1, x - 1).getItem().getDefinition().getType().equals(ItemType.lake)
-            || gameMap.getTile(y - 1, x).getItem().getDefinition().getType().equals(ItemType.lake)
-            || gameMap.getTile(y - 1, x + 1).getItem().getDefinition().getType().equals(ItemType.lake);
+                || gameMap.getTile(y, x + 1).getItem().getDefinition().getType().equals(ItemType.lake)
+                || gameMap.getTile(y + 1, x - 1).getItem().getDefinition().getType().equals(ItemType.lake)
+                || gameMap.getTile(y + 1, x).getItem().getDefinition().getType().equals(ItemType.lake)
+                || gameMap.getTile(y + 1, x + 1).getItem().getDefinition().getType().equals(ItemType.lake)
+                || gameMap.getTile(y - 1, x - 1).getItem().getDefinition().getType().equals(ItemType.lake)
+                || gameMap.getTile(y - 1, x).getItem().getDefinition().getType().equals(ItemType.lake)
+                || gameMap.getTile(y - 1, x + 1).getItem().getDefinition().getType().equals(ItemType.lake);
     }
 
     public double getMBasedOnWeather(Game game) {
         WeatherStates weather = game.getWeather().getCurrentWeather();
         switch (weather) {
-            case SUNNY :
+            case SUNNY -> {
                 return 1.5;
-
-            case RAIN :
+            }
+            case RAIN -> {
                 return 1.2;
-
-            case STORM :
+            }
+            case STORM -> {
                 return 0.5;
-
-            default :
+            }
+            default -> {
                 return 1;
-
+            }
         }
     }
 
@@ -159,7 +159,7 @@ public class AnimalController {
             ItemInstance item = new ItemInstance(fish);
             if (0.5 <= quality && quality < 0.7) {
                 item.setAttribute(ItemAttributes.baseSellPrice,
-                    (int) item.getAttribute(ItemAttributes.baseSellPrice) * 1.25);
+                        (int) item.getAttribute(ItemAttributes.baseSellPrice) * 1.25);
                 if (!player.getInventory().addItem(item)) {
                     view.showMessage("Your back pack is full!");
                 } else {
@@ -168,7 +168,7 @@ public class AnimalController {
                 }
             } else if (0.7 <= quality && quality < 0.9) {
                 item.setAttribute(ItemAttributes.baseSellPrice,
-                    (int) item.getAttribute(ItemAttributes.baseSellPrice) * 1.5);
+                        (int) item.getAttribute(ItemAttributes.baseSellPrice) * 1.5);
                 if (!player.getInventory().addItem(item)) {
                     view.showMessage("Your back pack is full!");
                 } else {
@@ -177,7 +177,7 @@ public class AnimalController {
                 }
             } else if (0.9 <= quality) {
                 item.setAttribute(ItemAttributes.baseSellPrice,
-                    (int) item.getAttribute(ItemAttributes.baseSellPrice) * 2);
+                        (int) item.getAttribute(ItemAttributes.baseSellPrice) * 2);
                 if (!player.getInventory().addItem(item)) {
                     view.showMessage("Your back pack is full!");
                 } else {
@@ -188,7 +188,7 @@ public class AnimalController {
         }
         player.getAbilities().increaseFishingAbility();
         System.out.println("Fishing ablitity: " +
-            player.getAbilities().getAbilityLevel(player.getAbilities().getFishingAbility()));
+                player.getAbilities().getAbilityLevel(player.getAbilities().getFishingAbility()));
     }
 
     public void buildBarnOrCoop(Matcher matcher, Game game) {
@@ -215,12 +215,12 @@ public class AnimalController {
         int playerY = player.getPosition().getY();
         int playerX = player.getPosition().getX();
         if (!(xShop - 1 <= playerX && playerX <= xShop + 1
-            && yShop - 1 <= playerY && playerY <= yShop + 1)) {
+                && yShop - 1 <= playerY && playerY <= yShop + 1)) {
             view.showMessage("You should be near Carpenter's shop to buy " + buildingName + "!");
             return;
         }
         if (!(playerMap.getStartPosition().getX() <= x && x <= playerMap.getEndPosition().getX()
-            && playerMap.getStartPosition().getY() <= y && y <= playerMap.getEndPosition().getY())) {
+                && playerMap.getStartPosition().getY() <= y && y <= playerMap.getEndPosition().getY())) {
             view.showMessage("Please select a tile from your own farm!");
             return;
         }
@@ -283,15 +283,15 @@ public class AnimalController {
         int playerY = player.getPosition().getY();
         int playerX = player.getPosition().getX();
         if (!(xShop - 1 <= playerX && playerX <= xShop + 1
-            && yShop - 1 <= playerY && playerY <= yShop + 1)) {
+                && yShop - 1 <= playerY && playerY <= yShop + 1)) {
             view.showMessage("You should be near Marine's Ranch to buy " + animalStr + "!");
             return;
         }
         boolean found = false;
         for (ItemDefinition itemDefinition : App.getItemDefinitions()) {
             if (itemDefinition.getId().name().equals(animalStr) &&
-                (itemDefinition.getType().equals(ItemType.coop_animal)
-                    || itemDefinition.getType().equals(ItemType.barn_animal))) {
+                    (itemDefinition.getType().equals(ItemType.coop_animal)
+                            || itemDefinition.getType().equals(ItemType.barn_animal))) {
                 found = true;
                 break;
             }
@@ -358,7 +358,7 @@ public class AnimalController {
         int playerX = player.getPosition().getX();
         int playerY = player.getPosition().getY();
         if (!(animalX - 1 <= playerX && playerX <= animalX + 1
-            && animalY - 1 <= playerY && playerY <= animalY + 1)) {
+                && animalY - 1 <= playerY && playerY <= animalY + 1)) {
             view.showMessage("You should be near " + animalName + " to pet!");
             return;
         }
@@ -401,7 +401,7 @@ public class AnimalController {
         }
         for (Animal animal : player.getAnimals()) {
             view.showMessage("Name : " + animal.getName() + "\nfriendship : " + animal.getFriendShip()
-                + "\nisPet : " + animal.isPet() + "\nisFed : " + animal.isFed());
+                    + "\nisPet : " + animal.isPet() + "\nisFed : " + animal.isFed());
         }
     }
 
@@ -440,7 +440,7 @@ public class AnimalController {
                     tile.setItem(new ItemInstance(Objects.requireNonNull(App.getItemDefinition("VOID"))));
                     animal.setOutside(false);
                     animal.setPosition(new Position(playerMap.getCoop().getPosition().getY(),
-                        playerMap.getCoop().getPosition().getX()));
+                            playerMap.getCoop().getPosition().getX()));
                     view.showMessage(animalName + " is now inside the coop!");
                     return;
                 } else {
@@ -454,7 +454,7 @@ public class AnimalController {
                     tile.setItem(new ItemInstance(Objects.requireNonNull(App.getItemDefinition("VOID"))));
                     animal.setOutside(false);
                     animal.setPosition(new Position(playerMap.getBarn().getPosition().getY(),
-                        playerMap.getBarn().getPosition().getX()));
+                            playerMap.getBarn().getPosition().getX()));
                     view.showMessage(animalName + " is now inside the barn!");
                     return;
                 } else {
@@ -470,8 +470,8 @@ public class AnimalController {
         }
         WeatherStates weatherStates = game.getWeather().getCurrentWeather();
         if (weatherStates.equals(WeatherStates.SNOWY)
-            || weatherStates.equals(WeatherStates.RAIN)
-            || weatherStates.equals(WeatherStates.STORM)) {
+                || weatherStates.equals(WeatherStates.RAIN)
+                || weatherStates.equals(WeatherStates.STORM)) {
             view.showMessage("Animals must stat inside, the weather is fucked up(" + weatherStates.name() + ")!");
             return;
         }
@@ -533,8 +533,8 @@ public class AnimalController {
                 ItemInstance item = entry.getKey();
                 Integer quality = entry.getValue();
                 view.showMessage("Animal Name : " + animal.getName() +
-                    "\nProduct Name : " + item.getDefinition().getDisplayName().toLowerCase()
-                    + "\nQuality : " + quality);
+                        "\nProduct Name : " + item.getDefinition().getDisplayName().toLowerCase()
+                        + "\nQuality : " + quality);
             }
         }
     }
@@ -573,7 +573,7 @@ public class AnimalController {
             ItemInstance item = entry.getKey();
             player.getInventory().addItem(item);
             view.showMessage("You've collected " + item.getDefinition().getDisplayName().toLowerCase() + " from "
-                + animalName + "!");
+                    + animalName + "!");
         }
         player.decreaseEnergy(-10);
     }
