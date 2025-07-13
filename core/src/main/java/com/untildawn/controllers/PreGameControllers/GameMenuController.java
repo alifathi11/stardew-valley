@@ -24,12 +24,24 @@ import com.untildawn.models.NPCs.MakeShops;
 import com.untildawn.models.Players.MakePlayerRelations;
 import com.untildawn.models.Players.Player;
 import com.untildawn.models.User;
+import com.untildawn.views.PreGameMenus.GameMenuView;
+import com.untildawn.views.PreGameMenus.MainMenuView;
 import com.untildawn.views.PreGameMenus.TerminalAnimation;
 
 
 import java.util.*;
 
 public class GameMenuController {
+
+    private GameMenuView view;
+
+    public void setView(GameMenuView view) {
+        this.view = view;
+    }
+
+    public void handleButtons() {
+
+    }
 
     public static String makeNewGame(Scanner sc) {
         // load items

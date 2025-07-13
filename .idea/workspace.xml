@@ -4,7 +4,133 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2ca16c3-bd77-4ce8-9a87-9ff706a514b9" name="Changes" comment="" />
+    <list default="true" id="e2ca16c3-bd77-4ce8-9a87-9ff706a514b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/backgrounds/MenusBG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/skin/flat-earth-ui.atlas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/skin/flat-earth-ui.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/skin/flat-earth-ui.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/skin/font-button-export.fnt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/skin/font-export.fnt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/skin/font-title-export.fnt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/MainMenuView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/ProfileMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Stardew_Valley_Images" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/assets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/assets.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/libgdx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/Enums/GameMenus/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/Enums/GameMenus/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/Enums/GameMenus/Menus$InGameMenus.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/Enums/GameMenus/Menus$InGameMenus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/Enums/GameMenus/Menus$PreGameMenus.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/Enums/GameMenus/Menus$PreGameMenus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/Enums/GameMenus/Menus.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/Enums/GameMenus/Menus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/InGameControllers/FarmingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/InGameControllers/FarmingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/InGameControllers/InventoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/InGameControllers/InventoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/AvatarMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/AvatarMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/GameMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/GameMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/LoginMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/LoginMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/MainMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/MainMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/PasswordGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/ProfileMenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/SHA256Hasher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/SecurityQuestions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/SessionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/SignupMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/SignupMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/PreGameControllers/Validation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/UpdateControllers/ArtisanUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/controllers/UpdateControllers/ArtisanUpdate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/AppMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/AppMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/AppView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/ActionMenuView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/ActionMenuView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/ActionMenuView.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/ActionMenuView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/CookingMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/CookingMenu$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/CookingMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/CookingMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/CraftingMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/CraftingMenu$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/CraftingMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/CraftingMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/ExitMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/ExitMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/FarmingView.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/FarmingView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/HomeMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/HomeMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/InventoryMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/InventoryMenu$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/InventoryMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/InventoryMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/MenuSwitcherView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/MenuSwitcherView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/MenuSwitcherView.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/MenuSwitcherView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/ShopMenuView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/ShopMenuView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/ShopMenuView.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/ShopMenuView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/TradeMenuView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/TradeMenuView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/TradeMenuView.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/InGameMenus/TradeMenuView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/AvatarMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/ExitMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/GameMenu$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/GameMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/LoginMenuView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/LoginMenuView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/LoginMenuView.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/LoginMenuView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/MainMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/ProfileMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/SignupMenuView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/SignupMenuView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/SignupMenuView.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/untildawn/views/PreGameMenus/SignupMenuView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/libs/core-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/tmp/compileJava/compileTransaction/stash-dir/CookingMenu.class.uniqueId8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/tmp/compileJava/compileTransaction/stash-dir/CookingMenuCommands.class.uniqueId7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/tmp/compileJava/compileTransaction/stash-dir/CookingMenuController.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/tmp/compileJava/compileTransaction/stash-dir/CraftingMenu.class.uniqueId3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/tmp/compileJava/compileTransaction/stash-dir/CraftingMenuCommands.class.uniqueId4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/tmp/compileJava/compileTransaction/stash-dir/CraftingMenuController.class.uniqueId5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/tmp/compileJava/compileTransaction/stash-dir/Menus$InGameMenus.class.uniqueId6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/tmp/compileJava/compileTransaction/stash-dir/Menus$PreGameMenus.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/tmp/compileJava/compileTransaction/stash-dir/Menus.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/Enums/GameMenus/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/Enums/GameMenus/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/Enums/GameMenus/Menus.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/Enums/GameMenus/Menus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/AvatarMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/AvatarMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/EmailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/utils/EmailSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/GameMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/GameMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/LoginMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/LoginMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/PasswordGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/utils/PasswordGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/ProfileMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/ProfileMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/SHA256Hasher.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/utils/SHA256Hasher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/SecurityQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/utils/SecurityQuestions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/SessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/utils/SessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/SignupMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/SignupMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/PreGameControllers/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/controllers/utils/Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/AppMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/AppMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/AppView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/ActionMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/ActionMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/CookingMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/CookingMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/CraftingMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/CraftingMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/ExitMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/ExitMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/FarmingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/FarmingView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/HomeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/InventoryMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/InventoryMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/MenuSwitcherView.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/MenuSwitcherView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/ShopMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/ShopMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/TradeMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/InGameMenus/TradeMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/AvatarMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/AvatarMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/ExitMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/ExitMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/GameMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/GameMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/LoginMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/LoginMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/MainMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/ProfileMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/SignupMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/untildawn/views/PreGameMenus/SignupMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lwjgl3/build/classes/java/main/com/untildawn/lwjgl3/Lwjgl3Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/lwjgl3/build/classes/java/main/com/untildawn/lwjgl3/Lwjgl3Launcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lwjgl3/build/resources/main/assets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lwjgl3/build/resources/main/assets.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lwjgl3/build/resources/main/libgdx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lwjgl3/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lwjgl3/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lwjgl3/src/main/java/com/untildawn/lwjgl3/Lwjgl3Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/lwjgl3/src/main/java/com/untildawn/lwjgl3/Lwjgl3Launcher.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +140,26 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="stardew-valley" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,18 +171,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "mhdi0110"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mhdi0110&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/alifathi11/stardew-valley.git",
-    "accountId": "f01e4499-5958-4c5e-895f-a172671c58b5"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/alifathi11/stardew-valley.git&quot;,
+    &quot;accountId&quot;: &quot;f01e4499-5958-4c5e-895f-a172671c58b5&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -45,40 +191,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.stardew-valley [dependencies].executor": "Run",
-    "Gradle.stardew-valley:lwjgl3 [:lwjgl3:com.untildawn.lwjgl3.Lwjgl3Launcher.main()].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/APP/stardew-valley",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.stardew-valley [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.stardew-valley:lwjgl3 [:lwjgl3:com.untildawn.lwjgl3.Lwjgl3Launcher.main()].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ali&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/stardew-valley/assets/images/backgrounds&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\stardew-valley\assets\images\backgrounds" />
+      <recent name="F:\stardew-valley\assets" />
       <recent name="F:\stardew-valley\core\src\lib" />
       <recent name="F:\stardew-valley\core\src\main\java\com\untildawn\data" />
       <recent name="F:\stardew-valley\core\src\main\java\com\untildawn\Enums\PreGameMenuCommands" />
-      <recent name="F:\stardew-valley\core\src\main\java\com\untildawn\Enums\NPCConsts" />
-      <recent name="F:\stardew-valley\core\src\main\java\com\untildawn\Enums\MapConsts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\stardew-valley\assets\images" />
+      <recent name="F:\stardew-valley\core\src\main\java\com\untildawn\controllers\utils" />
+      <recent name="F:\stardew-valley\assets\skin" />
+      <recent name="F:\stardew-valley\assets" />
       <recent name="F:\stardew-valley\core\src" />
-      <recent name="F:\stardew-valley\core\src\main\java\com\untildawn\controllers\UpdateControllers" />
-      <recent name="F:\stardew-valley\core\src\main\java\com\untildawn" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Lwjgl3Launcher">
@@ -123,14 +271,6 @@
         <item itemvalue="Gradle.stardew-valley [dependencies]" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

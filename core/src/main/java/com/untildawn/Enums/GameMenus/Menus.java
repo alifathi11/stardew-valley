@@ -1,9 +1,11 @@
 package com.untildawn.Enums.GameMenus;
 
+import com.badlogic.gdx.Screen;
+import com.untildawn.controllers.PreGameControllers.*;
 import com.untildawn.views.AppMenu;
 import com.untildawn.views.InGameMenus.*;
 import com.untildawn.views.PreGameMenus.*;
-import com.untildawn.views.PreGameMenus.ExitMenu;
+import com.untildawn.views.PreGameMenus.ExitMenuView;
 import java.util.Scanner;
 
 /*
@@ -12,22 +14,23 @@ import java.util.Scanner;
  */
 public class Menus {
     public enum PreGameMenus implements Menu {
-        SIGNUP_MENU(new SignupMenuView()),
-        LOGIN_MENU(new LoginMenuView()),
-        MAIN_MENU(new MainMenu()),
-        PROFILE_MENU(new ProfileMenu()),
-        AVATAR_MENU(new AvatarMenu()),
-        GAME_MENU(new GameMenu()),
-        EXIT_MENU(new ExitMenu());
+        SIGNUP_MENU(new SignupMenuView(new SignupMenuController())),
+        LOGIN_MENU(new LoginMenuView(new LoginMenuController())),
+        MAIN_MENU(new MainMenuView(new MainMenuController())),
+//        PROFILE_MENU(new ProfileMenu(new ProfileMenuController())),
+        AVATAR_MENU(new AvatarMenuView(new AvatarMenuController())),
+        GAME_MENU(new GameMenuView(new GameMenuController())),
+        EXIT_MENU(new ExitMenuView(new ExitMenuController())),
+        ;
 
-        private final AppMenu menu;
+        private final Screen menu;
 
-        PreGameMenus(AppMenu menu) {
+        PreGameMenus(Screen menu) {
             this.menu = menu;
         }
 
-        public void check(Scanner sc) {
-            this.menu.handleInput(sc);
+        public Screen getMenu() {
+            return menu;
         }
     }
 
@@ -46,10 +49,6 @@ public class Menus {
 
         InGameMenus(AppMenu menu) {
             this.menu = menu;
-        }
-
-        public void check(Scanner sc) {
-            this.menu.handleInput(sc);
         }
     }
 }

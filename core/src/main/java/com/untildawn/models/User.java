@@ -1,7 +1,7 @@
 package com.untildawn.models;
 
 import com.untildawn.Enums.GameConsts.Gender;
-import com.untildawn.controllers.PreGameControllers.SHA256Hasher;
+import com.untildawn.controllers.utils.SHA256Hasher;
 
 
 import java.util.ArrayList;
