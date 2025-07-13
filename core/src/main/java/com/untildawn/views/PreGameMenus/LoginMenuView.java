@@ -1,5 +1,6 @@
 package com.untildawn.views.PreGameMenus;
 
+import com.badlogic.gdx.Screen;
 import com.untildawn.Enums.PreGameMenuCommands.LoginMenuCommands;
 import com.untildawn.controllers.PreGameControllers.LoginMenuController;
 import com.untildawn.views.AppMenu;
@@ -8,7 +9,7 @@ import com.untildawn.views.AppMenu;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 
-public class LoginMenuView implements AppMenu {
+public class LoginMenuView implements AppMenu, Screen {
     private LoginMenuController controller = new LoginMenuController(this);
     private Scanner scanner;
     @Override
@@ -74,6 +75,41 @@ public class LoginMenuView implements AppMenu {
     public boolean checkAutoLogin() {
         if (controller.autoLogin()) return true;
         return false;
+    }
+
+    @Override
+    public void show() {
+
+    }
+
+    @Override
+    public void render(float v) {
+
+    }
+
+    @Override
+    public void resize(int i, int i1) {
+
+    }
+
+    @Override
+    public void pause() {
+
+    }
+
+    @Override
+    public void resume() {
+
+    }
+
+    @Override
+    public void hide() {
+
+    }
+
+    @Override
+    public void dispose() {
+
     }
 }
 

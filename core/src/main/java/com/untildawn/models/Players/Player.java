@@ -1,5 +1,6 @@
 package com.untildawn.models.Players;
 
+import com.badlogic.gdx.graphics.Texture;
 import com.untildawn.Enums.GameConsts.Gender;
 import com.untildawn.Enums.GameConsts.WeatherStates;
 import com.untildawn.models.Animals.Animal;
@@ -352,5 +353,6 @@ public class Player {
     public Refrigerator getRefrigerator(){
         return this.refrigerator;
     }
+
 }
 
