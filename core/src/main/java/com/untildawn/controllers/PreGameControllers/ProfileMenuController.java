@@ -126,6 +126,7 @@ public class ProfileMenuController {
         } else if (UserInfo.isChecked()) {
             view.setInUserInfo(true);
             UserInfo.setChecked(false);
+            showUserInfoDialog();
 
         } else if(view.getRandomPasswordButton().isChecked()) {
             showRandomPasswordDialog();
@@ -150,7 +151,6 @@ public class ProfileMenuController {
                 changeNickname(newNickname);
 
             } else if (view.isInUserInfo()) {
-
             }
 
             view.getSubmitButton().setChecked(false);
@@ -181,5 +181,36 @@ public class ProfileMenuController {
             (Gdx.graphics.getHeight() - dialog.getHeight()) / 2f
         );
     }
+    public void showUserInfoDialog() {
+        Skin skin = PreGameAssetManager.getSkin();
+        User user = App.getCurrentUser();
+        int highestCoins = getHighestCoinsEarned();
 
+        String infoText =
+            "Username: " + user.getUsername() + "\n" +
+                "Nickname: " + user.getName() + "\n" +
+                "Email: " + user.getEmail() + "\n" +
+                "Highest Coins Earned: " + highestCoins + "\n" +
+                "Number of Games: " + user.getGameHistory().size();
+
+        Dialog dialog = new Dialog("User Info", skin) {
+            @Override
+            protected void result(Object object) {
+                boolean accepted = (Boolean) object;
+                if (accepted) {
+                    view.makeThemFalse();
+                    view.show();
+                }
+            }
+        };
+        dialog.text(infoText);
+        dialog.button("Close", true);
+
+        dialog.show(view.getStage());
+        dialog.setSize(400, 300);
+        dialog.setPosition(
+            (Gdx.graphics.getWidth() - dialog.getWidth()) / 2f,
+            (Gdx.graphics.getHeight() - dialog.getHeight()) / 2f
+        );
+    }
 }

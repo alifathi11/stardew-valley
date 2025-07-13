@@ -145,20 +145,7 @@ public class ProfileMenuView implements AppMenu, Screen {
 
     }
 
-    @Override
-    public void show() {
-        this.stage = new Stage(new ScreenViewport());
-        Gdx.input.setInputProcessor(stage);
-        this.profileTitle.setFontScale(1.9f);
-        this.font.setColor(Color.WHITE);
-
-        table.setFillParent(true);
-        table.clear();
-        table.reset();
-        table.center();
-        table.add(profileTitle).padBottom(20f);
-        table.row();
-
+    private void setUp() {
         if (isInUsernameChange) {
             usernameField.setMessageText("enter a new username");
             table.add(usernameField).width(600).padBottom(32f).height(80);
@@ -203,6 +190,22 @@ public class ProfileMenuView implements AppMenu, Screen {
             table.row();
 
         }
+    }
+
+    @Override
+    public void show() {
+        this.stage = new Stage(new ScreenViewport());
+        Gdx.input.setInputProcessor(stage);
+        this.profileTitle.setFontScale(1.9f);
+        this.font.setColor(Color.WHITE);
+
+        table.setFillParent(true);
+        table.clear();
+        table.reset();
+        table.center();
+        table.add(profileTitle).padBottom(20f);
+        table.row();
+        setUp();
         table.add(backButton).width(600).padBottom(32f).height(80);
         stage.addActor(table);
     }
@@ -341,7 +344,7 @@ public class ProfileMenuView implements AppMenu, Screen {
         return isInUserInfo;
     }
 
-    private void makeThemFalse() {
+    public void makeThemFalse() {
         isInUsernameChange = false;
         isInPasswordChange = false;
         isInNickNameChange = false;
@@ -386,10 +389,10 @@ public class ProfileMenuView implements AppMenu, Screen {
 
     public boolean isAllFalse() {
         return !isInUsernameChange
-            && !isInPasswordChange
-            && !isInNickNameChange
-            && !isInEmailChange
-            && !isInUserInfo;
+                && !isInPasswordChange
+                && !isInNickNameChange
+                && !isInEmailChange
+                && !isInUserInfo;
     }
 
     @Override
