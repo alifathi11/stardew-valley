@@ -22,12 +22,15 @@ import java.util.Collections;
 public class ProfileMenuController {
     ProfileMenuView view;
 
-        public void setView(ProfileMenuView view) {
-            this.view = view;
-        }
+    public void setView(ProfileMenuView view) {
+        this.view = view;
+    }
 
     public void changeUsername(String newUsername, String oldUsername) {
-        if (ProfileMenuCommands.Username_Validation.getMatcher(newUsername) == null) {
+        if (newUsername.isEmpty()) {
+            view.setErrorMessage("You should fill the box");
+        }
+        else if (ProfileMenuCommands.Username_Validation.getMatcher(newUsername) == null) {
             view.setErrorMessage("username format is invalid");
         } else if (App.getCurrentUser().getUsername().equals(newUsername)) {
             view.setErrorMessage("Please enter a new username!");
@@ -42,23 +45,12 @@ public class ProfileMenuController {
         }
     }
 
-    public int getHighestCoinsEarned() {
-        ArrayList<Integer> coinsEarned = new ArrayList<>();
-        for (GameHistory gameHistory : App.getCurrentUser().getGameHistory()) {
-            coinsEarned.add(gameHistory.getCoinsEarned());
-        }
-        if (coinsEarned.isEmpty()) {
-            return 0;
-        }
-        return Collections.max(coinsEarned);
-    }
-
-    public void exitMenu() {
-        App.setCurrentMenu(Menus.PreGameMenus.MAIN_MENU);
-    }
 
     public void changePassword(String newPassword, String oldPassword) {
-        if (!App.getCurrentUser().verifyPassword(oldPassword)) {
+        if (newPassword.isEmpty() || oldPassword.isEmpty()) {
+            view.setErrorMessage("You should fill both of the boxes");
+        }
+        else if (!App.getCurrentUser().verifyPassword(oldPassword)) {
             view.setErrorMessage("Password does not match!");
         } else if (App.getCurrentUser().getPasswordHash().equals(newPassword)) {
             view.setErrorMessage("Please enter a new password!");
@@ -72,7 +64,10 @@ public class ProfileMenuController {
     }
 
     public void changeEmail(String email) {
-        if (App.getCurrentUser().getEmail().equals(email)) {
+        if (email.isEmpty()) {
+            view.setErrorMessage("You should fill the box");
+        }
+        else if (App.getCurrentUser().getEmail().equals(email)) {
             view.setErrorMessage("Please enter a new email!");
         } else if (ProfileMenuCommands.Email_Validation.getMatcher(email) == null) {
             view.setErrorMessage("Email format is invalid");
@@ -83,7 +78,10 @@ public class ProfileMenuController {
     }
 
     public void changeNickname(String nickname) {
-        if (App.getCurrentUser().getName().equals(nickname)) {
+        if (nickname.isEmpty()) {
+            view.setErrorMessage("You should fill the box");
+        }
+        else if (App.getCurrentUser().getName().equals(nickname)) {
             view.setErrorMessage("Please enter a new nickname!");
         } else {
             App.getCurrentUser().setName(nickname);
@@ -99,6 +97,20 @@ public class ProfileMenuController {
         }
         App.setCurrentMenu(menu);
         view.setErrorMessage("Your are now in " + menuName);
+    }
+    public int getHighestCoinsEarned() {
+        ArrayList<Integer> coinsEarned = new ArrayList<>();
+        for (GameHistory gameHistory : App.getCurrentUser().getGameHistory()) {
+            coinsEarned.add(gameHistory.getCoinsEarned());
+        }
+        if (coinsEarned.isEmpty()) {
+            return 0;
+        }
+        return Collections.max(coinsEarned);
+    }
+
+    public void exitMenu() {
+        App.setCurrentMenu(Menus.PreGameMenus.MAIN_MENU);
     }
 
     public void handleProfileButtons() {
@@ -129,17 +141,17 @@ public class ProfileMenuController {
             UserInfo.setChecked(false);
             showUserInfoDialog();
 
-        } else if(avatarChange.isChecked()) {
+        } else if (avatarChange.isChecked()) {
             view.setInAvatarChange(true);
             avatarChange.setChecked(false);
-        }
-        else if (view.getRandomPasswordButton().isChecked()) {
+        } else if (view.getRandomPasswordButton().isChecked()) {
             showRandomPasswordDialog();
             view.getRandomPasswordButton().setChecked(false);
         } else if (view.getSubmitButton().isChecked()) {
             if (view.isInUsernameChange()) {
                 String newUsername = view.getUsernameField().getText();
                 changeUsername(newUsername, App.getCurrentUser().getUsername());
+
 
             } else if (view.isInPasswordChange()) {
                 String newPassword = view.getNewPasswordField().getText();
@@ -203,6 +215,7 @@ public class ProfileMenuController {
         String infoText =
             "Username: " + user.getUsername() + "\n" +
                 "Nickname: " + user.getName() + "\n" +
+                "Gender: " + user.getGender().name().toLowerCase() + "\n" +
                 "Email: " + user.getEmail() + "\n" +
                 "Highest Coins Earned: " + highestCoins + "\n" +
                 "Number of Games: " + user.getGameHistory().size();

@@ -52,15 +52,9 @@ public class AvatarAssetManager {
     private static final Texture Vincent = new Texture(Gdx.files.internal("Images/Villagers/Vincent.png"));
     private static final Texture Willy = new Texture(Gdx.files.internal("Images/Villagers/Willy.png"));
     private static final Texture Wizard = new Texture(Gdx.files.internal("Images/Villagers/Wizard.png"));
-    public static Skin getSkin() {
-        if (skin == null) {
-            skin = new Skin(Gdx.files.internal("skin/flat-earth-ui.json"));
-        }
-        return skin;
-    }
 
     public static Texture[] getSkinTextures() {
-        return new Texture[] {
+        return new Texture[]{
             Abigail, Alex, Birdie, Bouncer, Caroline, Clint, Demetrius, Dwarf,
             Elliott, Emily, Evelyn, Fizz_00, George, Gil, Governor, Grandpa, Gunther,
             Gus, Haley, Harvey, Henchman_Portrait_1, Jas, Jodi, Kent, Krobus, Leah,
