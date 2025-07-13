@@ -341,7 +341,7 @@ public class ProfileMenuView implements AppMenu, Screen {
         return isInUserInfo;
     }
 
-    private void makeThemFalse() {
+    public void makeThemFalse() {
         isInUsernameChange = false;
         isInPasswordChange = false;
         isInNickNameChange = false;
