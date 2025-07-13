@@ -41,7 +41,13 @@ public class Main extends Game {
         User ali2 = new User("ali2", "ali2", "ali2", "ali2", Gender.OTHER, new Question("ali2", "ali2"));
         User ali3 = new User("ali3", "ali3", "ali3", "ali3", Gender.OTHER, new Question("ali3", "ali3"));
         User ali4 = new User("ali4", "ali4", "ali4", "ali4", Gender.OTHER, new Question("ali4", "ali4"));
+        App.addUser("ali1", ali1);
+        App.addUser("ali2", ali2);
+        App.addUser("ali3", ali3);
+        App.addUser("ali4", ali4);
+
         App.setCurrentUser(ali1);
+
         main.setScreen(Menus.PreGameMenus.PROFILE_MENU.getMenu());
         App.setCurrentMenu(Menus.PreGameMenus.PROFILE_MENU);
     }

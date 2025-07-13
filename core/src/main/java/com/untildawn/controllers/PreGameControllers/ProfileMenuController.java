@@ -22,23 +22,23 @@ import java.util.Collections;
 public class ProfileMenuController {
     ProfileMenuView view;
 
-    public void setView(ProfileMenuView view) {
-        this.view = view;
-    }
+        public void setView(ProfileMenuView view) {
+            this.view = view;
+        }
 
     public void changeUsername(String newUsername, String oldUsername) {
         if (ProfileMenuCommands.Username_Validation.getMatcher(newUsername) == null) {
-            System.out.println("username format is invalid");
+            view.setErrorMessage("username format is invalid");
         } else if (App.getCurrentUser().getUsername().equals(newUsername)) {
-            System.out.println("Please enter a new username!");
+            view.setErrorMessage("Please enter a new username!");
         } else if (App.userExists(newUsername)) {
-            System.out.println("Username already exists!");
+            view.setErrorMessage("Username already exists!");
         } else {
             User user = App.getUser(oldUsername);
             user.setUsername(newUsername);
             App.getUsers().remove(newUsername);
             App.addUser(newUsername, user);
-            System.out.println("Username has been changed to " + newUsername + "!");
+            view.setErrorMessage("Username has been changed to " + newUsername + "!");
         }
     }
 
@@ -98,7 +98,7 @@ public class ProfileMenuController {
 
         }
         App.setCurrentMenu(menu);
-        System.out.println("Your are now in " + menuName);
+        view.setErrorMessage("Your are now in " + menuName);
     }
 
     public void handleProfileButtons() {

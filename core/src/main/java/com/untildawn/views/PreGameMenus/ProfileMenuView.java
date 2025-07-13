@@ -112,7 +112,6 @@ public class ProfileMenuView implements AppMenu, Screen {
             addSubmitAndBackButton();
 
         } else if (isInUserInfo) {
-            addSubmitAndBackButton();
 
         } else if (isInAvatarChange) {
             Texture[] avatars = com.untildawn.models.GameAssetManager.AvatarAssetManager.getSkinTextures();
