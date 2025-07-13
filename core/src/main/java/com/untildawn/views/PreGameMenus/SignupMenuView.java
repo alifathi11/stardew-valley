@@ -1,5 +1,6 @@
 package com.untildawn.views.PreGameMenus;
 
+import com.badlogic.gdx.Screen;
 import com.untildawn.Enums.PreGameMenuCommands.SignupMenuCommands;
 import com.untildawn.controllers.PreGameControllers.SignupMenuController;
 import com.untildawn.views.AppMenu;
@@ -9,7 +10,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 
 
-public class SignupMenuView implements AppMenu {
+public class SignupMenuView implements AppMenu, Screen {
 
     Scanner scanner;
 
@@ -64,5 +65,40 @@ public class SignupMenuView implements AppMenu {
 
     public void showMessage(String message) {
         System.out.println(message);
+    }
+
+    @Override
+    public void show() {
+
+    }
+
+    @Override
+    public void render(float v) {
+
+    }
+
+    @Override
+    public void resize(int i, int i1) {
+
+    }
+
+    @Override
+    public void pause() {
+
+    }
+
+    @Override
+    public void resume() {
+
+    }
+
+    @Override
+    public void hide() {
+
+    }
+
+    @Override
+    public void dispose() {
+
     }
 }

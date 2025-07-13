@@ -10,7 +10,8 @@ import com.untildawn.views.PreGameMenus.TerminalAnimation;
 
 import java.util.Scanner;
 
-import static org.example.Controllers.PreGameMenuController.SecurityQuestions.askPersonalSecurityQuestion;
+import static com.untildawn.controllers.PreGameControllers.SecurityQuestions.askPersonalSecurityQuestion;
+
 
 public class LoginMenuController {
 

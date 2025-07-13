@@ -1,7 +1,1 @@
 libgdx.png
-skin/flat-earth-ui.atlas
-skin/flat-earth-ui.json
-skin/flat-earth-ui.png
-skin/font-button-export.fnt
-skin/font-export.fnt
-skin/font-title-export.fnt

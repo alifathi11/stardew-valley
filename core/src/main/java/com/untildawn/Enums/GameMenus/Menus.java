@@ -1,14 +1,12 @@
 package com.untildawn.Enums.GameMenus;
 
+import com.badlogic.gdx.Screen;
+import com.untildawn.controllers.PreGameControllers.MainMenuController;
+import com.untildawn.controllers.PreGameControllers.ProfileMenuController;
 import com.untildawn.views.AppMenu;
 import com.untildawn.views.InGameMenus.*;
 import com.untildawn.views.PreGameMenus.*;
-import com.untildawn.views.PreGameMenus.ExitMenu;
-import org.example.Views.AppMenu;
-import org.example.Views.InGameMenus.*;
-import org.example.Views.PreGameMenus.*;
-import org.example.Views.PreGameMenus.ExitMenu;
-
+import com.untildawn.views.PreGameMenus.ExitMenuView;
 import java.util.Scanner;
 
 /*
@@ -19,20 +17,24 @@ public class Menus {
     public enum PreGameMenus implements Menu {
         SIGNUP_MENU(new SignupMenuView()),
         LOGIN_MENU(new LoginMenuView()),
-        MAIN_MENU(new MainMenu()),
-        PROFILE_MENU(new ProfileMenu()),
-        AVATAR_MENU(new AvatarMenu()),
-        GAME_MENU(new GameMenu()),
-        EXIT_MENU(new ExitMenu());
+        MAIN_MENU(new MainMenuView(new MainMenuController())),
+        PROFILE_MENU(new ProfileMenuView(new ProfileMenuController())),
+        AVATAR_MENU(new AvatarMenuView()),
+        GAME_MENU(new GameMenuView()),
+        EXIT_MENU(new ExitMenuView());
 
-        private final AppMenu menu;
+        private final Screen menu;
 
-        PreGameMenus(AppMenu menu) {
+        PreGameMenus(Screen menu) {
             this.menu = menu;
         }
 
         public void check(Scanner sc) {
-            this.menu.handleInput(sc);
+//            this.menu.handleInput(sc);
+        }
+
+        public Screen getMenu() {
+            return menu;
         }
     }
 
@@ -42,7 +44,7 @@ public class Menus {
         COOKING_MENU(new CookingMenu()),
         ACTION_MENU(new ActionMenuView()),
         SHOP_MENU(new ShopMenuView()),
-        EXIT_MENU(new ExitMenu()),
+        EXIT_MENU(new ExitMenuView()),
         INVENTORY_MENU(new InventoryMenu()),
         MENU_SWITCHER(new MenuSwitcherView()),
         TRADE_MENU(new TradeMenuView()),
