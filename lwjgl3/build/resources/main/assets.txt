@@ -2851,7 +2851,7 @@ Images/Villagers/Marlon.png
 Images/Villagers/Marnie.png
 Images/Villagers/Maru.png
 Images/Villagers/Morris.png
-Images/Villagers/Mr._Qi.png
+Images/Villagers/Mr_Qi.png
 Images/Villagers/Pam.png
 Images/Villagers/Penny.png
 Images/Villagers/Pierre.png

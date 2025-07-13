@@ -2,6 +2,7 @@ package com.untildawn.controllers.PreGameControllers;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
@@ -105,8 +106,8 @@ public class ProfileMenuController {
         TextButton changePassword = view.getChangePassword();
         TextButton changeEmail = view.getChangeEmail();
         TextButton changeNickname = view.getChangeNickname();
+        TextButton avatarChange = view.getChangeAvatar();
         TextButton UserInfo = view.getUserInfo();
-
         if (changeUsername.isChecked()) {
             view.setInUsernameChange(true);
             changeUsername.setChecked(false);
@@ -128,11 +129,14 @@ public class ProfileMenuController {
             UserInfo.setChecked(false);
             showUserInfoDialog();
 
-        } else if(view.getRandomPasswordButton().isChecked()) {
+        } else if(avatarChange.isChecked()) {
+            view.setInAvatarChange(true);
+            avatarChange.setChecked(false);
+        }
+        else if (view.getRandomPasswordButton().isChecked()) {
             showRandomPasswordDialog();
             view.getRandomPasswordButton().setChecked(false);
-        }
-        else if (view.getSubmitButton().isChecked()) {
+        } else if (view.getSubmitButton().isChecked()) {
             if (view.isInUsernameChange()) {
                 String newUsername = view.getUsernameField().getText();
                 changeUsername(newUsername, App.getCurrentUser().getUsername());
@@ -150,12 +154,21 @@ public class ProfileMenuController {
                 String newNickname = view.getNicknameField().getText();
                 changeNickname(newNickname);
 
+            } else if (view.isInAvatarChange()) {
+                Texture avatar = view.getSelectedAvatar();
+                if (avatar == null) {
+                    view.setErrorMessage("please select an avatar!");
+                } else {
+                    view.setErrorMessage("Avatar selected!");
+                    App.getCurrentUser().setAvatar(avatar);
+                }
             } else if (view.isInUserInfo()) {
             }
 
             view.getSubmitButton().setChecked(false);
         }
     }
+
     private void showRandomPasswordDialog() {
         Skin skin = PreGameAssetManager.getSkin();
         String randomPassword = PasswordGenerator.generatePassword(App.getCurrentUser().getUsername());
@@ -181,6 +194,7 @@ public class ProfileMenuController {
             (Gdx.graphics.getHeight() - dialog.getHeight()) / 2f
         );
     }
+
     public void showUserInfoDialog() {
         Skin skin = PreGameAssetManager.getSkin();
         User user = App.getCurrentUser();

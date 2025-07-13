@@ -101,4 +101,8 @@ public class User {
     public Texture getAvatar() {
         return avatar;
     }
+
+    public void setAvatar(Texture avatar) {
+        this.avatar = avatar;
+    }
 }
