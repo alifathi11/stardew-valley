@@ -97,6 +97,7 @@ public class AvatarMenuView implements Screen, AppMenu {
         if (stage != null) {
             stage.getViewport().update(width, height, true);
         }
+
     }
 
     @Override
@@ -113,6 +114,7 @@ public class AvatarMenuView implements Screen, AppMenu {
     public void hide() {
 
     }
+
     public void dispose() {
         stage.dispose();
     }

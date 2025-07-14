@@ -537,10 +537,10 @@ public class PlayerRelationController {
     }
 
     private boolean arePlayersClose(Player player1, Player player2) {
-        int y1 = player1.getPosition().getY();
-        int x1 = player1.getPosition().getX();
-        int y2 = player2.getPosition().getY();
-        int x2 = player2.getPosition().getX();
+        int y1 = (int) player1.getPosition().getY();
+        int x1 = (int) player1.getPosition().getX();
+        int y2 = (int) player2.getPosition().getY();
+        int x2 = (int) player2.getPosition().getX();
 
         if (y1 >= y2 - 1 && y1 <= y2 + 1
             && x1 >= x2 - 1 && x1 <= x2 + 1) {

@@ -17,10 +17,10 @@ public class Barn extends ItemInstance {
         animals = new ArrayList<>();
     }
     public int getX(){
-        return position.getX();
+        return (int) position.getX();
     }
     public int getY(){
-        return position.getY();
+        return (int) position.getY();
     }
     public Position getPosition(){
         return position;

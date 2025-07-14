@@ -5,6 +5,7 @@ import com.untildawn.Enums.ItemConsts.ItemAttributes;
 import com.untildawn.Enums.ItemConsts.ItemIDs;
 import com.untildawn.Enums.ItemConsts.ItemType;
 import com.untildawn.Enums.NPCConsts.NPCConst;
+import com.untildawn.controllers.utils.GenerateRandomNumber;
 import com.untildawn.models.Animals.Animal;
 import com.untildawn.models.Animals.Barn;
 import com.untildawn.models.Animals.Coop;
@@ -112,8 +113,8 @@ public class AnimalController {
 
     public boolean isNearLake(Player player, Game game) {
         GameMap gameMap = game.getGameMap();
-        int x = player.getPosition().getX();
-        int y = player.getPosition().getY();
+        int x = (int) player.getPosition().getX();
+        int y = (int) player.getPosition().getY();
         return gameMap.getTile(y, x - 1).getItem().getDefinition().getType().equals(ItemType.lake)
             || gameMap.getTile(y, x + 1).getItem().getDefinition().getType().equals(ItemType.lake)
             || gameMap.getTile(y + 1, x - 1).getItem().getDefinition().getType().equals(ItemType.lake)
@@ -212,8 +213,8 @@ public class AnimalController {
         }
         int yShop = NPCConst.ShopPositions.CarpenterShop.getY();
         int xShop = NPCConst.ShopPositions.CarpenterShop.getX();
-        int playerY = player.getPosition().getY();
-        int playerX = player.getPosition().getX();
+        int playerY = (int) player.getPosition().getY();
+        int playerX = (int) player.getPosition().getX();
         if (!(xShop - 1 <= playerX && playerX <= xShop + 1
             && yShop - 1 <= playerY && playerY <= yShop + 1)) {
             view.showMessage("You should be near Carpenter's shop to buy " + buildingName + "!");
@@ -280,8 +281,8 @@ public class AnimalController {
         PlayerMap playerMap = player.getPlayerMap();
         int yShop = NPCConst.ShopPositions.MarnieRanch.getY();
         int xShop = NPCConst.ShopPositions.MarnieRanch.getX();
-        int playerY = player.getPosition().getY();
-        int playerX = player.getPosition().getX();
+        int playerY = (int) player.getPosition().getY();
+        int playerX = (int) player.getPosition().getX();
         if (!(xShop - 1 <= playerX && playerX <= xShop + 1
             && yShop - 1 <= playerY && playerY <= yShop + 1)) {
             view.showMessage("You should be near Marine's Ranch to buy " + animalStr + "!");
@@ -353,10 +354,10 @@ public class AnimalController {
             view.showMessage("This animal does not exist!");
             return;
         }
-        int animalY = animal.getPosition().getY();
-        int animalX = animal.getPosition().getX();
-        int playerX = player.getPosition().getX();
-        int playerY = player.getPosition().getY();
+        int animalY = (int) animal.getPosition().getY();
+        int animalX = (int) animal.getPosition().getX();
+        int playerX = (int) player.getPosition().getX();
+        int playerY = (int) player.getPosition().getY();
         if (!(animalX - 1 <= playerX && playerX <= animalX + 1
             && animalY - 1 <= playerY && playerY <= animalY + 1)) {
             view.showMessage("You should be near " + animalName + " to pet!");
@@ -439,8 +440,8 @@ public class AnimalController {
                 if (animal.isOutside()) {
                     tile.setItem(new ItemInstance(Objects.requireNonNull(App.getItemDefinition("VOID"))));
                     animal.setOutside(false);
-                    animal.setPosition(new Position(playerMap.getCoop().getPosition().getY(),
-                        playerMap.getCoop().getPosition().getX()));
+                    animal.setPosition(new Position((int) playerMap.getCoop().getPosition().getY(),
+                        (int) playerMap.getCoop().getPosition().getX()));
                     view.showMessage(animalName + " is now inside the coop!");
                     return;
                 } else {
@@ -453,8 +454,8 @@ public class AnimalController {
                 if (animal.isOutside()) {
                     tile.setItem(new ItemInstance(Objects.requireNonNull(App.getItemDefinition("VOID"))));
                     animal.setOutside(false);
-                    animal.setPosition(new Position(playerMap.getBarn().getPosition().getY(),
-                        playerMap.getBarn().getPosition().getX()));
+                    animal.setPosition(new Position((int) playerMap.getBarn().getPosition().getY(),
+                        (int) playerMap.getBarn().getPosition().getX()));
                     view.showMessage(animalName + " is now inside the barn!");
                     return;
                 } else {

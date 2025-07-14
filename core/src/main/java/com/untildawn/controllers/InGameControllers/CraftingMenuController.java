@@ -330,16 +330,16 @@ public class CraftingMenuController {
             Player player = game.getCurrentPlayer();
             switch (direction) {
                 case "up":
-                    if (!game.getGameMap().getTile(player.getPosition().getY() - 1, player.getPosition().getX()).
+                    if (!game.getGameMap().getTile((int) player.getPosition().getY() - 1, (int) player.getPosition().getX()).
                         getItem().getDefinition().getId().equals(ItemIDs.VOID)) {
                         return "You can't place the item.";
                     } else {
-                        Tile tile = game.getGameMap().getTile(player.getPosition().getY() - 1, player.getPosition().getX());
+                        Tile tile = game.getGameMap().getTile((int) player.getPosition().getY() - 1, (int) player.getPosition().getX());
                         tile.setItem(new ItemInstance(App.getItemDefinitionByName(name)));
                         tile.getItem().setDroppedByPlayer(true);
                         game.getCurrentPlayer().getInventory().trashItem(item.getId(), 1);
-                        int tileY = tile.getPosition().getY();
-                        int tileX = tile.getPosition().getX();
+                        int tileY = (int) tile.getPosition().getY();
+                        int tileX = (int) tile.getPosition().getX();
                         if (item.getId() == ItemIDs.scarecrow) {
                             for (int y = tileY - 8; y <= tileY + 8; y++) {
                                 for (int x = tileX - 8; x <= tileX + 8; x++) {
@@ -356,16 +356,16 @@ public class CraftingMenuController {
                         return "You placed the " + name + " on the map.";
                     }
                 case "up right":
-                    if (!game.getGameMap().getTile(player.getPosition().getY() - 1, player.getPosition().getX() + 1).
+                    if (!game.getGameMap().getTile((int) player.getPosition().getY() - 1, (int) player.getPosition().getX() + 1).
                         getItem().getDefinition().getId().equals(ItemIDs.VOID)) {
                         return "You can't place the item.";
                     } else {
-                        Tile tile = game.getGameMap().getTile(player.getPosition().getY() - 1, player.getPosition().getX() + 1);
+                        Tile tile = game.getGameMap().getTile((int) player.getPosition().getY() - 1, (int) player.getPosition().getX() + 1);
                         tile.setItem(new ItemInstance(App.getItemDefinitionByName(name)));
                         tile.getItem().setDroppedByPlayer(true);
                         game.getCurrentPlayer().getInventory().trashItem(item.getId(), 1);
-                        int tileY = tile.getPosition().getY();
-                        int tileX = tile.getPosition().getX();
+                        int tileY = (int) tile.getPosition().getY();
+                        int tileX = (int) tile.getPosition().getX();
                         if (item.getId() == ItemIDs.scarecrow) {
                             for (int y = tileY - 8; y <= tileY + 8; y++) {
                                 for (int x = tileX - 8; x <= tileX + 8; x++) {
@@ -383,16 +383,16 @@ public class CraftingMenuController {
 
                     }
                 case "up left":
-                    if (!game.getGameMap().getTile(player.getPosition().getY() - 1, player.getPosition().getX() - 1).
+                    if (!game.getGameMap().getTile((int) player.getPosition().getY() - 1, (int) player.getPosition().getX() - 1).
                         getItem().getDefinition().getId().equals(ItemIDs.VOID)) {
                         return "You can't place the item.";
                     } else {
-                        Tile tile = game.getGameMap().getTile(player.getPosition().getY() - 1, player.getPosition().getX() - 1);
+                        Tile tile = game.getGameMap().getTile((int) player.getPosition().getY() - 1, (int) player.getPosition().getX() - 1);
                         tile.setItem(new ItemInstance(App.getItemDefinitionByName(name)));
                         tile.getItem().setDroppedByPlayer(true);
                         game.getCurrentPlayer().getInventory().trashItem(item.getId(), 1);
-                        int tileY = tile.getPosition().getY();
-                        int tileX = tile.getPosition().getX();
+                        int tileY = (int) tile.getPosition().getY();
+                        int tileX = (int) tile.getPosition().getX();
                         if (item.getId() == ItemIDs.scarecrow) {
                             for (int y = tileY - 8; y <= tileY + 8; y++) {
                                 for (int x = tileX - 8; x <= tileX + 8; x++) {
@@ -410,16 +410,16 @@ public class CraftingMenuController {
 
                     }
                 case "right":
-                    if (!game.getGameMap().getTile(player.getPosition().getY(), player.getPosition().getX() + 1).
+                    if (!game.getGameMap().getTile((int) player.getPosition().getY(), (int) player.getPosition().getX() + 1).
                         getItem().getDefinition().getId().equals(ItemIDs.VOID)) {
                         return "You can't place the item.";
                     } else {
-                        Tile tile = game.getGameMap().getTile(player.getPosition().getY(), player.getPosition().getX() + 1);
+                        Tile tile = game.getGameMap().getTile((int) player.getPosition().getY(), (int) player.getPosition().getX() + 1);
                         tile.setItem(new ItemInstance(App.getItemDefinitionByName(name)));
                         tile.getItem().setDroppedByPlayer(true);
                         game.getCurrentPlayer().getInventory().trashItem(item.getId(), 1);
-                        int tileY = tile.getPosition().getY();
-                        int tileX = tile.getPosition().getX();
+                        int tileY = (int) tile.getPosition().getY();
+                        int tileX = (int) tile.getPosition().getX();
                         if (item.getId() == ItemIDs.scarecrow) {
                             for (int y = tileY - 8; y <= tileY + 8; y++) {
                                 for (int x = tileX - 8; x <= tileX + 8; x++) {
@@ -437,16 +437,16 @@ public class CraftingMenuController {
 
                     }
                 case "down right":
-                    if (!game.getGameMap().getTile(player.getPosition().getY() + 1, player.getPosition().getX() + 1).
+                    if (!game.getGameMap().getTile((int) player.getPosition().getY() + 1, (int) player.getPosition().getX() + 1).
                         getItem().getDefinition().getId().equals(ItemIDs.VOID)) {
                         return "You can't place the item.";
                     } else {
-                        Tile tile = game.getGameMap().getTile(player.getPosition().getY() + 1, player.getPosition().getX() + 1);
+                        Tile tile = game.getGameMap().getTile((int) player.getPosition().getY() + 1, (int) player.getPosition().getX() + 1);
                         tile.setItem(new ItemInstance(App.getItemDefinitionByName(name)));
                         tile.getItem().setDroppedByPlayer(true);
                         game.getCurrentPlayer().getInventory().trashItem(item.getId(), 1);
-                        int tileY = tile.getPosition().getY();
-                        int tileX = tile.getPosition().getX();
+                        int tileY = (int) tile.getPosition().getY();
+                        int tileX = (int) tile.getPosition().getX();
                         if (item.getId() == ItemIDs.scarecrow) {
                             for (int y = tileY - 8; y <= tileY + 8; y++) {
                                 for (int x = tileX - 8; x <= tileX + 8; x++) {
@@ -464,16 +464,16 @@ public class CraftingMenuController {
 
                     }
                 case "down":
-                    if (!game.getGameMap().getTile(player.getPosition().getY() + 1, player.getPosition().getX()).
+                    if (!game.getGameMap().getTile((int) player.getPosition().getY() + 1, (int) player.getPosition().getX()).
                         getItem().getDefinition().getId().equals(ItemIDs.VOID)) {
                         return "You can't place the item.";
                     } else {
-                        Tile tile = game.getGameMap().getTile(player.getPosition().getY() + 1, player.getPosition().getX());
+                        Tile tile = game.getGameMap().getTile((int) player.getPosition().getY() + 1, (int) player.getPosition().getX());
                         tile.setItem(new ItemInstance(App.getItemDefinitionByName(name)));
                         tile.getItem().setDroppedByPlayer(true);
                         game.getCurrentPlayer().getInventory().trashItem(item.getId(), 1);
-                        int tileY = tile.getPosition().getY();
-                        int tileX = tile.getPosition().getX();
+                        int tileY = (int) tile.getPosition().getY();
+                        int tileX = (int) tile.getPosition().getX();
                         if (item.getId() == ItemIDs.scarecrow) {
                             for (int y = tileY - 8; y <= tileY + 8; y++) {
                                 for (int x = tileX - 8; x <= tileX + 8; x++) {
@@ -491,16 +491,16 @@ public class CraftingMenuController {
 
                     }
                 case "down left":
-                    if (!game.getGameMap().getTile(player.getPosition().getY() + 1, player.getPosition().getX() - 1).
+                    if (!game.getGameMap().getTile((int) player.getPosition().getY() + 1, (int) player.getPosition().getX() - 1).
                         getItem().getDefinition().getId().equals(ItemIDs.VOID)) {
                         return "You can't place the item.";
                     } else {
-                        Tile tile = game.getGameMap().getTile(player.getPosition().getY() + 1, player.getPosition().getX() - 1);
+                        Tile tile = game.getGameMap().getTile((int) player.getPosition().getY() + 1, (int) player.getPosition().getX() - 1);
                         tile.setItem(new ItemInstance(App.getItemDefinitionByName(name)));
                         tile.getItem().setDroppedByPlayer(true);
                         game.getCurrentPlayer().getInventory().trashItem(item.getId(), 1);
-                        int tileY = tile.getPosition().getY();
-                        int tileX = tile.getPosition().getX();
+                        int tileY = (int) tile.getPosition().getY();
+                        int tileX = (int) tile.getPosition().getX();
                         if (item.getId() == ItemIDs.scarecrow) {
                             for (int y = tileY - 8; y <= tileY + 8; y++) {
                                 for (int x = tileX - 8; x <= tileX + 8; x++) {
@@ -518,16 +518,16 @@ public class CraftingMenuController {
 
                     }
                 case "left":
-                    if (!game.getGameMap().getTile(player.getPosition().getY(), player.getPosition().getX() - 1).
+                    if (!game.getGameMap().getTile((int) player.getPosition().getY(), (int) player.getPosition().getX() - 1).
                         getItem().getDefinition().getId().equals(ItemIDs.VOID)) {
                         return "You can't place the item.";
                     } else {
-                        Tile tile = game.getGameMap().getTile(player.getPosition().getY(), player.getPosition().getX() - 1);
+                        Tile tile = game.getGameMap().getTile((int) player.getPosition().getY(), (int)  player.getPosition().getX() - 1);
                         tile.setItem(new ItemInstance(App.getItemDefinitionByName(name)));
                         tile.getItem().setDroppedByPlayer(true);
                         game.getCurrentPlayer().getInventory().trashItem(item.getId(), 1);
-                        int tileY = tile.getPosition().getY();
-                        int tileX = tile.getPosition().getX();
+                        int tileY = (int) tile.getPosition().getY();
+                        int tileX = (int) tile.getPosition().getX();
                         if (item.getId() == ItemIDs.scarecrow) {
                             for (int y = tileY - 8; y <= tileY + 8; y++) {
                                 for (int x = tileX - 8; x <= tileX + 8; x++) {

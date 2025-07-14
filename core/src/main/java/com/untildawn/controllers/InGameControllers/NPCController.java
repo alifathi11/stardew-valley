@@ -303,10 +303,10 @@ public class NPCController {
 
     private boolean isNPCClose(NPC npc) {
         Player player = App.getCurrentGame().getCurrentPlayer();
-        int playerY = player.getPosition().getY();
-        int playerX = player.getPosition().getX();
-        int NPcY = npc.getPosition().getY();
-        int NPcX = npc.getPosition().getX();
+        int playerY = (int) player.getPosition().getY();
+        int playerX = (int) player.getPosition().getX();
+        int NPcY = (int) npc.getPosition().getY();
+        int NPcX = (int) npc.getPosition().getX();
 
         if (!(NPcY >= playerY - 1 && NPcY <= playerY + 1
                 && NPcX >= playerX - 1 && NPcX <= playerX + 1)) {

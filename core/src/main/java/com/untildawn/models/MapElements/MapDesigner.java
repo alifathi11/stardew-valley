@@ -158,8 +158,8 @@ public class MapDesigner {
     }
 
     private static void drawLake(Tile tile, GameMap map) {
-        int y = tile.getPosition().getY();
-        int x = tile.getPosition().getX();
+        int y = (int) tile.getPosition().getY();
+        int x = (int) tile.getPosition().getX();
 
         ArrayList<Tile> lakeTiles = new ArrayList<>();
 
@@ -189,8 +189,8 @@ public class MapDesigner {
         }
     }
     private static void drawCottage(Tile tile, GameMap map) {
-        int y = tile.getPosition().getY();
-        int x = tile.getPosition().getX();
+        int y = (int) tile.getPosition().getY();
+        int x = (int) tile.getPosition().getX();
 
         ArrayList<Tile> cottageTiles = new ArrayList<>();
 
@@ -207,8 +207,8 @@ public class MapDesigner {
         }
     }
     private static void drawQuarry(Tile tile, GameMap map) {
-        int y = tile.getPosition().getY();
-        int x = tile.getPosition().getX();
+        int y = (int) tile.getPosition().getY();
+        int x = (int) tile.getPosition().getX();
 
         ArrayList<Tile> quarryTiles = new ArrayList<>();
 
@@ -223,8 +223,8 @@ public class MapDesigner {
         }
     }
     private static void drawGreenHouse(Tile tile, GameMap map) {
-        int y = tile.getPosition().getY();
-        int x = tile.getPosition().getX();
+        int y = (int) tile.getPosition().getY();
+        int x = (int) tile.getPosition().getX();
 
         ArrayList<Tile> greenhouseTiles = new ArrayList<>();
 
@@ -241,8 +241,8 @@ public class MapDesigner {
         }
     }
     private static void drawShop(Tile tile, GameMap map) {
-        int y = tile.getPosition().getY();
-        int x = tile.getPosition().getX();
+        int y = (int) tile.getPosition().getY();
+        int x = (int) tile.getPosition().getX();
 
         ArrayList<Tile> shopTiles = new ArrayList<>();
 
@@ -259,8 +259,8 @@ public class MapDesigner {
         }
     }
     private static void drawHome(Tile tile, GameMap map) {
-        int y = tile.getPosition().getY();
-        int x = tile.getPosition().getX();
+        int y = (int) tile.getPosition().getY();
+        int x = (int) tile.getPosition().getX();
 
         ArrayList<Tile> homeTiles = new ArrayList<>();
 

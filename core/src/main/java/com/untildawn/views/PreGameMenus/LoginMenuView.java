@@ -11,13 +11,13 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextField;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
-import com.untildawn.Enums.PreGameMenuCommands.LoginMenuCommands;
+
 import com.untildawn.Main;
 import com.untildawn.controllers.PreGameControllers.LoginMenuController;
 import com.untildawn.models.AssetManager.PreGameAssetManager;
 import com.untildawn.views.AppMenu;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
-import jdk.jfr.BooleanFlag;
+
 
 import java.util.Scanner;
 import java.util.function.Consumer;
@@ -243,5 +243,6 @@ public class LoginMenuView implements Screen, AppMenu {
     public void handleInput(Scanner sc) {
 
     }
+
 }
 

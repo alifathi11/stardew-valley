@@ -15,7 +15,7 @@ public class GameMap {
     }
 
     public void addTile(Tile tile) {
-        map[tile.getPosition().getY()][tile.getPosition().getX()] = tile;
+        map[(int) tile.getPosition().getY()][(int) tile.getPosition().getX()] = tile;
     }
     public Tile getTile(int y, int x) {
         try {

@@ -14,6 +14,7 @@ import com.untildawn.Main;
 import com.untildawn.controllers.PreGameControllers.GameMenuController;
 import com.untildawn.controllers.PreGameControllers.LoginMenuController;
 import com.untildawn.models.AssetManager.PreGameAssetManager;
+
 import com.untildawn.views.AppMenu;
 
 
@@ -55,7 +56,9 @@ public class GameMenuView implements Screen, AppMenu {
 
         controller.setView(this);
         controller.handleButtons();
+
     }
+
 
     @Override
     public void show() {
@@ -84,6 +87,7 @@ public class GameMenuView implements Screen, AppMenu {
         backgroundImage.setSize(stage.getWidth(), stage.getHeight());
         stage.addActor(backgroundImage);
         stage.addActor(table);
+
     }
 
     @Override
@@ -96,11 +100,10 @@ public class GameMenuView implements Screen, AppMenu {
     }
 
     @Override
-    public void resize(int width, int height) {
-        if (stage != null) {
-            stage.getViewport().update(width, height, true);
-        }
+    public void resize(int i, int i1) {
+
     }
+
 
     @Override
     public void pause() {
@@ -240,4 +243,5 @@ public class GameMenuView implements Screen, AppMenu {
     public void handleInput(Scanner sc) {
 
     }
+
 }

@@ -19,8 +19,6 @@ import com.untildawn.views.AppMenu;
 
 import java.util.Scanner;
 import java.util.function.Consumer;
-import java.util.regex.Matcher;
-
 
 public class SignupMenuView implements Screen, AppMenu {
 
@@ -167,6 +165,7 @@ public class SignupMenuView implements Screen, AppMenu {
     public void hide() {
 
     }
+
     public void dispose() {
         stage.dispose();
     }
@@ -267,6 +266,11 @@ public class SignupMenuView implements Screen, AppMenu {
         );
     }
 
+    @Override
+    public void handleInput(Scanner sc) {
+
+    }
+
     public TextButton getSignupButton() {
         return signupButton;
     }
@@ -275,30 +279,8 @@ public class SignupMenuView implements Screen, AppMenu {
         return loginButton;
     }
 
-
-    @Override
-    public void handleInput(Scanner sc) {
-
-    }
-
     public TextField getUsernameField() {
         return usernameField;
-    }
-
-    public TextField getPasswordField() {
-        return passwordField;
-    }
-
-    public TextField getEmailField() {
-        return emailField;
-    }
-
-    public SelectBox<String> getSecurityQuestionBox() {
-        return securityQuestionBox;
-    }
-
-    public TextField getSecurityAnswer() {
-        return securityAnswer;
     }
 
     public ImageTextButton getMaleButton() {
@@ -309,4 +291,19 @@ public class SignupMenuView implements Screen, AppMenu {
         return femaleButton;
     }
 
+    public TextField getSecurityAnswer() {
+        return securityAnswer;
+    }
+
+    public SelectBox<String> getSecurityQuestionBox() {
+        return securityQuestionBox;
+    }
+
+    public TextField getEmailField() {
+        return emailField;
+    }
+
+    public TextField getPasswordField() {
+        return passwordField;
+    }
 }

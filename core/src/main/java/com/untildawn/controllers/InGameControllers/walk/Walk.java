@@ -21,10 +21,10 @@ public class Walk {
     }
 
     public static int heuristic(Tile a, Tile b) {
-        int aX = a.getPosition().getX();
-        int bX = b.getPosition().getX();
-        int aY = a.getPosition().getY();
-        int bY = b.getPosition().getY();
+        int aX = (int) a.getPosition().getX();
+        int bX = (int) b.getPosition().getX();
+        int aY = (int) a.getPosition().getY();
+        int bY = (int) b.getPosition().getY();
 
         return Math.abs(aY - bY) + Math.abs(aX - bX);
     }
@@ -35,8 +35,8 @@ public class Walk {
         int[][] directions = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
 
         for (int[] d : directions) {
-            int nY = tile.getPosition().getY() + d[0];
-            int nX = tile.getPosition().getX() + d[1];
+            int nY = (int) tile.getPosition().getY() + d[0];
+            int nX = (int) tile.getPosition().getX() + d[1];
 
             if (nY >= 0 && nY < MapSizes.MAP_ROWS.getSize() && nX >= 0 && nX < MapSizes.MAP_COLS.getSize()) {
                 Tile neighbor = map.getTile(nY, nX);
@@ -137,8 +137,8 @@ public class Walk {
     }
 
     private static Direction getDirection(Position from, Position to) {
-        int dx = to.getX() - from.getX();
-        int dy = to.getY() - from.getY();
+        int dx = (int) (to.getX() - from.getX());
+        int dy = (int) (to.getY() - from.getY());
 
         if (dx == 1) return Direction.RIGHT;
         if (dx == -1) return Direction.LEFT;

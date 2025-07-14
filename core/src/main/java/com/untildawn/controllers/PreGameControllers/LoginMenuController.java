@@ -23,10 +23,12 @@ public class LoginMenuController {
             view.getLoginButton().addListener(new ClickListener() {
                 @Override
                 public void clicked(InputEvent event, float x, float y) {
-                    String username = view.getUsernameField().getText();
-                    String password = view.getPasswordField().getText();
-
-                    login(username, password);
+//                    String username = view.getUsernameField().getText();
+//                    String password = view.getPasswordField().getText();
+//
+//                    login(username, password);
+                    view.dispose();
+                    Main.getMain().setScreen(Menus.PreGameMenus.MAIN_MENU.getMenu()); // temp
                 }
             });
 

@@ -1,5 +1,6 @@
 package com.untildawn.models;
 
+import com.badlogic.gdx.graphics.Texture;
 import com.untildawn.Enums.GameConsts.Gender;
 import com.untildawn.controllers.utils.SHA256Hasher;
 
@@ -18,6 +19,7 @@ public class User {
     private ArrayList<GameHistory> gameHistory;
     private Question securityQuestion;
     private boolean isInAnyGame;
+    private Texture avatar;
 
     public User() {}
 
@@ -94,5 +96,9 @@ public class User {
 
     public void setInAnyGame(boolean inAnyGame) {
         isInAnyGame = inAnyGame;
+    }
+
+    public Texture getAvatar() {
+        return avatar;
     }
 }

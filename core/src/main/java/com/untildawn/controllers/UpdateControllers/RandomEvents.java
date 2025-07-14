@@ -1,7 +1,7 @@
 package com.untildawn.controllers.UpdateControllers;
 
 import com.untildawn.Enums.ItemConsts.ItemType;
-import com.untildawn.controllers.InGameControllers.GenerateRandomNumber;
+import com.untildawn.controllers.utils.GenerateRandomNumber;
 import com.untildawn.models.App;
 import com.untildawn.models.Game;
 import com.untildawn.models.Items.ItemInstance;

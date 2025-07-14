@@ -222,8 +222,8 @@ public class ShopMenuController {
 
         Game currentGame = App.getCurrentGame();
         Player currentPlayer = currentGame.getCurrentPlayer();
-        int playerY = currentPlayer.getPosition().getY();
-        int playerX = currentPlayer.getPosition().getX();
+        int playerY = (int) currentPlayer.getPosition().getY();
+        int playerX = (int) currentPlayer.getPosition().getX();
 
         boolean isCloseToShippingBin = false;
 

@@ -1,9 +1,12 @@
 package com.untildawn.models.Players;
 
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.untildawn.Enums.GameConsts.Gender;
 import com.untildawn.Enums.GameConsts.WeatherStates;
 import com.untildawn.models.Animals.Animal;
 import com.untildawn.models.App;
+import com.untildawn.models.AssetManager.InGameAssetManager;
 import com.untildawn.models.Game;
 import com.untildawn.models.Items.Inventory;
 import com.untildawn.models.Items.ItemInstance;
@@ -49,6 +52,17 @@ public class Player {
     private boolean farmingEnable;
     private boolean maxEnergyEnable;
     private Refrigerator refrigerator;
+
+    // graphics
+    private final Texture texture;
+    private final Sprite sprite;
+    private final CollisionRect collisionRect;
+    private final float width = 100;
+    private final float height = 150;
+    private final float speed = 1;
+
+
+
     public Player(User user, String name, Gender gender, Position position) {
         this.user = user;
         this.name = name;
@@ -70,6 +84,16 @@ public class Player {
         this.spouse = null;
         this.rejectedDays = 0;
         this.trades = new ArrayList<>();
+
+        this.texture = InGameAssetManager.getInGameAssetManager().getCharacterTexture();
+        this.sprite = new Sprite(texture);
+        this.sprite.setSize(width, height);
+        this.collisionRect = new CollisionRect(
+            position.getX(),
+            position.getY(),
+            (float) texture.getWidth(),
+            (float) texture.getHeight()
+        );
     }
 
     public Wallet getWallet() {
@@ -162,7 +186,7 @@ public class Player {
 
     public Tile getPlayerTile(Game game) {
         GameMap gameMap = game.getGameMap();
-        return gameMap.getTile(this.position.getY(), this.position.getX());
+        return gameMap.getTile((int) this.position.getY(), (int) this.position.getX());
     }
 
     public void decreaseEnergy(int deltaEnergy) {
@@ -351,6 +375,30 @@ public class Player {
     }
     public Refrigerator getRefrigerator(){
         return this.refrigerator;
+    }
+
+    public float getWidth() {
+        return width;
+    }
+
+    public float getHeight() {
+        return height;
+    }
+
+    public float getSpeed() {
+        return speed;
+    }
+
+    public CollisionRect getCollisionRect() {
+        return collisionRect;
+    }
+
+    public Sprite getSprite() {
+        return sprite;
+    }
+
+    public Texture getTexture() {
+        return texture;
     }
 }
 

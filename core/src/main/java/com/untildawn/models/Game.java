@@ -2,7 +2,7 @@ package com.untildawn.models;
 
 import com.untildawn.Enums.GameConsts.Seasons;
 import com.untildawn.Enums.GameConsts.WeatherStates;
-import com.untildawn.controllers.InGameControllers.GenerateRandomNumber;
+import com.untildawn.controllers.utils.GenerateRandomNumber;
 import com.untildawn.controllers.UpdateControllers.UpdateByDay;
 import com.untildawn.controllers.UpdateControllers.UpdateByHour;
 import com.untildawn.models.Items.ShippingBin;
