@@ -4,98 +4,195 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.untildawn.Enums.GameMenus.Menus;
 import com.untildawn.Enums.PreGameMenuCommands.GameMenuCommands;
 import com.untildawn.Main;
 import com.untildawn.controllers.PreGameControllers.GameMenuController;
-import com.untildawn.controllers.PreGameControllers.LoginMenuController;
-import com.untildawn.models.AssetManager.PreGameAssetManager;
-
+import com.untildawn.controllers.PreGameControllers.ProfileMenuController;
+import com.untildawn.models.GameAssetManager.AvatarAssetManager;
+import com.untildawn.models.GameAssetManager.PreGameAssetManager;
 import com.untildawn.views.AppMenu;
 
 
 import java.util.Scanner;
-import java.util.function.Consumer;
 import java.util.regex.Matcher;
 
-public class GameMenuView implements Screen, AppMenu {
-
+public class GameMenuView implements Screen {
     private Stage stage;
-    private final Skin skin;
-    private final Texture backgroundTexture;
-    private final Image backgroundImage;
-    private final TextButton loginButton;
-    private final TextButton signupButton;
-    private final Label loginLabel;
-    private final TextField usernameField;
-    private final TextField passwordField;
-    private final TextButton forgetPasswordButton;
-    private final Table table;
-
-    private final GameMenuController controller;
-
+    private Table table;
+    private BitmapFont font;
+    private Texture backgroundTexture;
+    private String errorMessage;
+    private Label gameMenuTitle;
+    private GameMenuController controller;
+    private TextButton newGameButton;
+    private TextButton exitButton;
+    private boolean isNewGameClicked = false;
+    private TextField usernameField;
+    private TextButton addPlayerButton;
+    private TextButton backButton;
+    private TextButton selectMapButton;
+    private boolean isInMapSelection = false;
+    private Texture map1;
+    private Texture map2;
+    private Texture map3;
+    private Texture map4;
     public GameMenuView(GameMenuController controller) {
         this.controller = controller;
-        this.skin = PreGameAssetManager.getInstance().getSkin();
-        this.loginButton = new TextButton("LOGIN", skin);
-        this.signupButton = new TextButton("I don't have an account", skin);
-        this.loginLabel = new Label("LOGIN MENU", skin);
-        this.usernameField = new TextField("", skin);
-        this.usernameField.setMessageText("Enter your username");
-        this.passwordField = new TextField("", skin);
-        this.passwordField.setMessageText("Enter your password");
-        this.forgetPasswordButton = new TextButton("I've forgotten my password", skin);
-        this.table = new Table();
-
-        this.backgroundTexture = new Texture("images/backgrounds/MenusBG.png");
-        this.backgroundImage = new Image(backgroundTexture);
-
         controller.setView(this);
-        controller.handleButtons();
-
+        table = new Table();
+        font = new BitmapFont();
+        newGameButton = new TextButton("New Game", PreGameAssetManager.getSkin());
+        exitButton = new TextButton("Exit", PreGameAssetManager.getSkin());
+        gameMenuTitle = new Label("Game Menu", PreGameAssetManager.getSkin());
+        backgroundTexture = PreGameAssetManager.getGameMenuBG();
+        usernameField = new TextField("", PreGameAssetManager.getSkin());
+        addPlayerButton = new TextButton("Add Player", PreGameAssetManager.getSkin());
+        backButton = new TextButton("Back", PreGameAssetManager.getSkin());
+        selectMapButton = new TextButton("Select Maps", PreGameAssetManager.getSkin());
+        map1 = AvatarAssetManager.getAbigail();
+        map2 = AvatarAssetManager.getAbigail();
+        map3 = AvatarAssetManager.getAbigail();
+        map4 = AvatarAssetManager.getAbigail();
     }
 
 
     @Override
     public void show() {
-        if (stage != null) {
-            table.clear();
-            stage.clear();
+        this.stage = new Stage(new ScreenViewport());
+        Gdx.input.setInputProcessor(stage);
+        this.gameMenuTitle.setFontScale(1.9f);
+        this.font.setColor(Color.WHITE);
+        stage.setKeyboardFocus(table);
+        table.setFillParent(true);
+        table.clear();
+        table.reset();
+        table.center();
+        if(isNewGameClicked){
+            usernameField.setMessageText("enter the player username");
+            table.add(usernameField).width(600).padBottom(32f).height(80);
+            table.row();
+            table.add(addPlayerButton).width(600).padBottom(32f).height(80);
+            table.row();
+            if(controller.getGamePlayers().size() >= 4) {
+                table.add(selectMapButton).width(600).padBottom(32f).height(80);
+                table.row();
+            }
+            table.add(backButton).width(600).padBottom(32f).height(80);
+
+        } else if(isInMapSelection){
+        table.clearChildren(); // Clean slate
+
+        // Use new Stage-based layout for manual positioning
+        stage.clear();
+
+        Label label = new Label("Select Map", PreGameAssetManager.getSkin());
+        label.setFontScale(2f);
+        label.setPosition(Gdx.graphics.getWidth() / 2f - 150, Gdx.graphics.getHeight() - 200);
+        stage.addActor(label);
+
+        // Create Image actors for each map
+        Image imageMap1 = new Image(map1);
+        Image imageMap2 = new Image(map2);
+        Image imageMap3 = new Image(map3);
+        Image imageMap4 = new Image(map4);
+
+        // Create buttons
+        TextButton selectMap1 = new TextButton("Select Map 1", PreGameAssetManager.getSkin());
+        TextButton selectMap2 = new TextButton("Select Map 2", PreGameAssetManager.getSkin());
+        TextButton selectMap3 = new TextButton("Select Map 3", PreGameAssetManager.getSkin());
+        TextButton selectMap4 = new TextButton("Select Map 4", PreGameAssetManager.getSkin());
+
+        int imageWidth = 300;
+        int imageHeight = 200;
+        int padding = 100;
+
+        imageMap1.setBounds(padding, Gdx.graphics.getHeight() - imageHeight - padding, imageWidth, imageHeight);
+        selectMap1.setSize(imageWidth, 50);
+        selectMap1.setPosition(padding, imageMap1.getY() - 60);
+
+        imageMap2.setBounds(Gdx.graphics.getWidth() - imageWidth - padding,
+            Gdx.graphics.getHeight() - imageHeight - padding, imageWidth, imageHeight);
+        selectMap2.setSize(imageWidth, 50);
+        selectMap2.setPosition(imageMap2.getX(), imageMap2.getY() - 60);
+
+        imageMap3.setBounds(padding, padding + 100, imageWidth, imageHeight);
+        selectMap3.setSize(imageWidth, 50);
+        selectMap3.setPosition(padding, padding + 40);
+
+        imageMap4.setBounds(Gdx.graphics.getWidth() - imageWidth - padding, padding + 100, imageWidth, imageHeight);
+        selectMap4.setSize(imageWidth, 50);
+        selectMap4.setPosition(imageMap4.getX(), padding + 40);
+
+        stage.addActor(imageMap1);
+        stage.addActor(selectMap1);
+
+        stage.addActor(imageMap2);
+        stage.addActor(selectMap2);
+
+        stage.addActor(imageMap3);
+        stage.addActor(selectMap3);
+
+        stage.addActor(imageMap4);
+        stage.addActor(selectMap4);
+        selectMap1.addListener(new ClickListener() {
+            @Override
+            public void clicked(InputEvent event, float x, float y) {
+                controller.createMapSelectListener(1);
+            }
+        });
+        selectMap2.addListener(new ClickListener() {
+            @Override
+            public void clicked(InputEvent event, float x, float y) {
+                controller.createMapSelectListener(2);
+            }
+        });
+        selectMap3.addListener(new ClickListener() {
+                @Override
+                public void clicked(InputEvent event, float x, float y) {
+                    controller.createMapSelectListener(3);
+                }
+            });
+        selectMap4.addListener(new ClickListener() {
+                @Override
+                public void clicked(InputEvent event, float x, float y) {
+                    controller.createMapSelectListener(4);
+                }
+            });
+    }
+
+        else {
+            table.add(newGameButton).width(600).padBottom(32f).height(80);
+            table.row();
+            table.add(exitButton).width(600).padBottom(32f).height(80);
+            table.row();
         }
 
-        stage = new Stage(new ScreenViewport());
-        Gdx.input.setInputProcessor(stage);
-
-        table.setFillParent(true);
-        table.center();
-        table.add(loginLabel);
-        table.row().pad(10, 5, 10, 5);
-        table.add(usernameField).width(800).height(80);
-        table.row().pad(10, 5, 10, 5);
-        table.add(passwordField).width(800).height(80);
-        table.row().pad(10, 5, 10, 5);
-        table.add(loginButton).width(200).height(60);
-        table.row().pad(20, 5, 10, 5);
-        table.add(forgetPasswordButton).width(150).height(30);
-        table.row().pad(20, 5, 10, 5);
-        table.add(signupButton).width(150).height(30);
-
-        backgroundImage.setSize(stage.getWidth(), stage.getHeight());
-        stage.addActor(backgroundImage);
         stage.addActor(table);
+        controller.setListener();
 
     }
 
     @Override
     public void render(float v) {
-        ScreenUtils.clear(Color.BLACK, true);
+        ScreenUtils.clear(0.5f, 0.5f, 0.5f, 1f);
+
         Main.getBatch().begin();
+        Main.getBatch().draw(backgroundTexture, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+
+        font.getData().setScale(2f);
+        if (errorMessage != null && !errorMessage.isEmpty()) {
+            font.draw(Main.getBatch(), errorMessage, Gdx.graphics.getWidth() / 2 - errorMessage.length() * 5, Gdx.graphics.getHeight() - 50);
+        }
         Main.getBatch().end();
-        stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
+        stage.act(v);
         stage.draw();
     }
 
@@ -103,7 +200,6 @@ public class GameMenuView implements Screen, AppMenu {
     public void resize(int i, int i1) {
 
     }
-
 
     @Override
     public void pause() {
@@ -119,129 +215,70 @@ public class GameMenuView implements Screen, AppMenu {
     public void hide() {
 
     }
+
+    @Override
     public void dispose() {
-        stage.dispose();
+
     }
 
-    @Override
-    public void showError(String error) {
-        Dialog errorDialog = new Dialog("Error", skin) {
-            @Override
-            protected void result(Object object) {
-            }
-        };
 
-        errorDialog.text(error);
-
-        TextButton closeButton = new TextButton("Close", skin);
-        closeButton.getStyle().fontColor = Color.RED;
-        errorDialog.button(closeButton);
-
-        errorDialog.show(stage);
-
-        errorDialog.setSize(400, 200);
-        errorDialog.setPosition(
-            (stage.getWidth() - errorDialog.getWidth()) / 2,
-            (stage.getHeight() - errorDialog.getHeight()) / 2
-        );
+    private static void executeCommand(GameMenuCommands command, Matcher matcher, Scanner sc) {
+        switch (command) {
+            case NEW_GAME:
+//                System.out.printf(GameMenuController.makeNewGame(sc));
+                break;
+            case Exit_Menu:
+                GameMenuController.changeMenu(Menus.PreGameMenus.MAIN_MENU, "main menu");
+        }
     }
 
-    @Override
-    public void showMessage(String message) {
-        Dialog messageDialog = new Dialog("Alert", skin) {
-            @Override
-            protected void result(Object object) {
-            }
-        };
 
-        messageDialog.text(message);
-
-        TextButton closeButton = new TextButton("Close", skin);
-        closeButton.getStyle().fontColor = Color.RED;
-        messageDialog.button(closeButton);
-
-        messageDialog.show(stage);
-
-        messageDialog.setSize(400, 200);
-        messageDialog.setPosition(
-            (stage.getWidth() - messageDialog.getWidth()) / 2,
-            (stage.getHeight() - messageDialog.getHeight()) / 2
-        );
+    public TextButton getNewGameButton() {
+        return newGameButton;
     }
 
-    @Override
-    public void showMessageAndExecute(String message, Runnable onClose) {
-        Dialog messageDialog = new Dialog("Alert", skin) {
-            @Override
-            protected void result(Object object) {
-                if (onClose != null) {
-                    onClose.run();
-                }
-            }
-        };
-
-        messageDialog.text(message);
-        TextButton closeButton = new TextButton("Close", skin);
-        closeButton.getStyle().fontColor = Color.RED;
-
-        messageDialog.button(closeButton, true);
-        messageDialog.show(stage);
-
-        messageDialog.setSize(400, 200);
-        messageDialog.setPosition(
-            (stage.getWidth() - messageDialog.getWidth()) / 2,
-            (stage.getHeight() - messageDialog.getHeight()) / 2
-        );
+    public TextButton getExitButton() {
+        return exitButton;
     }
 
-    @Override
-    public void showConfirmation(String message, final Consumer<Boolean> resultCallback) {
-        Dialog dialog = new Dialog("Confirm", skin) {
-            @Override
-            protected void result(Object object) {
-                if (object instanceof Boolean) {
-                    resultCallback.accept((Boolean) object);
-                }
-            }
-        };
-
-        dialog.text(message);
-
-        dialog.button("Yes", true);
-        dialog.button("No", false);
-
-        dialog.show(stage);
-
-        dialog.setSize(400, 200);
-        dialog.setPosition(
-            (stage.getWidth() - dialog.getWidth()) / 2,
-            (stage.getHeight() - dialog.getHeight()) / 2
-        );
-    }
-
-    public TextButton getLoginButton() {
-        return loginButton;
-    }
-
-    public TextField getPasswordField() {
-        return passwordField;
+    public void setNewGameClicked(boolean newGameClicked) {
+        isNewGameClicked = newGameClicked;
+        isInMapSelection = false;
+        show();
     }
 
     public TextField getUsernameField() {
         return usernameField;
     }
 
-    public TextButton getForgetPasswordButton() {
-        return forgetPasswordButton;
+    public TextButton getAddPlayerButton() {
+        return addPlayerButton;
     }
 
-    public TextButton getSignupButton() {
-        return signupButton;
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
     }
 
-    @Override
-    public void handleInput(Scanner sc) {
+    public TextButton getBackButton() {
+        return backButton;
+    }
 
+    public boolean isNewGameClicked() {
+        return isNewGameClicked;
+    }
+
+    public TextButton getSelectMapButton() {
+        return selectMapButton;
+    }
+
+    public boolean isInMapSelection() {
+        return isInMapSelection;
+    }
+
+    public void setInMapSelection(boolean inMapSelection) {
+        isInMapSelection = inMapSelection;
+        isNewGameClicked = false;
+        show();
     }
 
 }

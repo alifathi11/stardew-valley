@@ -5,8 +5,10 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.untildawn.Enums.GameMenus.Menus;
@@ -36,11 +38,13 @@ public class ProfileMenuView implements AppMenu, Screen {
     private boolean isInPasswordChange;
     private boolean isInNickNameChange;
     private boolean isInEmailChange;
+    private boolean isInAvatarChange;
     private boolean isInUserInfo;
     private TextButton changeUsername;
     private TextButton changePassword;
     private TextButton changeEmail;
     private TextButton changeNickname;
+    private TextButton changeAvatar;
     private TextButton UserInfo;
     private TextField usernameField;
     private TextField newPasswordField;
@@ -50,6 +54,8 @@ public class ProfileMenuView implements AppMenu, Screen {
     private TextButton backButton;
     private TextButton submitButton;
     private TextButton randomPasswordButton;
+    private ScrollPane avatarScrollPane;
+    private Texture selectedAvatar;
 
     public ProfileMenuView(ProfileMenuController controller) {
         Skin skin = PreGameAssetManager.getInstance().getSkin();
@@ -62,6 +68,7 @@ public class ProfileMenuView implements AppMenu, Screen {
         changePassword = new TextButton("Change password", skin);
         changeEmail = new TextButton("Change email", skin);
         changeNickname = new TextButton("Change nickname", skin);
+        changeAvatar = new TextButton("Change avatar", skin);
         UserInfo = new TextButton("User info", skin);
         usernameField = new TextField("", skin);
         newPasswordField = new TextField("", skin);
@@ -76,20 +83,7 @@ public class ProfileMenuView implements AppMenu, Screen {
 
     }
 
-    @Override
-    public void show() {
-        this.stage = new Stage(new ScreenViewport());
-        Gdx.input.setInputProcessor(stage);
-        this.profileTitle.setFontScale(1.9f);
-        this.font.setColor(Color.WHITE);
-
-        table.setFillParent(true);
-        table.clear();
-        table.reset();
-        table.center();
-        table.add(profileTitle).padBottom(20f);
-        table.row();
-
+    private void setUp() {
         if (isInUsernameChange) {
             usernameField.setMessageText("enter a new username");
             table.add(usernameField).width(600).padBottom(32f).height(80);
@@ -121,7 +115,49 @@ public class ProfileMenuView implements AppMenu, Screen {
 
         } else if (isInUserInfo) {
 
+        } else if (isInAvatarChange) {
+            Texture[] avatars = com.untildawn.models.GameAssetManager.AvatarAssetManager.getSkinTextures();
+            Skin skin = PreGameAssetManager.getSkin();
+
+            Table avatarTable = new Table();
+            avatarTable.defaults().pad(10f);
+
+            int columns = 6;
+            for (int i = 0; i < avatars.length; i++) {
+                final int index = i;
+
+                Image avatarImage = new Image(avatars[i]);
+                avatarImage.setSize(150, 150);
+                avatarImage.addListener(new ClickListener() {
+                    @Override
+                    public void clicked(InputEvent event, float x, float y) {
+                        selectedAvatar = avatars[index];
+                    }
+                });
+                avatarTable.add(avatarImage).size(64, 64);
+                if ((i + 1) % columns == 0) {
+                    avatarTable.row();
+                }
+
+            }
+
+            avatarScrollPane = new ScrollPane(avatarTable, skin);
+            avatarScrollPane.setFadeScrollBars(false);
+            avatarScrollPane.setScrollingDisabled(true, false);
+            avatarScrollPane.setScrollbarsOnTop(true);
+            avatarScrollPane.setScrollBarPositions(true, true);
+
+            table.add(avatarScrollPane).width(600).height(300).padBottom(32f);
+            table.row();
+
+            addSubmitAndBackButton();
         } else {
+            if(App.getCurrentUser().getAvatar() != null) {
+                Image avatarImage = new Image(App.getCurrentUser().getAvatar());
+                avatarImage.setSize(100, 100);
+                table.add(avatarImage).width(100).height(100).padBottom(32f);
+                table.row();
+            }
             table.add(changeUsername).width(600).padBottom(32f).height(80);
             table.row();
             table.add(changePassword).width(600).padBottom(32f).height(80);
@@ -130,10 +166,29 @@ public class ProfileMenuView implements AppMenu, Screen {
             table.row();
             table.add(changeNickname).width(600).padBottom(32f).height(80);
             table.row();
+            table.add(changeAvatar).width(600).padBottom(32f).height(80);
+            table.row();
             table.add(UserInfo).width(600).padBottom(32f).height(80);
             table.row();
 
         }
+    }
+
+    @Override
+    public void show() {
+        this.stage = new Stage(new ScreenViewport());
+        Gdx.input.setInputProcessor(stage);
+        this.profileTitle.setFontScale(1.9f);
+        this.font.setColor(Color.WHITE);
+
+        stage.setKeyboardFocus(table);
+        table.setFillParent(true);
+        table.clear();
+        table.reset();
+        table.center();
+        table.add(profileTitle).padBottom(20f);
+        table.row();
+        setUp();
         table.add(backButton).width(600).padBottom(32f).height(80);
         stage.addActor(table);
     }
@@ -154,7 +209,9 @@ public class ProfileMenuView implements AppMenu, Screen {
             }
             backButton.setChecked(false);
         }
-
+        if(selectedAvatar != null && isInAvatarChange) {
+            Main.getBatch().draw(selectedAvatar, 0, Gdx.graphics.getHeight() / 2, 200, 200);
+        }
         font.getData().setScale(2f);
         if (errorMessage != null && !errorMessage.isEmpty()) {
             font.draw(Main.getBatch(), errorMessage, Gdx.graphics.getWidth() / 2 - errorMessage.length() * 5, Gdx.graphics.getHeight() - 50);
@@ -222,6 +279,10 @@ public class ProfileMenuView implements AppMenu, Screen {
         return randomPasswordButton;
     }
 
+    public TextButton getChangeAvatar() {
+        return changeAvatar;
+    }
+
     public void setInUsernameChange(boolean inUsernameChange) {
         makeThemFalse();
         isInUsernameChange = inUsernameChange;
@@ -252,6 +313,16 @@ public class ProfileMenuView implements AppMenu, Screen {
         show();
     }
 
+    public void setInAvatarChange(boolean inAvatarChange) {
+        makeThemFalse();
+        isInAvatarChange = inAvatarChange;
+        show();
+    }
+
+    public boolean isInAvatarChange() {
+        return isInAvatarChange;
+    }
+
     public boolean isInUsernameChange() {
         return isInUsernameChange;
     }
@@ -272,12 +343,14 @@ public class ProfileMenuView implements AppMenu, Screen {
         return isInUserInfo;
     }
 
-    private void makeThemFalse() {
+    public void makeThemFalse() {
         isInUsernameChange = false;
         isInPasswordChange = false;
         isInNickNameChange = false;
         isInEmailChange = false;
         isInUserInfo = false;
+        isInAvatarChange = false;
+        selectedAvatar = null;
     }
 
     public TextField getUsernameField() {
@@ -315,12 +388,22 @@ public class ProfileMenuView implements AppMenu, Screen {
         return stage;
     }
 
+    public Texture getSelectedAvatar() {
+        return selectedAvatar;
+    }
+
     public boolean isAllFalse() {
         return !isInUsernameChange
-            && !isInPasswordChange
-            && !isInNickNameChange
-            && !isInEmailChange
-            && !isInUserInfo;
+                && !isInPasswordChange
+                && !isInNickNameChange
+                && !isInEmailChange
+                && !isInUserInfo
+                && !isInAvatarChange;
+    }
+
+    @Override
+    public void handleInput(Scanner sc) {
+
     }
 
     @Override
@@ -343,8 +426,4 @@ public class ProfileMenuView implements AppMenu, Screen {
 
     }
 
-    @Override
-    public void handleInput(Scanner sc) {
-
-    }
 }

@@ -1,7 +1,10 @@
 package com.untildawn.Enums.GameMenus;
 
 import com.badlogic.gdx.Screen;
+import com.untildawn.controllers.InGameControllers.GameControllers.GameController;
 import com.untildawn.controllers.PreGameControllers.*;
+import com.untildawn.controllers.PreGameControllers.GameMenuController;
+import com.untildawn.controllers.PreGameControllers.MainMenuController;
 import com.untildawn.controllers.PreGameControllers.ProfileMenuController;
 import com.untildawn.views.AppMenu;
 import com.untildawn.views.InGameMenus.*;
@@ -44,11 +47,16 @@ public class Menus {
         INVENTORY_MENU(new InventoryMenu()),
         MENU_SWITCHER(new MenuSwitcherView()),
         TRADE_MENU(new TradeMenuView()),
+        GAME_VIEW(new GameView(new GameController()))
         ;
-        private final AppMenu menu;
+        private final Screen menu;
 
-        InGameMenus(AppMenu menu) {
+        InGameMenus(Screen menu) {
             this.menu = menu;
+        }
+
+        public Screen getMenu() {
+            return menu;
         }
     }
 }

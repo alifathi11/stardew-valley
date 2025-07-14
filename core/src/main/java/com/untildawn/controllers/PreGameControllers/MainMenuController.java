@@ -36,20 +36,20 @@ public class MainMenuController {
     }
 
     public void userLogout() {
-        // SessionManager.clearSession(); // اگر کلاسی برای مدیریت session دارید
+        // SessionManager.clearSession();
         App.setCurrentUser(null);
-        // game.setScreen(new LoginMenuScreen(game, skin));
+         Main.getMain().setScreen(Menus.PreGameMenus.LOGIN_MENU.getMenu());
+         App.setCurrentMenu(Menus.PreGameMenus.LOGIN_MENU);
         System.out.println("User logged out. Switching to Login Screen...");
     }
 
     public void exit() {
-        view.dispose();
-        Main.getMain().setScreen(Menus.PreGameMenus.LOGIN_MENU.getMenu());
-//        UserDataHandler.saveUsers();
+        UserDataHandler.saveUsers();
+        Gdx.app.exit();
     }
 
 
-    public void changeMenu(Menu menu, String menuName) {
+public void changeMenu(Menu menu, String menuName) {
         try {
             TerminalAnimation.loadingAnimation("redirecting to " + menuName + " menu");
         }

@@ -8,7 +8,7 @@ public class PreGameAssetManager implements GameAssetManager {
     private static PreGameAssetManager preGameAssetManager;
 
     private static final Texture MenusBG = new Texture(Gdx.files.internal("Images/backgrounds/MenusBG.png"));
-    private Skin skin = new Skin(Gdx.files.internal("skin/flat-earth-ui.json"));
+    private static Skin skin = new Skin(Gdx.files.internal("skin/flat-earth-ui.json"));
 
     public static Texture getMenusBG() {
         return MenusBG;
@@ -23,7 +23,7 @@ public class PreGameAssetManager implements GameAssetManager {
         return preGameAssetManager;
     }
 
-    public Skin getSkin() {
+    public static Skin getSkin() {
         return skin;
     }
 
