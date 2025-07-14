@@ -114,21 +114,21 @@ public class ToolController {
         }
         switch (direction) {
             case "up" -> applyTool(tool, game.getGameMap().getTile
-                    (tile.getPosition().getY() - 1, tile.getPosition().getX()), player, game);
+                    ((int) tile.getPosition().getY() - 1, (int) tile.getPosition().getX()), player, game);
             case "down" -> applyTool(tool, game.getGameMap().getTile
-                    (tile.getPosition().getY() + 1, tile.getPosition().getX()), player, game);
+                    ((int) tile.getPosition().getY() + 1, (int) tile.getPosition().getX()), player, game);
             case "left" -> applyTool(tool, game.getGameMap().getTile
-                    (tile.getPosition().getY(), tile.getPosition().getX() - 1), player, game);
+                    ((int) tile.getPosition().getY(), (int) tile.getPosition().getX() - 1), player, game);
             case "right" -> applyTool(tool, game.getGameMap().getTile
-                    (tile.getPosition().getY(), tile.getPosition().getX() + 1), player, game);
+                    ((int) tile.getPosition().getY(), (int) tile.getPosition().getX() + 1), player, game);
             case "up left" -> applyTool(tool, game.getGameMap().getTile
-                    (tile.getPosition().getY() - 1, tile.getPosition().getX() - 1), player, game);
+                    ((int) tile.getPosition().getY() - 1, (int) tile.getPosition().getX() - 1), player, game);
             case "up right" -> applyTool(tool, game.getGameMap().getTile
-                    (tile.getPosition().getY() - 1, tile.getPosition().getX() + 1), player, game);
+                    ((int) tile.getPosition().getY() - 1, (int) tile.getPosition().getX() + 1), player, game);
             case "down left" -> applyTool(tool, game.getGameMap().getTile
-                    (tile.getPosition().getY() + 1, tile.getPosition().getX() - 1), player, game);
+                    ((int) tile.getPosition().getY() + 1, (int) tile.getPosition().getX() - 1), player, game);
             case "down right" -> applyTool(tool, game.getGameMap().getTile
-                    (tile.getPosition().getY() + 1, tile.getPosition().getX() + 1), player, game);
+                    ((int) tile.getPosition().getY() + 1, (int) tile.getPosition().getX() + 1), player, game);
             default -> view.showMessage("please select a valid direction!");
         }
     }
@@ -392,8 +392,8 @@ public class ToolController {
     public void upgradeTool(Matcher matcher) {
         Game game = App.getCurrentGame();
         Player player = game.getCurrentPlayer();
-        int playerX = player.getPosition().getX();
-        int playerY = player.getPosition().getY();
+        int playerX = (int) player.getPosition().getX();
+        int playerY = (int) player.getPosition().getY();
         int pierreX = NPCConst.ShopPositions.PierreGeneralStore.getX();
         int pierreY = NPCConst.ShopPositions.PierreGeneralStore.getY();
         int smithX = NPCConst.ShopPositions.BlackSmith.getX();

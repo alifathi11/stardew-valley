@@ -57,8 +57,8 @@ public class ActionMenuController {
         // check whether the player can go to the destination or not
 
         GameMap map = currentGame.getGameMap();
-        int currentPlayerY = currentPlayer.getPosition().getY();
-        int currentPlayerX = currentPlayer.getPosition().getX();
+        int currentPlayerY = (int) currentPlayer.getPosition().getY();
+        int currentPlayerX = (int) currentPlayer.getPosition().getX();
         Tile start = map.getTile(currentPlayerY, currentPlayerX);
 
         Tile goal;
@@ -256,13 +256,13 @@ public class ActionMenuController {
 
         // show entire map
         String[][] mapArray = new String[2 * size][2 * size];
-        for (int i = position.getY() - size; i < position.getY() + size; i++) {
-            for (int j = position.getX() - size; j < position.getX() + size; j++) {
+        for (int i = (int) position.getY() - size; i < position.getY() + size; i++) {
+            for (int j = (int) position.getX() - size; j < position.getX() + size; j++) {
                 try {
                     Tile tile = map.getTile(i, j);
                     ItemType type = tile.getItem().getDefinition().getType();
                     String symbol = ItemDisplay.getDisplayByType(type);
-                    mapArray[i - position.getY() + size][j - position.getX() + size] =
+                    mapArray[i - (int) position.getY() + size][j - (int) position.getX() + size] =
                             AnsiColors.wrap(symbol + " ", tile.getForGroundColor(), tile.getBackGroundColor());
                 } catch (ArrayIndexOutOfBoundsException e) {
                     continue;
@@ -275,12 +275,12 @@ public class ActionMenuController {
         ArrayList<Player> players = App.getCurrentGame().getPlayers();
         int playerNumber = 1;
         for (Player player : players) {
-            int playerY = player.getPosition().getY();
-            int playerX = player.getPosition().getX();
+            int playerY = (int) player.getPosition().getY();
+            int playerX = (int) player.getPosition().getX();
 
             if (playerY >= position.getY() - size && playerY < position.getY() + size) {
                 if (playerX >= position.getX() - size && playerX < position.getX() + size) {
-                    mapArray[playerY - position.getY() + size][playerX - position.getX() + size] =
+                    mapArray[playerY - (int) position.getY() + size][playerX - (int) position.getX() + size] =
                             AnsiColors.wrap(playerNumber + " ", AnsiColors.BLACK, AnsiColors.ORANGE);
 
                 }
@@ -290,17 +290,17 @@ public class ActionMenuController {
 
         // show NPCs
         for (NPC npc : game.getNPCs()) {
-            int NPcY = npc.getPosition().getY();
-            int NPcX = npc.getPosition().getX();
+            int NPcY = (int) npc.getPosition().getY();
+            int NPcX = (int) npc.getPosition().getX();
 
             if (NPcY >= position.getY() - size && NPcY < position.getY() + size) {
                 if (NPcX >= position.getX() - size && NPcX < position.getX() + size) {
-                    mapArray[NPcY - position.getY() + size][NPcX - position.getX() + size] =
+                    mapArray[NPcY - (int) position.getY() + size][NPcX - (int) position.getX() + size] =
                             AnsiColors.wrap(npc.getName().toCharArray()[0] + " ", AnsiColors.BLACK, AnsiColors.PINK);
 
                 }
                 if (npc.getName().equalsIgnoreCase("Kian")) {
-                    mapArray[NPcY - position.getY() + size][NPcX - position.getX() + size] =
+                    mapArray[NPcY - (int) position.getY() + size][NPcX - (int) position.getX() + size] =
                             AnsiColors.wrap(npc.getName().toCharArray()[0] + " ", AnsiColors.BLACK, AnsiColors.WHITE);
                 }
             }

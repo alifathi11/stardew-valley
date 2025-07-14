@@ -42,6 +42,7 @@ public class AvatarAssetManager {
     private static final Texture Mr_Qi = new Texture(Gdx.files.internal("Images/Villagers/Mr_Qi.png"));
     private static final Texture Pam = new Texture(Gdx.files.internal("Images/Villagers/Pam.png"));
     private static final Texture Penny = new Texture(Gdx.files.internal("Images/Villagers/Penny.png"));
+
     private static final Texture Pierre = new Texture(Gdx.files.internal("Images/Villagers/Pierre.png"));
     private static final Texture Professor_Snail = new Texture(Gdx.files.internal("Images/Villagers/Professor_Snail.png"));
     private static final Texture Robin = new Texture(Gdx.files.internal("Images/Villagers/Robin.png"));

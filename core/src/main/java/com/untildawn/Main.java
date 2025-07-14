@@ -10,26 +10,6 @@ import com.untildawn.models.AssetManager.PreGameAssetManager;
 import com.untildawn.models.Question;
 import com.untildawn.models.User;
 
-/** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
-
-//public class Main {
-//    public static void main(String[] args) throws IOException {
-//
-//        System.setProperty("org.slf4j.simpleLogger.defaultLogLevel", "off");
-//        System.setProperty("org.slf4j.simpleLogger.defaultLogLevel", "warn");
-//
-//        runProgram();
-//    }
-//
-//    public static void runProgram() {
-//        Runtime.getRuntime().addShutdownHook(new Thread(UserDataHandler::saveUsers));
-//        UserDataHandler.loadUsers();
-//
-//        AppView appView = new AppView();
-//        appView.run();
-//    }
-//}
-
 public class Main extends Game {
     private static SpriteBatch batch;
     private static Main main;
@@ -53,8 +33,8 @@ public class Main extends Game {
 
         App.setCurrentUser(ali1);
 
-        main.setScreen(Menus.PreGameMenus.MAIN_MENU.getMenu());
-        App.setCurrentMenu(Menus.PreGameMenus.MAIN_MENU);
+        main.setScreen(Menus.PreGameMenus.LOGIN_MENU.getMenu());
+        App.setCurrentMenu(Menus.PreGameMenus.LOGIN_MENU);
     }
 
     @Override

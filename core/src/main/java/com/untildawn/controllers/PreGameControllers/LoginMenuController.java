@@ -1,23 +1,55 @@
 package com.untildawn.controllers.PreGameControllers;
 
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.untildawn.Enums.GameMenus.Menus;
+import com.untildawn.Main;
+import com.untildawn.controllers.utils.PasswordGenerator;
+import com.untildawn.controllers.utils.SessionManager;
 import com.untildawn.models.App;
 import com.untildawn.models.User;
-import com.untildawn.models.UserDataHandler;
 import com.untildawn.views.PreGameMenus.LoginMenuView;
-import com.untildawn.views.PreGameMenus.TerminalAnimation;
-
-
-import java.util.Scanner;
-
-import static com.untildawn.controllers.PreGameControllers.SecurityQuestions.askPersonalSecurityQuestion;
 
 
 public class LoginMenuController {
 
     private LoginMenuView view;
-    public LoginMenuController(LoginMenuView view) {
+    public void setView(LoginMenuView view) {
         this.view = view;
+    }
+
+    public void handleButtons() {
+        if (view != null) {
+            view.getLoginButton().addListener(new ClickListener() {
+                @Override
+                public void clicked(InputEvent event, float x, float y) {
+//                    String username = view.getUsernameField().getText();
+//                    String password = view.getPasswordField().getText();
+//
+//                    login(username, password);
+                    view.dispose();
+                    Main.getMain().setScreen(Menus.PreGameMenus.MAIN_MENU.getMenu()); // temp
+                }
+            });
+
+            view.getForgetPasswordButton().addListener(new ClickListener() {
+                @Override
+                public void clicked(InputEvent event, float x, float y) {
+                    String username = view.getUsernameField().getText();
+
+                    forgetPassword(username);
+                }
+            });
+
+            view.getSignupButton().addListener(new ClickListener() {
+                @Override
+                public void clicked(InputEvent event, float x, float y) {
+                    view.dispose();
+                    Main.getMain().setScreen(Menus.PreGameMenus.SIGNUP_MENU.getMenu());
+
+                }
+            });
+        }
     }
 
     public boolean autoLogin() {
@@ -36,86 +68,28 @@ public class LoginMenuController {
         return false;
     }
 
-    public String changeMenu(String menu) {
-        switch (menu.toLowerCase()) {
-            case "signup menu", "signupmenu", "signup" -> {
-                App.setCurrentMenu(Menus.PreGameMenus.SIGNUP_MENU);
-                try {
-                    TerminalAnimation.loadingAnimation("redirecting to signup menu");
-                    return "\nYou are now in signup menu.\n";
-                } catch (InterruptedException e) {
-                    return "Problem redirecting to signup menu. Please try again later.\n";
-                }
-            }
-            case "login menu", "loginmenu", "login" -> {
-                return "You are in login menu now!\n";
-            }
-            default -> {
-                return "You only have access to signup and login menus right now.\n";
-            }
-        }
+    public void exitMenu() {
+
     }
 
-    public String exitMenu() {
-        try {
-            TerminalAnimation.loadingAnimation("Exiting the game\n");
-        } catch (InterruptedException e) {
-            return "Problem exiting the game. Please try again later.\n";
-        }
+    public void login(String username, String password) {
 
-        UserDataHandler.saveUsers();
-
-        System.exit(0);
-        return "";
     }
-    public String showCurrentMenu() {
-        return "You are in login menu.\n";
-    }
-
-    public String login(Scanner sc, String username, String password, boolean stayLoggedIn) {
-        if(!App.userExists(username)) {
-            return "User not found.\n";
+    public void forgetPassword(String username) {
+        if (username.isEmpty()) {
+            this.view.showError("Please enter your username.");
+            return;
         }
 
-        if (!App.getUser(username).verifyPassword(password)) {
-            return "Password is not correct.\n";
-        }
-        if (!SecurityQuestions.askSecurityQuestion(sc)) {
-            return "Login failed. Please try again.\n";
-        }
-
-        if (stayLoggedIn) {
-            SessionManager.saveSession(username);
-        }
-
-        App.setCurrentUser(App.getUser(username));
-        App.setCurrentMenu(Menus.PreGameMenus.MAIN_MENU);
-        try {
-            TerminalAnimation.loadingAnimation("Redirecting to main menu");
-        } catch (InterruptedException e) {
-            return "Problem logging you in. Please try again later.\n";
-        }
-        return "Logged in successfully. You are now in main menu.\n";
-
-}
-    public String forgetPassword(Scanner sc, String username) {
         if (!App.userExists(username)) {
-            return "User not found.\n";
-        }
-        System.out.printf("Enter your email address.\n");
-        String email = sc.nextLine();
-        String correctEmail = App.getUser(username).getEmail();
-        if (!email.equals(correctEmail)) {
-            return "Incorrect email address.\n";
+            this.view.showError("User doesn't exist.");
+            return;
         }
 
-        if (!askPersonalSecurityQuestion(username, sc)) return "Retrieving failed. Please try again later.";
+        User user = App.getUser(username);
+        String email = user.getEmail();
 
-        User currentUser = App.getCurrentUser();
-        String newPassword = this.view.prompt("Enter your new password: ");
-        String passwordHash = SHA256Hasher.hashPassword(newPassword);
-        currentUser.setPasswordHash(passwordHash);
-
-        return "Your password has been changed successfully.";
+//        EmailSender.sendEmail(email);
+        this.view.showMessage("Your password has been\n   sent to your email.");
     }
 }

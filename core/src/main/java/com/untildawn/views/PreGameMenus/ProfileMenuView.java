@@ -15,11 +15,13 @@ import com.untildawn.Enums.GameMenus.Menus;
 import com.untildawn.Main;
 import com.untildawn.controllers.PreGameControllers.ProfileMenuController;
 import com.untildawn.models.App;
+import com.untildawn.models.AssetManager.AvatarAssetManager;
 import com.untildawn.models.AssetManager.PreGameAssetManager;
 import com.untildawn.views.AppMenu;
 
 
 import java.util.Scanner;
+import java.util.function.Consumer;
 
 public class ProfileMenuView implements AppMenu, Screen {
 
@@ -112,7 +114,7 @@ public class ProfileMenuView implements AppMenu, Screen {
         } else if (isInUserInfo) {
 
         } else if (isInAvatarChange) {
-            Texture[] avatars = com.untildawn.models.AssetManager.AvatarAssetManager.getSkinTextures();
+            Texture[] avatars = AvatarAssetManager.getSkinTextures();
             Skin skin = PreGameAssetManager.getSkin();
 
             Table avatarTable = new Table();
@@ -408,7 +410,18 @@ public class ProfileMenuView implements AppMenu, Screen {
     }
 
     @Override
-    public String prompt(String message) {
-        return "";
+    public void showError(String error) {
+
     }
+
+    @Override
+    public void showMessageAndExecute(String message, Runnable onClose) {
+
+    }
+
+    @Override
+    public void showConfirmation(String message, Consumer<Boolean> resultCallback) {
+
+    }
+
 }

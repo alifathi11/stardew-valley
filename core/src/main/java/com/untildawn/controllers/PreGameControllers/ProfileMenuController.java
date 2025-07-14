@@ -8,6 +8,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.untildawn.Enums.GameMenus.Menu;
 import com.untildawn.Enums.GameMenus.Menus;
 import com.untildawn.Enums.PreGameMenuCommands.ProfileMenuCommands;
+import com.untildawn.controllers.utils.PasswordGenerator;
+import com.untildawn.controllers.utils.SHA256Hasher;
 import com.untildawn.models.App;
 import com.untildawn.models.AssetManager.PreGameAssetManager;
 import com.untildawn.models.GameHistory;

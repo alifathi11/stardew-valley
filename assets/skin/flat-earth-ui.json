@@ -328,7 +328,7 @@
       imageChecked: radio-pressed-c
       imageCheckedOver: radio-pressed-h
       font: button
-      fontColor: color
+      fontColor: white
       downFontColor: pressed
       overFontColor: highlight
     }
@@ -349,7 +349,7 @@
   }
   com.badlogic.gdx.scenes.scene2d.ui.List$ListStyle: {
     default: {
-      font: font
+      font: button
       fontColorSelected: white
       fontColorUnselected: white
       selection: selection
@@ -382,7 +382,7 @@
   }
   com.badlogic.gdx.scenes.scene2d.ui.SelectBox$SelectBoxStyle: {
     default: {
-      font: font
+      font: button
       fontColor: white
       background: select-box-c
       scrollStyle: default

@@ -23,7 +23,7 @@ import com.untildawn.views.AppMenu;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 
-public class GameMenuView implements AppMenu, Screen {
+public class GameMenuView implements Screen {
     private Stage stage;
     private Table table;
     private BitmapFont font;
@@ -220,9 +220,6 @@ public class GameMenuView implements AppMenu, Screen {
 
     }
 
-    @Override
-    public void handleInput(Scanner sc) {
-    }
 
     private static void executeCommand(GameMenuCommands command, Matcher matcher, Scanner sc) {
         switch (command) {
@@ -233,15 +230,7 @@ public class GameMenuView implements AppMenu, Screen {
                 GameMenuController.changeMenu(Menus.PreGameMenus.MAIN_MENU, "main menu");
         }
     }
-    @Override
-    public void showMessage(String message) {
 
-    }
-
-    @Override
-    public String prompt(String message) {
-        return "";
-    }
 
     public TextButton getNewGameButton() {
         return newGameButton;

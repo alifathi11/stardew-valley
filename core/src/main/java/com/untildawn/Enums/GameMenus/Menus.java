@@ -1,6 +1,8 @@
 package com.untildawn.Enums.GameMenus;
 
 import com.badlogic.gdx.Screen;
+import com.untildawn.controllers.InGameControllers.GameControllers.GameController;
+import com.untildawn.controllers.PreGameControllers.*;
 import com.untildawn.controllers.PreGameControllers.GameMenuController;
 import com.untildawn.controllers.PreGameControllers.MainMenuController;
 import com.untildawn.controllers.PreGameControllers.ProfileMenuController;
@@ -16,22 +18,18 @@ import java.util.Scanner;
  */
 public class Menus {
     public enum PreGameMenus implements Menu {
-        SIGNUP_MENU(new SignupMenuView()),
-        LOGIN_MENU(new LoginMenuView()),
+        SIGNUP_MENU(new SignupMenuView(new SignupMenuController())),
+        LOGIN_MENU(new LoginMenuView(new LoginMenuController())),
         MAIN_MENU(new MainMenuView(new MainMenuController())),
         PROFILE_MENU(new ProfileMenuView(new ProfileMenuController())),
-        AVATAR_MENU(new AvatarMenuView()),
+        AVATAR_MENU(new AvatarMenuView(new AvatarMenuController())),
         GAME_MENU(new GameMenuView(new GameMenuController())),
-        EXIT_MENU(new ExitMenuView());
+        EXIT_MENU(new ExitMenuView(new ExitMenuController()));
 
         private final Screen menu;
 
         PreGameMenus(Screen menu) {
             this.menu = menu;
-        }
-
-        public void check(Scanner sc) {
-//            this.menu.handleInput(sc);
         }
 
         public Screen getMenu() {
@@ -45,19 +43,20 @@ public class Menus {
         COOKING_MENU(new CookingMenu()),
         ACTION_MENU(new ActionMenuView()),
         SHOP_MENU(new ShopMenuView()),
-        EXIT_MENU(new ExitMenuView()),
+        EXIT_MENU(new ExitMenu()),
         INVENTORY_MENU(new InventoryMenu()),
         MENU_SWITCHER(new MenuSwitcherView()),
         TRADE_MENU(new TradeMenuView()),
+        GAME_VIEW(new GameView(new GameController()))
         ;
-        private final AppMenu menu;
+        private final Screen menu;
 
-        InGameMenus(AppMenu menu) {
+        InGameMenus(Screen menu) {
             this.menu = menu;
         }
 
-        public void check(Scanner sc) {
-            this.menu.handleInput(sc);
+        public Screen getMenu() {
+            return menu;
         }
     }
 }

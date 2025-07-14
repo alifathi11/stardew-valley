@@ -56,14 +56,14 @@ public class MenuSwitcher {
     private String setShop() {
         Game game = App.getCurrentGame();
         Player player = game.getCurrentPlayer();
-        int playerY = player.getPosition().getY();
-        int playerX = player.getPosition().getX();
+        int playerY = (int) player.getPosition().getY();
+        int playerX = (int) player.getPosition().getX();
 
         ArrayList<Shop> shops = game.getShops();
 
         for (Shop shop : shops) {
-            int shopY = shop.getPosition().getY();
-            int shopX = shop.getPosition().getX();
+            int shopY = (int) shop.getPosition().getY();
+            int shopX = (int) shop.getPosition().getX();
 
             if (shopY >= playerY - 1 && shopY <= playerY + 1
                 && shopX >= playerX - 1 && shopX <= playerX + 1) {

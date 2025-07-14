@@ -3,6 +3,7 @@ package com.untildawn.controllers.InGameControllers;
 import com.untildawn.Enums.ItemConsts.ItemAttributes;
 import com.untildawn.Enums.ItemConsts.ItemIDs;
 import com.untildawn.Enums.ItemConsts.ItemType;
+import com.untildawn.controllers.utils.GenerateRandomNumber;
 import com.untildawn.models.App;
 import com.untildawn.models.Game;
 import com.untildawn.models.Items.Inventory;
@@ -15,9 +16,7 @@ import com.untildawn.models.Players.Player;
 import com.untildawn.views.InGameMenus.ActionMenuView;
 
 
-import javax.swing.*;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -97,8 +96,8 @@ public class FarmingController {
         if (((String) plant.getDefinition().getAttribute(ItemAttributes.canBecomeGiant)).equalsIgnoreCase("false")) {
             return;
         }
-        int tileY = tile.getPosition().getY();
-        int tileX = tile.getPosition().getX();
+        int tileY = (int) tile.getPosition().getY();
+        int tileX = (int) tile.getPosition().getX();
         GameMap map = currentGame.getGameMap();
 
         ArrayList<Tile> square;
@@ -116,10 +115,10 @@ public class FarmingController {
     }
 
     private ArrayList<Tile> getSquare(Tile center, Tile corner) {
-        int centerY = center.getPosition().getY();
-        int centerX = center.getPosition().getX();
-        int cornerY = corner.getPosition().getY();
-        int cornerX = corner.getPosition().getX();
+        int centerY = (int) center.getPosition().getY();
+        int centerX = (int) center.getPosition().getX();
+        int cornerY = (int) corner.getPosition().getY();
+        int cornerX = (int) corner.getPosition().getX();
 
         GameMap map = App.getCurrentGame().getGameMap();
 
@@ -184,36 +183,36 @@ public class FarmingController {
         int tileY, tileX;
         switch (dir.toLowerCase()) {
             case "up":
-                tileY = currentPlayer.getPosition().getY() - 1;
-                tileX = currentPlayer.getPosition().getX();
+                tileY = (int) currentPlayer.getPosition().getY() - 1;
+                tileX = (int) currentPlayer.getPosition().getX();
                 break;
             case "down":
-                tileY = currentPlayer.getPosition().getY() + 1;
-                tileX = currentPlayer.getPosition().getX();
+                tileY = (int) currentPlayer.getPosition().getY() + 1;
+                tileX = (int) currentPlayer.getPosition().getX();
                 break;
             case "left":
-                tileY = currentPlayer.getPosition().getY();
-                tileX = currentPlayer.getPosition().getX() - 1;
+                tileY = (int) currentPlayer.getPosition().getY();
+                tileX = (int) currentPlayer.getPosition().getX() - 1;
                 break;
             case "right":
-                tileY = currentPlayer.getPosition().getY();
-                tileX = currentPlayer.getPosition().getX() + 1;
+                tileY = (int) currentPlayer.getPosition().getY();
+                tileX = (int) currentPlayer.getPosition().getX() + 1;
                 break;
             case "up right":
-                tileY = currentPlayer.getPosition().getY() - 1;
-                tileX = currentPlayer.getPosition().getX() + 1;
+                tileY = (int) currentPlayer.getPosition().getY() - 1;
+                tileX = (int) currentPlayer.getPosition().getX() + 1;
                 break;
             case "up left":
-                tileY = currentPlayer.getPosition().getY() - 1;
-                tileX = currentPlayer.getPosition().getX() - 1;
+                tileY = (int) currentPlayer.getPosition().getY() - 1;
+                tileX = (int) currentPlayer.getPosition().getX() - 1;
                 break;
             case "down right":
-                tileY = currentPlayer.getPosition().getY() + 1;
-                tileX = currentPlayer.getPosition().getX() + 1;
+                tileY = (int) currentPlayer.getPosition().getY() + 1;
+                tileX = (int) currentPlayer.getPosition().getX() + 1;
                 break;
             case "down left":
-                tileY = currentPlayer.getPosition().getY() + 1;
-                tileX = currentPlayer.getPosition().getX() - 1;
+                tileY = (int) currentPlayer.getPosition().getY() + 1;
+                tileX = (int) currentPlayer.getPosition().getX() - 1;
                 break;
             default:
                 this.view.showMessage("Please enter a valid direction: up, down, left and right");

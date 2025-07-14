@@ -30,7 +30,7 @@ public class NPC {
         this.gender = gender;
         this.profession = profession;
         this.placePosition = placePosition;
-        this.position = new Position(placePosition.getY(), placePosition.getX() + 1);
+        this.position = new Position((int) placePosition.getY(), (int) placePosition.getX() + 1);
         this.favorites = favorites;
         this.quests = quests;
         this.daysToLastQuest = daysToLastQuest;

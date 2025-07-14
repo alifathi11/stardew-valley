@@ -1,14 +1,16 @@
 package com.untildawn.views.InGameMenus;
 
+import com.badlogic.gdx.Screen;
 import com.untildawn.Enums.InGameMenuCommands.MenuSwitcherCommands;
 import com.untildawn.controllers.InGameControllers.MenuSwitcher;
 import com.untildawn.views.AppMenu;
 
 
 import java.util.Scanner;
+import java.util.function.Consumer;
 import java.util.regex.Matcher;
 
-public class MenuSwitcherView implements AppMenu {
+public class MenuSwitcherView implements Screen, AppMenu {
     public void handleInput(Scanner sc) {
         printMenus();
         String input = sc.nextLine();
@@ -31,6 +33,21 @@ public class MenuSwitcherView implements AppMenu {
     }
 
     @Override
+    public void showError(String error) {
+
+    }
+
+    @Override
+    public void showMessageAndExecute(String message, Runnable onClose) {
+
+    }
+
+    @Override
+    public void showConfirmation(String message, Consumer<Boolean> resultCallback) {
+
+    }
+
+
     public String prompt(String message) {
         return "";
     }
@@ -53,4 +70,38 @@ public class MenuSwitcherView implements AppMenu {
                 + "8. Exit Menu\n");
     }
 
+    @Override
+    public void show() {
+
+    }
+
+    @Override
+    public void render(float v) {
+
+    }
+
+    @Override
+    public void resize(int i, int i1) {
+
+    }
+
+    @Override
+    public void pause() {
+
+    }
+
+    @Override
+    public void resume() {
+
+    }
+
+    @Override
+    public void hide() {
+
+    }
+
+    @Override
+    public void dispose() {
+
+    }
 }

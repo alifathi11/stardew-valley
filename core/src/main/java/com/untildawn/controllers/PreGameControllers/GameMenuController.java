@@ -107,8 +107,8 @@ public class GameMenuController {
         for (Map.Entry<Player, PlayerMap> entry : playerMaps.entrySet()) {
             Player player = entry.getKey();
             PlayerMap map = entry.getValue();
-            int cottageY = map.getCottage().getTile().getPosition().getY();
-            int cottageX = map.getCottage().getTile().getPosition().getX();
+            int cottageY = (int) map.getCottage().getTile().getPosition().getY();
+            int cottageX = (int) map.getCottage().getTile().getPosition().getX();
             Position cottagePosition = new Position(cottageY, cottageX);
             player.setCottagePosition(cottagePosition);
             player.setPosition(cottagePosition);
@@ -292,8 +292,8 @@ public class GameMenuController {
                 for (Map.Entry<Player, PlayerMap> entry : playerMaps.entrySet()) {
                     Player player = entry.getKey();
                     PlayerMap map = entry.getValue();
-                    int cottageY = map.getCottage().getTile().getPosition().getY();
-                    int cottageX = map.getCottage().getTile().getPosition().getX();
+                    int cottageY = (int) map.getCottage().getTile().getPosition().getY();
+                    int cottageX = (int) map.getCottage().getTile().getPosition().getX();
                     Position cottagePosition = new Position(cottageY, cottageX);
                     player.setCottagePosition(cottagePosition);
                     player.setPosition(cottagePosition);
@@ -313,8 +313,9 @@ public class GameMenuController {
                 MakeRelation.makeRelations(newGame);
                 // make player relations
                 MakePlayerRelations.makePlayerRelations();
+                Main.getMain().setScreen(Menus.InGameMenus.GAME_VIEW.getMenu());
+                App.setCurrentMenu(Menus.InGameMenus.GAME_VIEW);
 
-                App.setCurrentMenu(Menus.InGameMenus.ACTION_MENU);
             }
         }
     }
