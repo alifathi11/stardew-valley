@@ -1,4 +1,4 @@
-package com.untildawn.models.AssetManager;
+package com.untildawn.models.GameAssetManager;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;

@@ -1,7 +1,6 @@
 package com.untildawn.controllers.PreGameControllers;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
@@ -12,7 +11,7 @@ import com.untildawn.Enums.PreGameMenuCommands.ProfileMenuCommands;
 import com.untildawn.controllers.utils.PasswordGenerator;
 import com.untildawn.controllers.utils.SHA256Hasher;
 import com.untildawn.models.App;
-import com.untildawn.models.AssetManager.PreGameAssetManager;
+import com.untildawn.models.GameAssetManager.PreGameAssetManager;
 import com.untildawn.models.GameHistory;
 import com.untildawn.models.User;
 import com.untildawn.views.PreGameMenus.ProfileMenuView;
@@ -184,7 +183,7 @@ public class ProfileMenuController {
     }
 
     private void showRandomPasswordDialog() {
-        Skin skin = PreGameAssetManager.getInstance().getSkin();
+        Skin skin = PreGameAssetManager.getSkin();
         String randomPassword = PasswordGenerator.generatePassword(App.getCurrentUser().getUsername());
         Dialog dialog = new Dialog("Random Password", skin) {
             @Override

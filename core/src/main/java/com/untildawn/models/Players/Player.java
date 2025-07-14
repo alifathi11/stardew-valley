@@ -6,7 +6,7 @@ import com.untildawn.Enums.GameConsts.Gender;
 import com.untildawn.Enums.GameConsts.WeatherStates;
 import com.untildawn.models.Animals.Animal;
 import com.untildawn.models.App;
-import com.untildawn.models.AssetManager.InGameAssetManager;
+import com.untildawn.models.GameAssetManager.InGameAssetManager;
 import com.untildawn.models.Game;
 import com.untildawn.models.Items.Inventory;
 import com.untildawn.models.Items.ItemInstance;

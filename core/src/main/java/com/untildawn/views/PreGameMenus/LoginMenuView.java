@@ -14,7 +14,7 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 
 import com.untildawn.Main;
 import com.untildawn.controllers.PreGameControllers.LoginMenuController;
-import com.untildawn.models.AssetManager.PreGameAssetManager;
+import com.untildawn.models.GameAssetManager.PreGameAssetManager;
 import com.untildawn.views.AppMenu;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 
@@ -40,7 +40,7 @@ public class LoginMenuView implements Screen, AppMenu {
 
     public LoginMenuView(LoginMenuController controller) {
         this.controller = controller;
-        this.skin = PreGameAssetManager.getInstance().getSkin();
+        this.skin = PreGameAssetManager.getSkin();
         this.loginButton = new TextButton("LOGIN", skin);
         this.signupButton = new TextButton("I don't have an account", skin, "naked");
         this.loginLabel = new Label("LOGIN", skin, "title");
