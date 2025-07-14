@@ -63,4 +63,7 @@ public class AvatarAssetManager {
         };
     }
 
+    public static Texture getAbigail() {
+        return Abigail;
+    }
 }

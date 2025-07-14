@@ -53,8 +53,8 @@ public class Main extends Game {
 
         App.setCurrentUser(ali1);
 
-        main.setScreen(Menus.PreGameMenus.PROFILE_MENU.getMenu());
-        App.setCurrentMenu(Menus.PreGameMenus.PROFILE_MENU);
+        main.setScreen(Menus.PreGameMenus.MAIN_MENU.getMenu());
+        App.setCurrentMenu(Menus.PreGameMenus.MAIN_MENU);
     }
 
     @Override
