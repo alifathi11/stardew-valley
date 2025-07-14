@@ -15,9 +15,8 @@ import com.untildawn.Enums.GameMenus.Menus;
 import com.untildawn.Enums.PreGameMenuCommands.GameMenuCommands;
 import com.untildawn.Main;
 import com.untildawn.controllers.PreGameControllers.GameMenuController;
-import com.untildawn.controllers.PreGameControllers.ProfileMenuController;
-import com.untildawn.models.GameAssetManager.AvatarAssetManager;
-import com.untildawn.models.GameAssetManager.PreGameAssetManager;
+import com.untildawn.models.AssetManager.AvatarAssetManager;
+import com.untildawn.models.AssetManager.PreGameAssetManager;
 import com.untildawn.views.AppMenu;
 
 

@@ -1,7 +1,6 @@
 package com.untildawn.controllers.PreGameControllers;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
@@ -10,7 +9,7 @@ import com.untildawn.Enums.GameMenus.Menu;
 import com.untildawn.Enums.GameMenus.Menus;
 import com.untildawn.Enums.PreGameMenuCommands.ProfileMenuCommands;
 import com.untildawn.models.App;
-import com.untildawn.models.GameAssetManager.PreGameAssetManager;
+import com.untildawn.models.AssetManager.PreGameAssetManager;
 import com.untildawn.models.GameHistory;
 import com.untildawn.models.User;
 import com.untildawn.views.PreGameMenus.ProfileMenuView;

@@ -12,16 +12,14 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.untildawn.Enums.GameMenus.Menus;
-import com.untildawn.Enums.PreGameMenuCommands.ProfileMenuCommands;
 import com.untildawn.Main;
 import com.untildawn.controllers.PreGameControllers.ProfileMenuController;
 import com.untildawn.models.App;
-import com.untildawn.models.GameAssetManager.PreGameAssetManager;
+import com.untildawn.models.AssetManager.PreGameAssetManager;
 import com.untildawn.views.AppMenu;
 
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
 
 public class ProfileMenuView implements AppMenu, Screen {
 
@@ -114,7 +112,7 @@ public class ProfileMenuView implements AppMenu, Screen {
         } else if (isInUserInfo) {
 
         } else if (isInAvatarChange) {
-            Texture[] avatars = com.untildawn.models.GameAssetManager.AvatarAssetManager.getSkinTextures();
+            Texture[] avatars = com.untildawn.models.AssetManager.AvatarAssetManager.getSkinTextures();
             Skin skin = PreGameAssetManager.getSkin();
 
             Table avatarTable = new Table();

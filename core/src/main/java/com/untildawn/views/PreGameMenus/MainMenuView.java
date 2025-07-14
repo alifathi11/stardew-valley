@@ -21,7 +21,7 @@ import com.untildawn.Enums.PreGameMenuCommands.MainMenuCommands;
 import com.untildawn.Main;
 import com.untildawn.controllers.PreGameControllers.MainMenuController;
 import com.untildawn.models.App;
-import com.untildawn.models.GameAssetManager.PreGameAssetManager;
+import com.untildawn.models.AssetManager.PreGameAssetManager;
 import com.untildawn.models.User;
 import com.untildawn.views.AppMenu;
 import java.util.Scanner;

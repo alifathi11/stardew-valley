@@ -6,7 +6,7 @@ import com.badlogic.gdx.utils.ScreenUtils;
 import com.untildawn.Enums.GameConsts.Gender;
 import com.untildawn.Enums.GameMenus.Menus;
 import com.untildawn.models.App;
-import com.untildawn.models.GameAssetManager.PreGameAssetManager;
+import com.untildawn.models.AssetManager.PreGameAssetManager;
 import com.untildawn.models.Question;
 import com.untildawn.models.User;
 

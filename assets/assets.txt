@@ -281,6 +281,7 @@ Images/Bait/Violet_Bait.png
 Images/Bait/White_Bait.png
 Images/Bait/Wild_Bait.png
 Images/Bait/Yellow_Bait.png
+Images/BirdAnimation.zip
 Images/BirdAnimation/Birds-0.png
 Images/BirdAnimation/Birds-1.png
 Images/BirdAnimation/Birds-10.png
