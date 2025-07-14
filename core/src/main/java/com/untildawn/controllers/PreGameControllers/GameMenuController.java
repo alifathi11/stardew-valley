@@ -1,11 +1,14 @@
 package com.untildawn.controllers.PreGameControllers;
 
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.untildawn.Enums.GameMenus.Menu;
 import com.untildawn.Enums.GameMenus.Menus;
 import com.untildawn.Enums.ItemConsts.ItemDisplay;
 import com.untildawn.Enums.ItemConsts.ItemType;
 import com.untildawn.Enums.MapConsts.AnsiColors;
 import com.untildawn.Enums.MapConsts.MapSizes;
+import com.untildawn.Main;
 import com.untildawn.controllers.UpdateControllers.UpdateForaging;
 import com.untildawn.controllers.UpdateControllers.spawnRandom;
 import com.untildawn.models.App;
@@ -24,13 +27,37 @@ import com.untildawn.models.NPCs.MakeShops;
 import com.untildawn.models.Players.MakePlayerRelations;
 import com.untildawn.models.Players.Player;
 import com.untildawn.models.User;
+import com.untildawn.views.PreGameMenus.GameMenuView;
+import com.untildawn.views.PreGameMenus.MainMenuView;
 import com.untildawn.views.PreGameMenus.TerminalAnimation;
 
 
 import java.util.*;
 
 public class GameMenuController {
+    GameMenuView view;
 
+    public void setView(GameMenuView view) {
+        this.view = view;
+    }
+    public void setListener() {
+        view.getExitButton().addListener(new ClickListener() {
+            @Override
+            public void clicked(InputEvent event, float x, float y) {
+                Main.getMain().setScreen(Menus.PreGameMenus.MAIN_MENU.getMenu());
+                App.setCurrentMenu(Menus.PreGameMenus.MAIN_MENU);
+            }
+        });
+        view.getNewGameButton().addListener(new ClickListener() {
+
+        });
+        view.getLoadGameButton().addListener(new ClickListener() {
+            @Override
+            public void clicked(InputEvent event, float x, float y) {
+
+            }
+        });
+    }
     public static String makeNewGame(Scanner sc) {
         // load items
         ItemLoader.loadItems();
