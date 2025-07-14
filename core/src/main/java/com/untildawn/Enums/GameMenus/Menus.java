@@ -1,6 +1,7 @@
 package com.untildawn.Enums.GameMenus;
 
 import com.badlogic.gdx.Screen;
+import com.untildawn.controllers.PreGameControllers.GameMenuController;
 import com.untildawn.controllers.PreGameControllers.MainMenuController;
 import com.untildawn.controllers.PreGameControllers.ProfileMenuController;
 import com.untildawn.views.AppMenu;
@@ -20,7 +21,7 @@ public class Menus {
         MAIN_MENU(new MainMenuView(new MainMenuController())),
         PROFILE_MENU(new ProfileMenuView(new ProfileMenuController())),
         AVATAR_MENU(new AvatarMenuView()),
-        GAME_MENU(new GameMenuView()),
+        GAME_MENU(new GameMenuView(new GameMenuController())),
         EXIT_MENU(new ExitMenuView());
 
         private final Screen menu;

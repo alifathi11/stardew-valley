@@ -2851,7 +2851,7 @@ Images/Villagers/Marlon.png
 Images/Villagers/Marnie.png
 Images/Villagers/Maru.png
 Images/Villagers/Morris.png
-Images/Villagers/Mr_Qi.png
+Images/Villagers/Mr._Qi.png
 Images/Villagers/Pam.png
 Images/Villagers/Penny.png
 Images/Villagers/Pierre.png
@@ -2946,6 +2946,7 @@ Images/Weapon/Wind_Spire.png
 Images/Weapon/Wood_Club.png
 Images/Weapon/Wood_Mallet.png
 Images/Weapon/Wooden_Blade.png
+Images/backgrounds/GameMenuBG.png
 Images/backgrounds/MenusBG.png
 Images/sprites/Abigail.png
 Images/sprites/Accessories.png
@@ -3047,6 +3048,7 @@ Images/sprites/Emote Menu.png
 Images/sprites/Emotes.png
 Images/sprites/Equipment & Special Items.png
 Images/sprites/Evelyn.png
+Images/sprites/Events.png
 Images/sprites/Farm Buildings Paint Masks.png
 Images/sprites/Farm Buildings.png
 Images/sprites/Farm Obelisk.png

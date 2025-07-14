@@ -7,6 +7,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 public class PreGameAssetManager {
     private static Skin skin;
     private static final Texture MenusBG = new Texture(Gdx.files.internal("Images/backgrounds/MenusBG.png"));
+    private static final Texture gameMenuBG = new Texture(Gdx.files.internal("Images/backgrounds/GameMenuBG.png"));
     public static Skin getSkin() {
         if (skin == null) {
             skin = new Skin(Gdx.files.internal("skin/flat-earth-ui.json"));
@@ -16,4 +17,9 @@ public class PreGameAssetManager {
     public static Texture getMenusBG() {
         return MenusBG;
     }
+
+    public static Texture getGameMenuBG() {
+        return gameMenuBG;
+    }
+
 }

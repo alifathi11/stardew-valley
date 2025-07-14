@@ -32,7 +32,6 @@ public class MainMenuView implements AppMenu, Screen {
         this.controller =controller;
         this.stage = new Stage(new ScreenViewport());
 
-        buildUI();
     }
 
     private void buildUI() {
@@ -42,6 +41,11 @@ public class MainMenuView implements AppMenu, Screen {
         stage.addActor(table);
 
         User currentPlayer = App.getCurrentUser();
+
+
+        Label titleLabel = new Label("Stardew Valley", skin, "title");
+        table.add(titleLabel).padBottom(50);
+        table.row();
         if (currentPlayer != null) {
 
 
@@ -52,11 +56,6 @@ public class MainMenuView implements AppMenu, Screen {
                 table.row();
             }
         }
-
-        Label titleLabel = new Label("Stardew Valley", skin, "title");
-        table.add(titleLabel).padBottom(50);
-        table.row();
-
         TextButton gameMenuButton = new TextButton("Game Menu", skin);
         gameMenuButton.addListener(new ClickListener() {
             @Override
@@ -118,6 +117,8 @@ public class MainMenuView implements AppMenu, Screen {
     @Override
     public void show() {
         Gdx.input.setInputProcessor(stage);
+        buildUI();
+
     }
 
     @Override

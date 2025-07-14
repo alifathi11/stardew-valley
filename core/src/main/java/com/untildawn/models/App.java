@@ -44,7 +44,7 @@ public abstract class App {
     }
 
     public static void setCurrentUser(User user) {
-        App.currentUser = user;
+        currentUser = user;
     }
 
     public static User getCurrentUser() {
