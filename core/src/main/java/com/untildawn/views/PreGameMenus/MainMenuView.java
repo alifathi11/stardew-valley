@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
+
 import java.util.Random;
 
 import com.badlogic.gdx.Game;
@@ -24,6 +25,7 @@ import com.untildawn.models.App;
 import com.untildawn.models.AssetManager.PreGameAssetManager;
 import com.untildawn.models.User;
 import com.untildawn.views.AppMenu;
+
 import java.util.Scanner;
 
 public class MainMenuView implements Screen {
@@ -38,13 +40,19 @@ public class MainMenuView implements Screen {
     private Array<Vector2> birdVelocities;
     private float[] birdStateTimes;
     private Random random = new Random();
+    private Label titleLabel;
+    private TextButton gameMenuButton;
+    private TextButton profileMenuButton;
+    private TextButton avatarMenuButton;
+    private TextButton logoutButton;
+    private TextButton exitButton;
 
     public MainMenuView(MainMenuController controller) {
         this.skin = PreGameAssetManager.getSkin();
         this.backgroundTexture = PreGameAssetManager.getMenusBG();
         this.controller = controller;
+        controller.setView(this);
         this.stage = new Stage(new ScreenViewport());
-
         birdAnimations = new Array<>();
         birdAnimations.add(PreGameAssetManager.getBrownBirdAnimation());
         birdAnimations.add(PreGameAssetManager.getBlueBirdAnimation());
@@ -53,73 +61,32 @@ public class MainMenuView implements Screen {
         this.birdPositions = new Array<>(BIRD_COUNT);
         this.birdVelocities = new Array<>(BIRD_COUNT);
         this.birdStateTimes = new float[BIRD_COUNT];
+        titleLabel = new Label("Stardew Valley", skin, "title");
+        gameMenuButton = new TextButton("Game Menu", skin);
+        profileMenuButton = new TextButton("Profile Menu", skin);
+        avatarMenuButton = new TextButton("Avatar Menu", skin);
+        logoutButton = new TextButton("Logout", skin);
+        exitButton = new TextButton("Exit Game", skin);
+
+
     }
 
     private void buildUI() {
         Table table = new Table();
         table.setFillParent(true);
         table.center();
-        stage.addActor(table);
-
-        User currentPlayer = App.getCurrentUser();
-        if (currentPlayer != null) {
 
 
-            Texture avatarTexture = currentPlayer.getAvatar();
-            if (avatarTexture != null) {
-                Image avatarImage = new Image(avatarTexture);
-                table.add(avatarImage).size(128, 128).padBottom(20);
-                table.row();
-            }
-        }
-
-        Label titleLabel = new Label("Stardew Valley", skin, "title");
         table.add(titleLabel).padBottom(50);
         table.row();
+        if (App.getCurrentUser().getAvatar() != null) {
+            Image avatarImage = new Image(App.getCurrentUser().getAvatar());
+            avatarImage.setSize(100, 100);
+            table.add(avatarImage).width(100).height(100).padBottom(32f);
+            table.row();
+        }
 
-        TextButton gameMenuButton = new TextButton("Game Menu", skin);
-        gameMenuButton.addListener(new ClickListener() {
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                controller.changeMenu(Menus.PreGameMenus.GAME_MENU);
-                Main.getMain().setScreen(Menus.PreGameMenus.GAME_MENU.getMenu());
-                App.setCurrentMenu(Menus.PreGameMenus.GAME_MENU);
-
-            }
-        });
-
-        TextButton profileMenuButton = new TextButton("Profile Menu", skin);
-        profileMenuButton.addListener(new ClickListener() {
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                controller.changeMenu(Menus.PreGameMenus.PROFILE_MENU);
-            }
-        });
-
-        TextButton avatarMenuButton = new TextButton("Avatar Menu", skin);
-        avatarMenuButton.addListener(new ClickListener() {
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                controller.changeMenu(Menus.PreGameMenus.AVATAR_MENU);
-            }
-        });
-
-        TextButton logoutButton = new TextButton("Logout", skin);
-        logoutButton.addListener(new ClickListener() {
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                controller.userLogout();
-            }
-        });
-
-        TextButton exitButton = new TextButton("Exit Game", skin);
-        exitButton.addListener(new ClickListener() {
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                controller.exit();
-            }
-        });
-
+        controller.setListeners();
         float buttonWidth = 300f;
         float buttonHeight = 50f;
         float pad = 10f;
@@ -133,6 +100,8 @@ public class MainMenuView implements Screen {
         table.add(logoutButton).width(buttonWidth).height(buttonHeight).pad(pad).padTop(30);
         table.row();
         table.add(exitButton).width(buttonWidth).height(buttonHeight).pad(pad);
+        stage.addActor(table);
+
     }
 
     private void initializeBirds() {
@@ -203,14 +172,34 @@ public class MainMenuView implements Screen {
     }
 
     @Override
-    public void pause() {}
+    public void pause() {
+    }
+
     @Override
-    public void resume() {}
+    public void resume() {
+    }
+
     @Override
-    public void hide() {}
+    public void hide() {
+    }
 
+    public TextButton getExitButton() {
+        return exitButton;
+    }
 
+    public TextButton getLogoutButton() {
+        return logoutButton;
+    }
 
+    public TextButton getAvatarMenuButton() {
+        return avatarMenuButton;
+    }
 
+    public TextButton getProfileMenuButton() {
+        return profileMenuButton;
+    }
 
+    public TextButton getGameMenuButton() {
+        return gameMenuButton;
+    }
 }

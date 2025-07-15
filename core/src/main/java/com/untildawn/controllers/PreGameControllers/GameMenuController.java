@@ -40,16 +40,27 @@ public class GameMenuController {
     GameMenuView view;
     ArrayList<Player> gamePlayers = new ArrayList<>();
     int counter = 0;
-    public GameMenuController() {
-//        User user = App.getCurrentUser();
-//            gamePlayers.add(new Player(user, user.getUsername(),
-//                App.getCurrentUser().getGender(), new Position(0, 0)));
-    }
+    boolean hasLoaded = false;
+    GameMap newGameMap;
+    ArrayList<PlayerMap> farms;
+    Map<Player, PlayerMap> playerMaps = new LinkedHashMap<>();
+    Map<Integer, PlayerMap> farmsWithNumber = new LinkedHashMap<>();
+
     public void setView(GameMenuView view) {
         this.view = view;
     }
+
     public void setListener() {
-        ItemLoader.loadItems();
+        if (!hasLoaded) {
+            ItemLoader.loadItems();
+            hasLoaded = true;
+            newGameMap = PrepareMap.prepareMap();
+            farms = PrepareMap.makePlayerMaps(newGameMap);
+        }
+        if (gamePlayers.isEmpty()) {
+            User user = App.getCurrentUser();
+            gamePlayers.add(new Player(user, user.getUsername(), user.getGender(), new Position(0, 0)));
+        }
         view.getExitButton().addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
@@ -66,15 +77,15 @@ public class GameMenuController {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 String username = view.getUsernameField().getText();
-                gamePlayers.add(getUsersForNewGame(username));
+                getUsersForNewGame(username);
                 view.show();
             }
         });
         view.getBackButton().addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
-                    view.setNewGameClicked(false);
-                    gamePlayers.clear();
+                view.setNewGameClicked(false);
+                gamePlayers.clear();
             }
         });
         view.getSelectMapButton().addListener(new ClickListener() {
@@ -84,13 +95,13 @@ public class GameMenuController {
             }
         });
     }
+
     public String makeNewGame() {
         // load items
         ItemLoader.loadItems();
         // prepare map
         GameMap newGameMap = PrepareMap.prepareMap();
         ArrayList<PlayerMap> farms = PrepareMap.makePlayerMaps(newGameMap);
-
 
 
         if (gamePlayers == null) return "New game canceled, You are now in game menu.\n";
@@ -133,57 +144,20 @@ public class GameMenuController {
         return "Game created successfully!\n";
     }
 
-    private Player getUsersForNewGame(String input) {
-        ArrayList<User> gamePlayers = new ArrayList<>();
-        gamePlayers.add(App.getCurrentUser());
-        int counter = 0;
-        System.out.print("Enter the users you want to play with. " +
-                "(next : \"next\") (back to menu : \"back\")\n");
-            if (input.equalsIgnoreCase("back")) {
-                try {
-                    TerminalAnimation.loadingAnimation("cancelling process");
-                    return null;
-                } catch (InterruptedException e) {
-                    return null;
-                }
-            }
-            if (input.equalsIgnoreCase("next")) {
-                try {
-                    TerminalAnimation.loadingAnimation("Wait for users to accept your invitation");
-                } catch (InterruptedException e) {
-                    view.setErrorMessage("Problem making a new game. Please try again later.\n");
-                    return null;
-                }
-            }
-            User user = App.getUser(input);
-
-            if (input.isEmpty()) {
-                view.setErrorMessage("Please enter a valid username.\n");
-            }
-            else if (!App.userExists(input)) {
-                view.setErrorMessage("User doesn't exist. Try again.\n");
-            }
-            else if (gamePlayers.contains(user)) {
-                view.setErrorMessage("User " + input + " is already added!\n");
-            }
-            else if (user.isInAnyGame()) {
-                view.setErrorMessage("User " + input + " is in another game right now! Try another one.\n");
-            }
-//            gamePlayers.add(user);
-//            counter++;
-//            if (counter == 3) {
-//                view.setErrorMessage("User " + input + " added successfully.\n");
-//                try {
-//                    TerminalAnimation.loadingAnimation("Wait for users to accept your invitation");
-//                } catch (InterruptedException e) {
-//                    view.setErrorMessage("Problem making a new game. Please try again later.\n");
-//                    return null;
-//                }
-//            }
-            else {
-                view.setErrorMessage("User " + input + " added successfully. Enter the next username.\n");
-            }
-        return new Player(user, user.getName(), user.getGender(), new Position(0, 0));
+    private void getUsersForNewGame(String input) {
+        User user = App.getUser(input);
+        if (input.isEmpty()) {
+            view.setErrorMessage("Please enter a valid username.\n");
+        } else if (!App.userExists(input)) {
+            view.setErrorMessage("User doesn't exist. Try again.\n");
+        } else if (isItInGamePlayers(user)) {
+            view.setErrorMessage("User " + input + " is already added!\n");
+        } else if (user.isInAnyGame()) {
+            view.setErrorMessage("User " + input + " is in another game right now! Try another one.\n");
+        } else {
+            view.setErrorMessage("User " + input + " added successfully. Enter the next username.\n");
+            gamePlayers.add(new Player(user, user.getName(), user.getGender(), new Position(0, 0)));
+        }
     }
 
     private Map<Player, PlayerMap> getPlayerMaps(Scanner sc, ArrayList<Player> players, GameMap gameMap, ArrayList<PlayerMap> farms) {
@@ -247,11 +221,11 @@ public class GameMenuController {
             System.out.print("\n\n");
         }
     }
+
     public static void changeMenu(Menu menu, String menuName) {
         try {
             TerminalAnimation.loadingAnimation("redirecting to " + menuName + " menu");
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
 
         }
         App.setCurrentMenu(menu);
@@ -261,62 +235,69 @@ public class GameMenuController {
     public ArrayList<Player> getGamePlayers() {
         return gamePlayers;
     }
+
     public void createMapSelectListener(int mapNumber) {
-        Map<Player, PlayerMap> playerMaps = new LinkedHashMap<>();
-        Map<Integer, PlayerMap> farmsWithNumber = new LinkedHashMap<>();
-        GameMap newGameMap = PrepareMap.prepareMap();
-        ArrayList<PlayerMap> farms = PrepareMap.makePlayerMaps(newGameMap);
         int number = 1;
         for (PlayerMap playerMap : farms) {
             farmsWithNumber.put(number++, playerMap);
         }
 
-        printMaps(farmsWithNumber);
+        if (mapNumber < 1 || mapNumber > 4) {
+            view.setErrorMessage("Please enter a number between 1 and 4.\n");
+            return;
+        }
 
-            view.setErrorMessage("Player " +  gamePlayers.get(counter).getName() + ": ");
+        PlayerMap playerMap = farmsWithNumber.get(mapNumber);
+        if (playerMaps.containsValue(playerMap)) {
+            view.setErrorMessage("Selected map is already chosen by another player.\n");
+            return;
+        }
 
-            if (mapNumber < 1 || mapNumber > 4) {
-                view.setErrorMessage("Please enter a number between 1 and 4.\n");
+        playerMaps.put(gamePlayers.get(counter), playerMap);
+        gamePlayers.get(counter).setPlayerMap(playerMap);
+        counter++;
+        if (counter == gamePlayers.size()) {
+            for (Map.Entry<Player, PlayerMap> entry : playerMaps.entrySet()) {
+                Player player = entry.getKey();
+                PlayerMap map = entry.getValue();
+                int cottageY = (int) map.getCottage().getTile().getPosition().getY();
+                int cottageX = (int) map.getCottage().getTile().getPosition().getX();
+                Position cottagePosition = new Position(cottageY, cottageX);
+                player.setCottagePosition(cottagePosition);
+                player.setPosition(cottagePosition);
             }
 
-            PlayerMap playerMap = farmsWithNumber.get(mapNumber);
-            if (playerMaps.containsValue(playerMap)) {
-                view.setErrorMessage("Selected map is already chosen by another player.\n");
-            }
+            Game newGame = new Game(gamePlayers, playerMaps, gamePlayers.get(0), newGameMap);
+            App.setCurrentGame(newGame);
 
-            playerMaps.put(gamePlayers.get(counter), playerMap);
-            gamePlayers.get(counter).setPlayerMap(playerMap);
-            counter++;
-            view.setErrorMessage("counter = " + counter + "gameplayers = " + gamePlayers.size());
-            if (counter == gamePlayers.size()) {
-                for (Map.Entry<Player, PlayerMap> entry : playerMaps.entrySet()) {
-                    Player player = entry.getKey();
-                    PlayerMap map = entry.getValue();
-                    int cottageY = (int) map.getCottage().getTile().getPosition().getY();
-                    int cottageX = (int) map.getCottage().getTile().getPosition().getX();
-                    Position cottagePosition = new Position(cottageY, cottageX);
-                    player.setCottagePosition(cottagePosition);
-                    player.setPosition(cottagePosition);
-                }
+            spawnRandom.spawnRandomElements();
+            UpdateForaging.updateForaging(newGame);
+            // make NPCs
+            MakeNPC.makeNPC();
+            // make shops
+            MakeShops.makeShops();
+            ShopItemLoader.loadShopItems();
+            // make relations
+            MakeRelation.makeRelations(newGame);
+            // make player relations
+            MakePlayerRelations.makePlayerRelations();
+            Main.getMain().setScreen(Menus.InGameMenus.GAME_VIEW.getMenu());
+            App.setCurrentMenu(Menus.InGameMenus.GAME_VIEW);
 
-                Game newGame = new Game(gamePlayers, playerMaps, gamePlayers.get(0), newGameMap);
-                App.setCurrentGame(newGame);
-
-                spawnRandom.spawnRandomElements();
-                UpdateForaging.updateForaging(newGame);
-                // make NPCs
-                MakeNPC.makeNPC();
-                // make shops
-                MakeShops.makeShops();
-                ShopItemLoader.loadShopItems();
-                // make relations
-                MakeRelation.makeRelations(newGame);
-                // make player relations
-                MakePlayerRelations.makePlayerRelations();
-                Main.getMain().setScreen(Menus.InGameMenus.GAME_VIEW.getMenu());
-                App.setCurrentMenu(Menus.InGameMenus.GAME_VIEW);
-
-            }
         }
     }
+
+    private boolean isItInGamePlayers(User user) {
+        for (Player gamePlayer : gamePlayers) {
+            if (gamePlayer.getUser().equals(user)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int getCounter() {
+        return counter;
+    }
+}
 

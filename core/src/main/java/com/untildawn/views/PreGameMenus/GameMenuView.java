@@ -10,6 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.ScreenUtils;
+import com.badlogic.gdx.utils.Timer;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.untildawn.Enums.GameMenus.Menus;
 import com.untildawn.Enums.PreGameMenuCommands.GameMenuCommands;
@@ -33,6 +34,7 @@ public class GameMenuView implements Screen {
     private GameMenuController controller;
     private TextButton newGameButton;
     private TextButton exitButton;
+    private TextButton loadGameButton;
     private boolean isNewGameClicked = false;
     private TextField usernameField;
     private TextButton addPlayerButton;
@@ -43,6 +45,7 @@ public class GameMenuView implements Screen {
     private Texture map2;
     private Texture map3;
     private Texture map4;
+
     public GameMenuView(GameMenuController controller) {
         this.controller = controller;
         controller.setView(this);
@@ -50,6 +53,7 @@ public class GameMenuView implements Screen {
         font = new BitmapFont();
         newGameButton = new TextButton("New Game", PreGameAssetManager.getSkin());
         exitButton = new TextButton("Exit", PreGameAssetManager.getSkin());
+        loadGameButton = new TextButton("Load Game", PreGameAssetManager.getSkin());
         gameMenuTitle = new Label("Game Menu", PreGameAssetManager.getSkin());
         backgroundTexture = PreGameAssetManager.getGameMenuBG();
         usernameField = new TextField("", PreGameAssetManager.getSkin());
@@ -74,101 +78,97 @@ public class GameMenuView implements Screen {
         table.clear();
         table.reset();
         table.center();
-        if(isNewGameClicked){
+        if (isNewGameClicked) {
             usernameField.setMessageText("enter the player username");
             table.add(usernameField).width(600).padBottom(32f).height(80);
             table.row();
             table.add(addPlayerButton).width(600).padBottom(32f).height(80);
             table.row();
-            if(controller.getGamePlayers().size() >= 4) {
+            if (controller.getGamePlayers().size() >= 4) {
                 table.add(selectMapButton).width(600).padBottom(32f).height(80);
                 table.row();
             }
             table.add(backButton).width(600).padBottom(32f).height(80);
 
-        } else if(isInMapSelection){
-        table.clearChildren(); // Clean slate
+        } else if (isInMapSelection) {
+            table.clearChildren();
+            stage.clear();
 
-        // Use new Stage-based layout for manual positioning
-        stage.clear();
+            Label label = new Label("Map Selection", PreGameAssetManager.getSkin());
+            label.setFontScale(2f);
+            label.setColor(Color.GREEN);
+            table.add(label);
+            // Create Image actors for each map
+            Image imageMap1 = new Image(map1);
+            Image imageMap2 = new Image(map2);
+            Image imageMap3 = new Image(map3);
+            Image imageMap4 = new Image(map4);
 
-        Label label = new Label("Select Map", PreGameAssetManager.getSkin());
-        label.setFontScale(2f);
-        label.setPosition(Gdx.graphics.getWidth() / 2f - 150, Gdx.graphics.getHeight() - 200);
-        stage.addActor(label);
+            TextButton selectMap1 = new TextButton("Select Map 1", PreGameAssetManager.getSkin());
+            TextButton selectMap2 = new TextButton("Select Map 2", PreGameAssetManager.getSkin());
+            TextButton selectMap3 = new TextButton("Select Map 3", PreGameAssetManager.getSkin());
+            TextButton selectMap4 = new TextButton("Select Map 4", PreGameAssetManager.getSkin());
 
-        // Create Image actors for each map
-        Image imageMap1 = new Image(map1);
-        Image imageMap2 = new Image(map2);
-        Image imageMap3 = new Image(map3);
-        Image imageMap4 = new Image(map4);
+            int imageWidth = 300;
+            int imageHeight = 200;
+            int padding = 100;
 
-        // Create buttons
-        TextButton selectMap1 = new TextButton("Select Map 1", PreGameAssetManager.getSkin());
-        TextButton selectMap2 = new TextButton("Select Map 2", PreGameAssetManager.getSkin());
-        TextButton selectMap3 = new TextButton("Select Map 3", PreGameAssetManager.getSkin());
-        TextButton selectMap4 = new TextButton("Select Map 4", PreGameAssetManager.getSkin());
+            imageMap1.setBounds(padding, Gdx.graphics.getHeight() - imageHeight - padding, imageWidth, imageHeight);
+            selectMap1.setSize(imageWidth, 50);
+            selectMap1.setPosition(padding, imageMap1.getY() - 60);
 
-        int imageWidth = 300;
-        int imageHeight = 200;
-        int padding = 100;
+            imageMap2.setBounds(Gdx.graphics.getWidth() - imageWidth - padding,
+                Gdx.graphics.getHeight() - imageHeight - padding, imageWidth, imageHeight);
+            selectMap2.setSize(imageWidth, 50);
+            selectMap2.setPosition(imageMap2.getX(), imageMap2.getY() - 60);
 
-        imageMap1.setBounds(padding, Gdx.graphics.getHeight() - imageHeight - padding, imageWidth, imageHeight);
-        selectMap1.setSize(imageWidth, 50);
-        selectMap1.setPosition(padding, imageMap1.getY() - 60);
+            imageMap3.setBounds(padding, padding + 100, imageWidth, imageHeight);
+            selectMap3.setSize(imageWidth, 50);
+            selectMap3.setPosition(padding, padding + 40);
 
-        imageMap2.setBounds(Gdx.graphics.getWidth() - imageWidth - padding,
-            Gdx.graphics.getHeight() - imageHeight - padding, imageWidth, imageHeight);
-        selectMap2.setSize(imageWidth, 50);
-        selectMap2.setPosition(imageMap2.getX(), imageMap2.getY() - 60);
+            imageMap4.setBounds(Gdx.graphics.getWidth() - imageWidth - padding, padding + 100, imageWidth, imageHeight);
+            selectMap4.setSize(imageWidth, 50);
+            selectMap4.setPosition(imageMap4.getX(), padding + 40);
 
-        imageMap3.setBounds(padding, padding + 100, imageWidth, imageHeight);
-        selectMap3.setSize(imageWidth, 50);
-        selectMap3.setPosition(padding, padding + 40);
+            stage.addActor(imageMap1);
+            stage.addActor(selectMap1);
 
-        imageMap4.setBounds(Gdx.graphics.getWidth() - imageWidth - padding, padding + 100, imageWidth, imageHeight);
-        selectMap4.setSize(imageWidth, 50);
-        selectMap4.setPosition(imageMap4.getX(), padding + 40);
+            stage.addActor(imageMap2);
+            stage.addActor(selectMap2);
 
-        stage.addActor(imageMap1);
-        stage.addActor(selectMap1);
+            stage.addActor(imageMap3);
+            stage.addActor(selectMap3);
 
-        stage.addActor(imageMap2);
-        stage.addActor(selectMap2);
-
-        stage.addActor(imageMap3);
-        stage.addActor(selectMap3);
-
-        stage.addActor(imageMap4);
-        stage.addActor(selectMap4);
-        selectMap1.addListener(new ClickListener() {
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                controller.createMapSelectListener(1);
-            }
-        });
-        selectMap2.addListener(new ClickListener() {
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                controller.createMapSelectListener(2);
-            }
-        });
-        selectMap3.addListener(new ClickListener() {
+            stage.addActor(imageMap4);
+            stage.addActor(selectMap4);
+            selectMap1.addListener(new ClickListener() {
+                @Override
+                public void clicked(InputEvent event, float x, float y) {
+                    controller.createMapSelectListener(1);
+                }
+            });
+            selectMap2.addListener(new ClickListener() {
+                @Override
+                public void clicked(InputEvent event, float x, float y) {
+                    controller.createMapSelectListener(2);
+                }
+            });
+            selectMap3.addListener(new ClickListener() {
                 @Override
                 public void clicked(InputEvent event, float x, float y) {
                     controller.createMapSelectListener(3);
                 }
             });
-        selectMap4.addListener(new ClickListener() {
+            selectMap4.addListener(new ClickListener() {
                 @Override
                 public void clicked(InputEvent event, float x, float y) {
                     controller.createMapSelectListener(4);
                 }
             });
-    }
-
-        else {
+        } else {
             table.add(newGameButton).width(600).padBottom(32f).height(80);
+            table.row();
+            table.add(loadGameButton).width(600).padBottom(32f).height(80);
             table.row();
             table.add(exitButton).width(600).padBottom(32f).height(80);
             table.row();
@@ -185,7 +185,8 @@ public class GameMenuView implements Screen {
 
         Main.getBatch().begin();
         Main.getBatch().draw(backgroundTexture, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
-
+        if (isInMapSelection)
+            setErrorMessage("Player " + controller.getGamePlayers().get(controller.getCounter()).getName() + ": ");
         font.getData().setScale(2f);
         if (errorMessage != null && !errorMessage.isEmpty()) {
             font.draw(Main.getBatch(), errorMessage, Gdx.graphics.getWidth() / 2 - errorMessage.length() * 5, Gdx.graphics.getHeight() - 50);
@@ -221,17 +222,6 @@ public class GameMenuView implements Screen {
     }
 
 
-    private static void executeCommand(GameMenuCommands command, Matcher matcher, Scanner sc) {
-        switch (command) {
-            case NEW_GAME:
-//                System.out.printf(GameMenuController.makeNewGame(sc));
-                break;
-            case Exit_Menu:
-                GameMenuController.changeMenu(Menus.PreGameMenus.MAIN_MENU, "main menu");
-        }
-    }
-
-
     public TextButton getNewGameButton() {
         return newGameButton;
     }
@@ -256,6 +246,13 @@ public class GameMenuView implements Screen {
 
     public void setErrorMessage(String errorMessage) {
         this.errorMessage = errorMessage;
+
+        Timer.schedule(new Timer.Task() {
+            @Override
+            public void run() {
+                GameMenuView.this.errorMessage = null;
+            }
+        }, 3);
     }
 
     public TextButton getBackButton() {

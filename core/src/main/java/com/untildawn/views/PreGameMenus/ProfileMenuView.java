@@ -10,6 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.ScreenUtils;
+import com.badlogic.gdx.utils.Timer;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.untildawn.Enums.GameMenus.Menus;
 import com.untildawn.Main;
@@ -111,9 +112,7 @@ public class ProfileMenuView implements AppMenu, Screen {
             table.row();
             addSubmitAndBackButton();
 
-        } else if (isInUserInfo) {
-
-        } else if (isInAvatarChange) {
+        }else if (isInAvatarChange) {
             Texture[] avatars = AvatarAssetManager.getSkinTextures();
             Skin skin = PreGameAssetManager.getSkin();
 
@@ -208,7 +207,8 @@ public class ProfileMenuView implements AppMenu, Screen {
             backButton.setChecked(false);
         }
         if(selectedAvatar != null && isInAvatarChange) {
-            Main.getBatch().draw(selectedAvatar, 0, Gdx.graphics.getHeight() / 2, 200, 200);
+            Main.getBatch().draw(selectedAvatar, Gdx.graphics.getWidth() / 2 - 75, Gdx
+                .graphics.getHeight() - 200, 200, 200);
         }
         font.getData().setScale(2f);
         if (errorMessage != null && !errorMessage.isEmpty()) {
@@ -242,7 +242,7 @@ public class ProfileMenuView implements AppMenu, Screen {
 
     @Override
     public void dispose() {
-
+        stage.dispose();
     }
 
     public TextButton getUserInfo() {
@@ -349,6 +349,7 @@ public class ProfileMenuView implements AppMenu, Screen {
         isInUserInfo = false;
         isInAvatarChange = false;
         selectedAvatar = null;
+        setErrorMessage(null);
     }
 
     public TextField getUsernameField() {
@@ -373,7 +374,15 @@ public class ProfileMenuView implements AppMenu, Screen {
 
     public void setErrorMessage(String errorMessage) {
         this.errorMessage = errorMessage;
+
+        Timer.schedule(new Timer.Task() {
+            @Override
+            public void run() {
+                ProfileMenuView.this.errorMessage = null;
+            }
+        }, 3);
     }
+
 
     private void addSubmitAndBackButton() {
         table.add(submitButton).width(600).padBottom(32f).height(80);
