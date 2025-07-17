@@ -33,7 +33,8 @@ public enum ItemAttributes {
     dailyLimit,
     fishingSkill,
     machine,
-    building
+    building,
+    path
 ;
 
 }

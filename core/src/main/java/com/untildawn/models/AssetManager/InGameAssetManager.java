@@ -1,17 +1,20 @@
-package com.untildawn.models.GameAssetManager;
+package com.untildawn.models.AssetManager;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 
 import java.io.File;
 
 public class InGameAssetManager implements GameAssetManager {
-
+    private static Skin skin;
     private static InGameAssetManager inGameAssetManager;
     private Animation<Texture> characterAnimation = buildCharacterAnimation("character1", "walk");
     private Texture characterTexture = characterAnimation.getKeyFrames()[0];
 
-    private InGameAssetManager() {}
+    private InGameAssetManager() {
+    }
 
     public static InGameAssetManager getInGameAssetManager() {
         if (inGameAssetManager == null) {
@@ -19,6 +22,15 @@ public class InGameAssetManager implements GameAssetManager {
         }
         return inGameAssetManager;
     }
+
+    public static Skin getSkin() {
+        if (skin == null) {
+            skin = new Skin(Gdx.files.internal("skin/flat-earth-ui.json"));
+        }
+        return skin;
+    }
+
+
 
     private Animation<Texture> buildCharacterAnimation(String characterName, String type) {
 

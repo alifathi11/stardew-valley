@@ -5,7 +5,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 
 public class AvatarAssetManager {
-    private static Skin skin;
     private static final Texture Abigail = new Texture(Gdx.files.internal("Images/Villagers/Abigail.png"));
     private static final Texture Alex = new Texture(Gdx.files.internal("Images/Villagers/Alex.png"));
     private static final Texture Birdie = new Texture(Gdx.files.internal("Images/Villagers/Birdie.png"));

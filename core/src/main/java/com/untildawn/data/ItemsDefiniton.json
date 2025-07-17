@@ -16,7 +16,8 @@
       "damage": 1,
       "energyCost": 5,
       "durability": -1,
-      "upgradeCost": 0
+      "upgradeCost": 0,
+      "path": "Images/Hoe/Hoe.png"
     }
   },
   {
@@ -76,7 +77,8 @@
       "damage": 1,
       "energyCost": 5,
       "durability": -1,
-      "upgradeCost": 0
+      "upgradeCost": 0,
+      "path": "Images/Tools/Pickaxe/Pickaxe.png"
     }
   },
   {
@@ -136,7 +138,8 @@
       "damage": 1,
       "energyCost": 5,
       "durability": -1,
-      "upgradeCost": 0
+      "upgradeCost": 0,
+      "path": "Images/Tools/Axe/Axe.png"
     }
   },
   {
@@ -196,7 +199,8 @@
       "durability": 0,
       "capacity": 40,
       "energyCost": 5,
-      "upgradeCost": 0
+      "upgradeCost": 0,
+      "path": "Images/Watering_Can/Watering_Can.png"
     }
   },
   {
@@ -293,7 +297,8 @@
     "type": "tool",
     "baseAttributes": {
       "quality": "regular",
-      "energyCost": 2
+      "energyCost": 2,
+      "path": "Images/Tools/Scythe.png"
     }
   },
   {
@@ -304,7 +309,8 @@
       "quality": "regular",
       "price": 1000,
       "energyCost": 4,
-      "isFull": false
+      "isFull": false,
+      "path": "Images/Tools/Milk_Pail.png"
     }
   },
   {
@@ -314,7 +320,8 @@
     "baseAttributes": {
       "quality": "regular",
       "energyCost": 4,
-      "price": 1000
+      "price": 1000,
+      "path": "Images/Tools/Shears.png"
     }
   },
   {
@@ -324,7 +331,8 @@
     "baseAttributes": {
       "quality": "regular",
       "capacity": 12,
-      "upgradeCost": 10000
+      "upgradeCost": 10000,
+      "path": "Images/Tools/36_Backpack.png"
 
     }
   },
@@ -5076,7 +5084,8 @@
       "description" : "It's a lot easier to use than other rods, but can only catch basic fish.",
       "shopPrice" : 25,
       "fishingSkill": 0,
-      "dailyLimit" : 1
+      "dailyLimit" : 1,
+      "path": "Images/Fishing_Pole/Training_Rod.png"
     }
   },
   {

@@ -299,5 +299,21 @@ public class GameMenuController {
     public int getCounter() {
         return counter;
     }
+
+    public ArrayList<PlayerMap> getFarms() {
+        return farms;
+    }
+
+    public GameMap getNewGameMap() {
+        return newGameMap;
+    }
+
+    public void setNewGameMap(GameMap newGameMap) {
+        this.newGameMap = newGameMap;
+    }
+
+    public void setFarms(ArrayList<PlayerMap> farms) {
+        this.farms = farms;
+    }
 }
 

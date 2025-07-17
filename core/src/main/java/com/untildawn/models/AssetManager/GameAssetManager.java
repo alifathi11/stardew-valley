@@ -1,4 +1,4 @@
-package com.untildawn.models.GameAssetManager;
+package com.untildawn.models.AssetManager;
 
 public interface GameAssetManager {
 }

@@ -15,11 +15,14 @@ public class Inventory {
     private ItemLevels.BackPackLevels level;
     private Map<ItemIDs, ArrayList<ItemInstance>> items;
     private ArrayList<ItemInstance> artisan;
+    private ItemInstance[] itemsInTaskBar;
+
 
     public Inventory() {
         this.level = ItemLevels.BackPackLevels.BASIC;
         this.items = new LinkedHashMap<>();
         this.artisan = new ArrayList<>();
+        this.itemsInTaskBar = new ItemInstance[12];
     }
 
     public ArrayList<ItemInstance> getArtisan() {
@@ -177,13 +180,74 @@ public class Inventory {
     }
 
     public void setInventoryTools () {
-        addItem(new ItemInstance(Objects.requireNonNull(App.getItemDefinition("base_hoe"))));
-        addItem(new ItemInstance(Objects.requireNonNull(App.getItemDefinition("base_pickaxe"))));
-        addItem(new ItemInstance(Objects.requireNonNull(App.getItemDefinition("base_axe"))));
-        addItem(new ItemInstance(Objects.requireNonNull(App.getItemDefinition("base_watering_can"))));
-        addItem(new ItemInstance(Objects.requireNonNull(App.getItemDefinition("training_fishing_pole"))));
-        addItem(new ItemInstance(Objects.requireNonNull(App.getItemDefinition("scythe"))));
-        addItem(new ItemInstance(Objects.requireNonNull(App.getItemDefinition("milk_pale"))));
-        addItem(new ItemInstance(Objects.requireNonNull(App.getItemDefinition("shear"))));
+        ItemInstance baseHoe = new ItemInstance(Objects.requireNonNull(App.getItemDefinition("base_hoe")));
+        addItem(baseHoe);
+        addToTaskBar(baseHoe);
+
+        ItemInstance basePickaxe = new ItemInstance(Objects.requireNonNull(App.getItemDefinition("base_pickaxe")));
+        addItem(basePickaxe);
+        addToTaskBar(basePickaxe);
+
+        ItemInstance baseAxe = new ItemInstance(Objects.requireNonNull(App.getItemDefinition("base_axe")));
+        addItem(baseAxe);
+        addToTaskBar(baseAxe);
+
+        ItemInstance baseWateringCan = new ItemInstance(Objects.requireNonNull(App.getItemDefinition("base_watering_can")));
+        addItem(baseWateringCan);
+        addToTaskBar(baseWateringCan);
+
+        ItemInstance trainingFishingPole = new ItemInstance(Objects.requireNonNull(App.getItemDefinition("training_rod")));
+        addItem(trainingFishingPole);
+        addToTaskBar(trainingFishingPole);
+
+        ItemInstance scythe = new ItemInstance(Objects.requireNonNull(App.getItemDefinition("scythe")));
+        addItem(scythe);
+        addToTaskBar(scythe);
+
+        ItemInstance milkPale = new ItemInstance(Objects.requireNonNull(App.getItemDefinition("milk_pale")));
+        addItem(milkPale);
+        addToTaskBar(milkPale);
+
+        ItemInstance shear = new ItemInstance(Objects.requireNonNull(App.getItemDefinition("shear")));
+        addItem(shear);
+        addToTaskBar(shear);
     }
+
+
+    public void addToTaskBar(ItemInstance item) {
+        for (int i = 0; i < itemsInTaskBar.length; i++) {
+            if (itemsInTaskBar[i] == null) {
+                itemsInTaskBar[i] = item;
+                return;
+            }
+        }
+    }
+
+    public ItemInstance[] getItemsInTaskBar() {
+        return itemsInTaskBar;
+    }
+    public void swapItemIDEntries(ItemIDs id1, ItemIDs id2) {
+        if (!items.containsKey(id1) || !items.containsKey(id2)) return;
+
+        ArrayList<ItemInstance> value1 = items.get(id1);
+        ArrayList<ItemInstance> value2 = items.get(id2);
+
+        // Rebuild in new order
+        LinkedHashMap<ItemIDs, ArrayList<ItemInstance>> newMap = new LinkedHashMap<>();
+
+        for (ItemIDs key : items.keySet()) {
+            if (key == id1) {
+                newMap.put(id2, value1); // insert id2 with id1's value
+            } else if (key == id2) {
+                newMap.put(id1, value2); // insert id1 with id2's value
+            } else {
+                newMap.put(key, items.get(key));
+            }
+        }
+
+        items.clear();
+        items.putAll(newMap);
+    }
+
+
 }

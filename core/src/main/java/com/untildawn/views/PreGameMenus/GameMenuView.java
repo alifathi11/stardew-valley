@@ -35,7 +35,7 @@ public class GameMenuView implements Screen {
     private TextButton newGameButton;
     private TextButton exitButton;
     private TextButton loadGameButton;
-    private boolean isNewGameClicked = false;
+    private boolean isNewGameClicked = true;
     private TextField usernameField;
     private TextButton addPlayerButton;
     private TextButton backButton;

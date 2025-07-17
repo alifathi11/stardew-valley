@@ -34,7 +34,7 @@ public class InventoryMenu implements Screen, AppMenu {
 
     private void executeCommand(InventoryCommands command, Matcher matcher, String input) {
         Game game = App.getCurrentGame();
-        this.controller = new InventoryController(this);
+//        this.controller = new InventoryController(this);
         switch (command) {
             case SWITCH_MENU:
                 controller.changeMenu();
@@ -43,7 +43,6 @@ public class InventoryMenu implements Screen, AppMenu {
                 controller.showInventory(game);
                 break;
             case INVENTORY_TRASH:
-                controller.inventoryTrash(game, matcher, input);
                 break;
         }
     }

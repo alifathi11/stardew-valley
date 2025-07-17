@@ -6,7 +6,7 @@ import com.untildawn.Enums.GameConsts.Gender;
 import com.untildawn.Enums.GameConsts.WeatherStates;
 import com.untildawn.models.Animals.Animal;
 import com.untildawn.models.App;
-import com.untildawn.models.GameAssetManager.InGameAssetManager;
+import com.untildawn.models.AssetManager.InGameAssetManager;
 import com.untildawn.models.Game;
 import com.untildawn.models.Items.Inventory;
 import com.untildawn.models.Items.ItemInstance;
@@ -17,6 +17,7 @@ import com.untildawn.models.MapElements.Position;
 import com.untildawn.models.MapElements.Tile;
 import com.untildawn.models.NPCs.Quest;
 import com.untildawn.models.User;
+
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -60,7 +61,6 @@ public class Player {
     private final float width = 100;
     private final float height = 150;
     private final float speed = 1;
-
 
 
     public Player(User user, String name, Gender gender, Position position) {
@@ -196,6 +196,7 @@ public class Player {
             this.isFainted = true;
         }
     }
+
     public void increaseEnergy(int deltaEnergy) {
         this.energy += deltaEnergy;
     }
@@ -370,10 +371,12 @@ public class Player {
     public void setFishingEnable(boolean fishingEnable) {
         this.fishingEnable = fishingEnable;
     }
+
     public void reduceEnergyWhenCrafting(int amount) {
         this.energy -= amount;
     }
-    public Refrigerator getRefrigerator(){
+
+    public Refrigerator getRefrigerator() {
         return this.refrigerator;
     }
 

@@ -1,23 +1,38 @@
 package com.untildawn.views.InGameMenus;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.InputProcessor;
-import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.maps.MapProperties;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.scenes.scene2d.ui.Stack;
+import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
+import com.badlogic.gdx.utils.Align;
+import com.badlogic.gdx.utils.Scaling;
 import com.badlogic.gdx.utils.viewport.FillViewport;
+import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.untildawn.Main;
 import com.untildawn.controllers.InGameControllers.GameControllers.GameController;
 import com.untildawn.models.App;
+import com.untildawn.models.AssetManager.InventoryAssetManager;
+import com.untildawn.models.AssetManager.ToolAssetManager;
 import com.untildawn.models.Game;
+import com.untildawn.models.Items.Inventory;
+import com.untildawn.models.Items.ItemInstance;
 import com.untildawn.models.Players.Player;
+
+import java.util.Objects;
 
 public class GameView implements InputProcessor, Screen {
 
@@ -25,12 +40,14 @@ public class GameView implements InputProcessor, Screen {
     private Viewport viewport;
     private TiledMap map;
     private OrthogonalTiledMapRenderer mapRenderer;
-
     private ShapeRenderer shapeRenderer;
-
     private Game game;
     private Player player;
     private GameController controller;
+    private Stage uiStage;
+    private Table inventoryTable;
+    private boolean isInventoryOpen = false;
+    private Table fullInventoryTable = null;
 
     public GameView(GameController controller) {
         camera = new OrthographicCamera();
@@ -41,12 +58,19 @@ public class GameView implements InputProcessor, Screen {
 
         shapeRenderer = new ShapeRenderer();
 
-        Gdx.input.setInputProcessor(this);
         this.controller = controller;
         controller.setView(this);
 
         game = App.getCurrentGame();
         player = game.getCurrentPlayer();
+        uiStage = new Stage(new ScreenViewport());
+
+        InputMultiplexer multiplexer = new InputMultiplexer();
+        multiplexer.addProcessor(uiStage);
+        multiplexer.addProcessor(this);
+        Gdx.input.setInputProcessor(multiplexer);
+        inventoryTable = new Table();
+        fullInventoryTable = new Table();
     }
 
     private void updateCamera() {
@@ -87,7 +111,7 @@ public class GameView implements InputProcessor, Screen {
         controller.update(delta);
         updateCamera();
 
-        Gdx.gl.glClearColor(0, 0, 0 ,1);
+        Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         camera.update();
@@ -98,11 +122,15 @@ public class GameView implements InputProcessor, Screen {
         player.getSprite().setPosition(player.getPosition().getX(), player.getPosition().getY());
         player.getSprite().draw(Main.getBatch());
         player.getCollisionRect().move(player.getPosition().getX(), player.getPosition().getY());
+        uiStage.act(delta);
+        uiStage.draw();
+
         Main.getBatch().end();
     }
 
     @Override
     public boolean keyDown(int i) {
+//        Gdx.input.isKeyPressed(Input.Keys)
         return false;
     }
 
@@ -177,4 +205,24 @@ public class GameView implements InputProcessor, Screen {
         mapRenderer.dispose();
         shapeRenderer.dispose();
     }
+
+    public Stage getUiStage() {
+        return uiStage;
+    }
+
+    public Table getInventoryTable() {
+        return inventoryTable;
+    }
+
+    public boolean isInventoryOpen() {
+        return isInventoryOpen;
+    }
+
+    public Table getFullInventoryTable() {
+        return fullInventoryTable;
+    }
+    public void setIsInventoryOpen(boolean isInventoryOpen) {
+        this.isInventoryOpen = isInventoryOpen;
+    }
+
 }
