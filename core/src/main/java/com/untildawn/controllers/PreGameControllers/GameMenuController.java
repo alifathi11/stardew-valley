@@ -55,7 +55,7 @@ public class GameMenuController {
             ItemLoader.loadItems();
             hasLoaded = true;
             newGameMap = PrepareMap.prepareMap();
-            farms = PrepareMap.makePlayerMaps(newGameMap);
+            farms = PrepareMap.loadPlayerMaps(newGameMap);
         }
         if (gamePlayers.isEmpty()) {
             User user = App.getCurrentUser();
@@ -101,7 +101,7 @@ public class GameMenuController {
         ItemLoader.loadItems();
         // prepare map
         GameMap newGameMap = PrepareMap.prepareMap();
-        ArrayList<PlayerMap> farms = PrepareMap.makePlayerMaps(newGameMap);
+//        ArrayList<PlayerMap> farms = PrepareMap.makePlayerMaps(newGameMap);
 
 
         if (gamePlayers == null) return "New game canceled, You are now in game menu.\n";
@@ -118,11 +118,11 @@ public class GameMenuController {
         for (Map.Entry<Player, PlayerMap> entry : playerMaps.entrySet()) {
             Player player = entry.getKey();
             PlayerMap map = entry.getValue();
-            int cottageY = (int) map.getCottage().getTile().getPosition().getY();
-            int cottageX = (int) map.getCottage().getTile().getPosition().getX();
-            Position cottagePosition = new Position(cottageY, cottageX);
-            player.setCottagePosition(cottagePosition);
-            player.setPosition(cottagePosition);
+//            int cottageY = (int) map.getCottage().getTile().getPosition().getY();
+//            int cottageX = (int) map.getCottage().getTile().getPosition().getX();
+//            Position cottagePosition = new Position(cottageY, cottageX);
+//            player.setCottagePosition(cottagePosition);
+//            player.setPosition(cottagePosition);
         }
 
         Game newGame = new Game(gamePlayers, playerMaps, gamePlayers.get(0), newGameMap);
@@ -260,14 +260,16 @@ public class GameMenuController {
             for (Map.Entry<Player, PlayerMap> entry : playerMaps.entrySet()) {
                 Player player = entry.getKey();
                 PlayerMap map = entry.getValue();
-                int cottageY = (int) map.getCottage().getTile().getPosition().getY();
-                int cottageX = (int) map.getCottage().getTile().getPosition().getX();
+                int cottageY = (int) map.getCottage().getTile()[2].getPosition().getY();
+                int cottageX = (int) map.getCottage().getTile()[2].getPosition().getX();
                 Position cottagePosition = new Position(cottageY, cottageX);
                 player.setCottagePosition(cottagePosition);
                 player.setPosition(cottagePosition);
             }
 
             Game newGame = new Game(gamePlayers, playerMaps, gamePlayers.get(0), newGameMap);
+//            PrepareMap.loadMapTilesFromTmx(newGame.getMap(), newGame);
+            PrepareMap.loadSecondLayer(newGame.getMap(), newGameMap);
             App.setCurrentGame(newGame);
 
             spawnRandom.spawnRandomElements();

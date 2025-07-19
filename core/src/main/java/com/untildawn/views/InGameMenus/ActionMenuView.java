@@ -109,19 +109,14 @@ public class ActionMenuView implements Screen, AppMenu {
                 actionController.energyUnlimited(game);
                 break;
             case TOOLS_EQUIP:
-                toolController.equipTool(matcher);
                 break;
             case TOOLS_SHOW_CURRENT:
-                toolController.showCurrentTool();
                 break;
             case TOOLS_SHOW_AVAILABLE:
-                toolController.showInventoryTools();
                 break;
             case TOOLS_UPGRADE:
-                toolController.upgradeTool(matcher);
                 break;
             case TOOLS_USE:
-                toolController.useTool(matcher);
                 break;
             case CRAFT_INFO:
                 actionController.craftInfo(matcher, game);

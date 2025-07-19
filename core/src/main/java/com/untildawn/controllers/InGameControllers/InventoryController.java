@@ -32,8 +32,8 @@ import java.util.Map;
 import java.util.Objects;
 
 public class InventoryController {
-    InventoryMenu view;
-    GameView gameView;
+    private InventoryMenu view;
+    private GameView gameView;
     private final int inventorySlots = 9;
     private int selectedSlotIndex = -1;
     private final ArrayList<Stack> slotStacks = new ArrayList<>(9);
@@ -74,7 +74,6 @@ public class InventoryController {
             Image slotImage = new Image(slotDrawable);
             slotStack.add(slotImage);
 
-            // Add slot number label
             Label.LabelStyle labelStyle = new Label.LabelStyle(new BitmapFont(), null);
             Label quantityLabel = new Label((i + 1) + "", labelStyle);
             quantityLabel.setFontScale(0.9f);
@@ -100,23 +99,6 @@ public class InventoryController {
 
     public void changeMenu() {
         App.setCurrentMenu(Menus.InGameMenus.MENU_SWITCHER);
-    }
-
-    public void showInventory(Game game) {
-        if (!game.isPlayerActive(game.getCurrentPlayer())) {
-            view.showMessage("You are ran out of energy for this turn!");
-            return;
-        }
-        Inventory inventory = game.getCurrentPlayer().getInventory();
-        StringBuilder inventoryStr = new StringBuilder();
-        for (Map.Entry<ItemIDs, ArrayList<ItemInstance>> entry : inventory.getItems().entrySet()) {
-            for (ItemInstance item : entry.getValue()) {
-                inventoryStr.append("name: \"").append(item.getDefinition().getDisplayName())
-                    .append("\", number in inventory: ").append(entry.getValue().size()).append("\n");
-                break;
-            }
-        }
-        view.showMessage(inventoryStr.toString());
     }
 
     public void checkTrashCanLevel(ItemDefinition item, int amount) {
@@ -166,6 +148,7 @@ public class InventoryController {
 
     private void updateTaskBar() {
         ItemInstance[] taskbarItems = inventory.getItemsInTaskBar();
+        Player player = App.getCurrentGame().getCurrentPlayer();
 
         for (int i = 0; i < 9; i++) {
             Stack stack = slotStacks.get(i);
@@ -184,6 +167,7 @@ public class InventoryController {
             }
             Image slotBackground = (Image) stack.getChildren().get(0);
             if (i + 1 == selectedSlotIndex) {
+                player.setCurrentItem(item);
                 slotBackground.setColor(1, 0, 0, 1);
             } else {
                 slotBackground.setColor(1, 1, 1, 1);
@@ -202,7 +186,7 @@ public class InventoryController {
         if (Gdx.input.isKeyJustPressed(Input.Keys.NUM_8)) selectedSlotIndex = 8;
         if (Gdx.input.isKeyJustPressed(Input.Keys.NUM_9)) selectedSlotIndex = 9;
         if (Gdx.input.isKeyJustPressed(Input.Keys.ESCAPE)) toggleInventoryWindow();
-        if (Gdx.input.isKeyJustPressed(Input.Keys.F)) toggleJournal();
+        if (Gdx.input.isKeyJustPressed(Input.Keys.F) && gameView.isInventoryOpen()) toggleJournal();
 
     }
 
@@ -318,7 +302,6 @@ public class InventoryController {
         fullInventoryTable.add(settingIcon).size(64, 64).pad(4f);
     }
 
-
     private void setBackground(Table fullInventoryTable) {
         // Remove old actors if needed
         if (background != null) background.remove();
@@ -345,9 +328,7 @@ public class InventoryController {
         gameView.getUiStage().addActor(fullInventoryTable);
     }
 
-
     private void setLabelForNumbers(int count, Stack slotStack) {
-
         Label.LabelStyle labelStyle = new Label.LabelStyle(new BitmapFont(), null);
         Label quantityLabel = new Label("x" + count, labelStyle);
         quantityLabel.setFontScale(0.8f);
@@ -506,8 +487,9 @@ public class InventoryController {
     }
 
     private void openJournal() {
-
+        //TODO
     }
+
     private void setting() {
         Skin skin = InGameAssetManager.getSkin();
         Dialog dialog = new Dialog("Settings", skin);
@@ -537,7 +519,6 @@ public class InventoryController {
 
         dialog.invalidateHierarchy();
     }
-
 
 }
 

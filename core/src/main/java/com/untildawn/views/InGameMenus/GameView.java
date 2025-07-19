@@ -8,9 +8,11 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.maps.MapProperties;
 import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
@@ -22,14 +24,19 @@ import com.badlogic.gdx.utils.Scaling;
 import com.badlogic.gdx.utils.viewport.FillViewport;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
+import com.untildawn.Enums.ItemConsts.ItemType;
 import com.untildawn.Main;
 import com.untildawn.controllers.InGameControllers.GameControllers.GameController;
+import com.untildawn.controllers.InGameControllers.ToolController;
 import com.untildawn.models.App;
+import com.untildawn.models.AssetManager.InGameAssetManager;
 import com.untildawn.models.AssetManager.InventoryAssetManager;
 import com.untildawn.models.AssetManager.ToolAssetManager;
 import com.untildawn.models.Game;
 import com.untildawn.models.Items.Inventory;
 import com.untildawn.models.Items.ItemInstance;
+import com.untildawn.models.MapElements.Tile;
+import com.untildawn.models.MessageCenter.InGameMessage;
 import com.untildawn.models.Players.Player;
 
 import java.util.Objects;
@@ -47,14 +54,12 @@ public class GameView implements InputProcessor, Screen {
     private Stage uiStage;
     private Table inventoryTable;
     private boolean isInventoryOpen = false;
-    private Table fullInventoryTable = null;
-
+    private Table fullInventoryTable;
+    private Table toolTable;
+    private InGameMessage message;
     public GameView(GameController controller) {
         camera = new OrthographicCamera();
         viewport = new FillViewport(600, 400, camera);
-
-        map = new TmxMapLoader().load("map.tmx");
-        mapRenderer = new OrthogonalTiledMapRenderer(map);
 
         shapeRenderer = new ShapeRenderer();
 
@@ -65,12 +70,18 @@ public class GameView implements InputProcessor, Screen {
         player = game.getCurrentPlayer();
         uiStage = new Stage(new ScreenViewport());
 
+        map = game.getMap();
+        mapRenderer = new OrthogonalTiledMapRenderer(map);
+
         InputMultiplexer multiplexer = new InputMultiplexer();
         multiplexer.addProcessor(uiStage);
         multiplexer.addProcessor(this);
         Gdx.input.setInputProcessor(multiplexer);
         inventoryTable = new Table();
         fullInventoryTable = new Table();
+        toolTable = new Table();
+        message = new InGameMessage(uiStage, InGameAssetManager.getSkin());
+        System.out.println(App.getCurrentGame().getCurrentPlayer().getCottagePosition());
     }
 
     private void updateCamera() {
@@ -122,6 +133,10 @@ public class GameView implements InputProcessor, Screen {
         player.getSprite().setPosition(player.getPosition().getX(), player.getPosition().getY());
         player.getSprite().draw(Main.getBatch());
         player.getCollisionRect().move(player.getPosition().getX(), player.getPosition().getY());
+        if (player.getItemInHandSprite() != null) {
+            player.getItemInHandSprite().setPosition(player.getPosition().getX(), player.getPosition().getY());
+            player.getItemInHandSprite().draw(Main.getBatch());
+        }
         uiStage.act(delta);
         uiStage.draw();
 
@@ -130,7 +145,6 @@ public class GameView implements InputProcessor, Screen {
 
     @Override
     public boolean keyDown(int i) {
-//        Gdx.input.isKeyPressed(Input.Keys)
         return false;
     }
 
@@ -145,8 +159,29 @@ public class GameView implements InputProcessor, Screen {
     }
 
     @Override
-    public boolean touchDown(int i, int i1, int i2, int i3) {
-        return false;
+    public boolean touchDown(int screenX, int screenY, int pointer, int button) {
+        Player player = game.getCurrentPlayer();
+        ItemInstance currentItem = player.getCurrentItem();
+        if (button == Input.Buttons.LEFT && currentItem != null &&
+            currentItem.getDefinition().getType().equals(ItemType.tool)) {
+            ToolController toolController = controller.getToolController();
+
+            Vector3 worldCoords = new Vector3(screenX, screenY, 0);
+            camera.unproject(worldCoords);
+
+            MapProperties props = map.getProperties();
+            int tileWidth = props.get("tilewidth", Integer.class);
+            int tileHeight = props.get("tileheight", Integer.class);
+
+            int tileX = (int) (worldCoords.x / tileWidth);
+            int tileY = (int) (worldCoords.y / tileHeight);
+            Tile selectedTile = game.getGameMap().getTile(tileY, tileX);
+            TiledMapTileLayer layer = (TiledMapTileLayer) map.getLayers().get(0);
+
+            TiledMapTileLayer.Cell cell = layer.getCell(tileX, tileY);
+            toolController.applyTool(currentItem, selectedTile, player, game, cell);
+        }
+        return true;
     }
 
     @Override
@@ -166,6 +201,7 @@ public class GameView implements InputProcessor, Screen {
 
     @Override
     public boolean mouseMoved(int i, int i1) {
+        controller.getPlayerController().handleWeaponRotation(i, i1);
         return false;
     }
 
@@ -221,8 +257,20 @@ public class GameView implements InputProcessor, Screen {
     public Table getFullInventoryTable() {
         return fullInventoryTable;
     }
+
     public void setIsInventoryOpen(boolean isInventoryOpen) {
         this.isInventoryOpen = isInventoryOpen;
     }
 
+    public Table getToolTable() {
+        return toolTable;
+    }
+
+    public void setToolTable(Table toolTable) {
+        this.toolTable = toolTable;
+    }
+
+    public InGameMessage getMessage() {
+        return message;
+    }
 }

@@ -26,4 +26,9 @@ public class Position {
     public float getX() {
         return x;
     }
+
+    @Override
+    public String toString() {
+        return "Position [y=" + y + ", x=" + x + "]";
+    }
 }

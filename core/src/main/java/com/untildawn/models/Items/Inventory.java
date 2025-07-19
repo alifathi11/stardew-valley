@@ -179,7 +179,7 @@ public class Inventory {
         };
     }
 
-    public void setInventoryTools () {
+    public void setInventoryTools() {
         ItemInstance baseHoe = new ItemInstance(Objects.requireNonNull(App.getItemDefinition("base_hoe")));
         addItem(baseHoe);
         addToTaskBar(baseHoe);
@@ -226,6 +226,7 @@ public class Inventory {
     public ItemInstance[] getItemsInTaskBar() {
         return itemsInTaskBar;
     }
+
     public void swapItemIDEntries(ItemIDs id1, ItemIDs id2) {
         if (!items.containsKey(id1) || !items.containsKey(id2)) return;
 
@@ -249,5 +250,14 @@ public class Inventory {
         items.putAll(newMap);
     }
 
-
+    public ItemInstance getItemByIndex(int index) {
+        int i = 0;
+        for (Map.Entry<ItemIDs, ArrayList<ItemInstance>> entry : items.entrySet()) {
+            if (i == index) {
+                return entry.getValue().get(0);
+            }
+            i++;
+        }
+        return null;
+    }
 }

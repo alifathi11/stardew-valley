@@ -34,7 +34,7 @@ public class Player {
     private Inventory inventory;
     private PlayerAbilities abilities;
     private Position position;
-    private ItemInstance currentTool;
+    private ItemInstance currentItem;
     private ItemInstance trashCan;
     private int energyPerTurn;
     private ArrayList<Quest> activeQuests;
@@ -53,6 +53,7 @@ public class Player {
     private boolean farmingEnable;
     private boolean maxEnergyEnable;
     private Refrigerator refrigerator;
+    private Sprite itemInHandSprite;
 
     // graphics
     private final Texture texture;
@@ -60,7 +61,7 @@ public class Player {
     private final CollisionRect collisionRect;
     private final float width = 100;
     private final float height = 150;
-    private final float speed = 1;
+    private final float speed = 10;
 
 
     public Player(User user, String name, Gender gender, Position position) {
@@ -100,12 +101,12 @@ public class Player {
         return wallet;
     }
 
-    public ItemInstance getCurrentTool() {
-        return currentTool;
+    public ItemInstance getCurrentItem() {
+        return currentItem;
     }
 
-    public void setCurrentTool(ItemInstance currentTool) {
-        this.currentTool = currentTool;
+    public void setCurrentItem(ItemInstance currentItem) {
+        this.currentItem = currentItem;
     }
 
     public String getName() {
@@ -289,7 +290,7 @@ public class Player {
         ArrayList<ItemInstance> items = new ArrayList<>();
         items.add(newTool);
         this.inventory.getItems().put(newTool.getDefinition().getId(), items);
-        this.currentTool = newTool;
+        this.currentItem = newTool;
     }
 
     public boolean isFainted() {
@@ -402,6 +403,14 @@ public class Player {
 
     public Texture getTexture() {
         return texture;
+    }
+
+    public void setItemInHandSprite(Sprite itemInHandSprite) {
+        this.itemInHandSprite = itemInHandSprite;
+    }
+
+    public Sprite getItemInHandSprite() {
+        return itemInHandSprite;
     }
 }
 

@@ -1,5 +1,9 @@
 package com.untildawn.models;
 
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TiledMapTile;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
+import com.badlogic.gdx.maps.tiled.TiledMapTileSet;
 import com.untildawn.Enums.GameMenus.Menu;
 import com.untildawn.Enums.GameMenus.Menus;
 import com.untildawn.models.Items.ItemDefinition;
@@ -87,4 +91,16 @@ public abstract class App {
     public static void setCurrentGame(Game currentGame) {
         App.currentGame = currentGame;
     }
+    public static TiledMapTile getTileByType(TiledMap map, String typeName) {
+        for (TiledMapTileSet tileSet : map.getTileSets()) {
+            for (TiledMapTile tile : tileSet) {
+                if (tile.getProperties().containsKey("type") &&
+                    tile.getProperties().get("type", String.class).equals(typeName)) {
+                    return tile;
+                }
+            }
+        }
+        return null;
+    }
+
 }

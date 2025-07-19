@@ -18,15 +18,13 @@ public class PlayerMap {
     private boolean hasBarn;
     private boolean hasCoop;
     public PlayerMap(Tile[][] map
-            , Tile greenHouseTile
-            , Tile cottageTile
-            , Tile[] lakeTiles
-            , Tile[] quarryTiles
+            , Tile[] cottageTile
+            , Tile[][] lakeTiles
+            , Tile[][]quarryTiles
             , Position startPosition
             , Position endPosition) {
         this.map = map;
         // make farm greenhouse
-        this.greenHouse = new GreenHouse(greenHouseTile);
         // make farm cottage
         this.cottage = new Cottage(cottageTile);
         // make farm quarries

@@ -1577,6 +1577,10 @@ Images/Farming/Unmilled_Rice.png
 Images/Farming/Wheat.png
 Images/Farming/Wheat_Flour.png
 Images/Farming/Yam.png
+Images/Fence/Fence3.png
+Images/Fence/Fences.png
+Images/Fence/Fences1.png
+Images/Fence/Fences2.png
 Images/Fence/Gate.png
 Images/Fence/Hardwood_Fence.png
 Images/Fence/Iron_Fence.png
@@ -1659,6 +1663,7 @@ Images/Fishing_Pole/Bamboo_Pole.png
 Images/Fishing_Pole/Fiberglass_Rod.png
 Images/Fishing_Pole/Iridium_Rod.png
 Images/Fishing_Pole/Training_Rod.png
+Images/Flooring/Dirt Hoed.png
 Images/Flooring/Flooring_01.png
 Images/Flooring/Flooring_02.png
 Images/Flooring/Flooring_03.png
@@ -2101,7 +2106,6 @@ Images/Ingredient/Rice.png
 Images/Ingredient/Sugar.png
 Images/Ingredient/Vinegar.png
 Images/Ingredient/Wheat_Flour.png
-Images/Inventory/,.png
 Images/Inventory/Inventory_Parts.png
 Images/Inventory/background.png
 Images/Inventory/inventory.png
@@ -3035,339 +3039,305 @@ Images/Weapon/Wood_Mallet.png
 Images/Weapon/Wooden_Blade.png
 Images/backgrounds/GameMenuBG.png
 Images/backgrounds/MenusBG.png
-Images/sprites/Abigail.png
-Images/sprites/Accessories.png
-Images/sprites/Alex.png
-Images/sprites/Animal Hats.png
-Images/sprites/Animations.png
-Images/sprites/Answering Machine.png
-Images/sprites/Aquarium Fishes.png
+Images/cottage/Big Shed Paint Mask.png
+Images/cottage/Cabin Paint Masks.png
+Images/cottage/Cabins.png
+Images/cottage/Sheds-0.png
+Images/cottage/Sheds-1.png
+Images/cottage/Sheds.png
 Images/sprites/Artifacts.png
-Images/sprites/Babies.png
-Images/sprites/Baby Golden Chicken.png
-Images/sprites/Bat.png
-Images/sprites/Bathhouse.png
-Images/sprites/Beach Fall.png
-Images/sprites/Beach Spring.png
-Images/sprites/Beach Summer.png
-Images/sprites/Beach Winter.png
-Images/sprites/Bear.png
-Images/sprites/Bear/Bear-0.png
-Images/sprites/Bear/Bear-1.png
-Images/sprites/Bear/Bear-10.png
-Images/sprites/Bear/Bear-11.png
-Images/sprites/Bear/Bear-12.png
-Images/sprites/Bear/Bear-13.png
-Images/sprites/Bear/Bear-14.png
-Images/sprites/Bear/Bear-15.png
-Images/sprites/Bear/Bear-16.png
-Images/sprites/Bear/Bear-17.png
-Images/sprites/Bear/Bear-18.png
-Images/sprites/Bear/Bear-19.png
-Images/sprites/Bear/Bear-2.png
-Images/sprites/Bear/Bear-20.png
-Images/sprites/Bear/Bear-21.png
-Images/sprites/Bear/Bear-3.png
-Images/sprites/Bear/Bear-4.png
-Images/sprites/Bear/Bear-5.png
-Images/sprites/Bear/Bear-6.png
-Images/sprites/Bear/Bear-7.png
-Images/sprites/Bear/Bear-8.png
-Images/sprites/Bear/Bear-9.png
-Images/sprites/Bear/f-0.png
-Images/sprites/Bear/f-1.png
-Images/sprites/Bear/f-10.png
-Images/sprites/Bear/f-11.png
-Images/sprites/Bear/f-12.png
-Images/sprites/Bear/f-13.png
-Images/sprites/Bear/f-14.png
-Images/sprites/Bear/f-15.png
-Images/sprites/Bear/f-16.png
-Images/sprites/Bear/f-17.png
-Images/sprites/Bear/f-18.png
-Images/sprites/Bear/f-19.png
-Images/sprites/Bear/f-2.png
-Images/sprites/Bear/f-20.png
-Images/sprites/Bear/f-21.png
-Images/sprites/Bear/f-3.png
-Images/sprites/Bear/f-4.png
-Images/sprites/Bear/f-5.png
-Images/sprites/Bear/f-6.png
-Images/sprites/Bear/f-7.png
-Images/sprites/Bear/f-8.png
-Images/sprites/Bear/f-9.png
-Images/sprites/Big Shed Paint Mask.png
-Images/sprites/Bigfoot.png
-Images/sprites/Birdie.png
-Images/sprites/Birds.png
-Images/sprites/Board Game.png
-Images/sprites/Boat Journey.png
-Images/sprites/Boat Tunnel.png
 Images/sprites/Bobbers.png
-Images/sprites/Book Animation.png
-Images/sprites/Bouncer.png
 Images/sprites/Buff Icons.png
-Images/sprites/Bug Land.png
-Images/sprites/Building Placement Tiles.png
 Images/sprites/Bundle Sprites.png
-Images/sprites/Bus People.png
-Images/sprites/Bushes.png
-Images/sprites/Cabin Paint Masks.png
-Images/sprites/Cabins.png
-Images/sprites/Calf Brown.png
-Images/sprites/Calf White.png
-Images/sprites/Caroline.png
-Images/sprites/Carolines Greenhouse.png
-Images/sprites/Cat Black.png
-Images/sprites/Cat Grey.png
-Images/sprites/Cat New.png
-Images/sprites/Cat Purple.png
-Images/sprites/Cat White.png
-Images/sprites/Cat.png
-Images/sprites/Chairs & Desks.png
+Images/sprites/CaveDoor.png
+Images/sprites/CaveDoor2.png
 Images/sprites/Character Backgrounds.png
-Images/sprites/Chat Box.png
-Images/sprites/Chick Blue.png
-Images/sprites/Chick Brown.png
-Images/sprites/Chick Void.png
-Images/sprites/Chick White.png
-Images/sprites/Chicken Blue.png
-Images/sprites/Chicken Brown.png
-Images/sprites/Chicken Void.png
-Images/sprites/Chicken White.png
-Images/sprites/Clint.png
-Images/sprites/Clock.png
-Images/sprites/Clothes Therapy Characters.png
-Images/sprites/Clouds.png
-Images/sprites/Cloudy Ocean.png
 Images/sprites/Community Center Joja.png
-Images/sprites/Community Center Junimo.png
 Images/sprites/Companions.png
 Images/sprites/Concessions.png
-Images/sprites/Controller Buttons.png
-Images/sprites/Coop.png
-Images/sprites/Cow Brown.png
-Images/sprites/Cow Photos.png
-Images/sprites/Cow White.png
 Images/sprites/Craftables.png
-Images/sprites/Crane Game.png
-Images/sprites/Critters.png
-Images/sprites/Crops.png
-Images/sprites/Darkroom.png
-Images/sprites/Darts.png
-Images/sprites/Demetrius.png
-Images/sprites/Desert Festival.png
-Images/sprites/Desert Racers.png
-Images/sprites/Desert.png
-Images/sprites/Dinosaur.png
-Images/sprites/Dirt Hoed.png
-Images/sprites/Dobson.png
-Images/sprites/Dog Blonde.png
-Images/sprites/Dog Brown.png
-Images/sprites/Dog Dark Brown.png
-Images/sprites/Dog Grey.png
-Images/sprites/Dog Light Brown.png
-Images/sprites/Dog Purple.png
-Images/sprites/Duck.png
-Images/sprites/Dwarf.png
 Images/sprites/Dye Bench.png
-Images/sprites/Elliot.png
-Images/sprites/Elliotts House.png
-Images/sprites/Emily.png
-Images/sprites/Emojis.png
-Images/sprites/Emote Menu.png
-Images/sprites/Emotes.png
 Images/sprites/Equipment & Special Items.png
-Images/sprites/Evelyn.png
-Images/sprites/Farm Buildings Paint Masks.png
-Images/sprites/Farm Buildings.png
-Images/sprites/Farm Obelisk.png
-Images/sprites/Farmer Base.png
-Images/sprites/Farmhouse.png
-Images/sprites/Fences.png
-Images/sprites/Festivals.png
-Images/sprites/Field Office Donations.png
 Images/sprites/Fireball.png
 Images/sprites/Fish Pond.png
-Images/sprites/Fishermen.png
-Images/sprites/Fishing Derby.png
-Images/sprites/Fishing.png
-Images/sprites/Fizz.png
-Images/sprites/Flooring.png
-Images/sprites/Fonts.png
 Images/sprites/Forage.png
-Images/sprites/Forge Menu.png
-Images/sprites/Free Cactuses.png
-Images/sprites/Fruit Trees.png
-Images/sprites/Furniture Front.png
 Images/sprites/Furniture.png
-Images/sprites/Gem Birds.png
-Images/sprites/George.png
 Images/sprites/Gift Boxes.png
-Images/sprites/Gil.png
-Images/sprites/Goat Baby.png
-Images/sprites/Goat.png
-Images/sprites/Golden Chicken.png
-Images/sprites/Gourmand.png
-Images/sprites/Governor.png
-Images/sprites/Grandpa.png
-Images/sprites/Grass.png
-Images/sprites/Greenhouse Interior.png
-Images/sprites/Gunther.png
-Images/sprites/Gus.png
-Images/sprites/Hairstyles.png
-Images/sprites/Haley.png
 Images/sprites/Harvested Crops Seed Packets Minerals Food Equipment & Misc Objects.png
-Images/sprites/Harvey.png
-Images/sprites/Hats.png
-Images/sprites/Henchman.png
-Images/sprites/Horse.png
-Images/sprites/Introduction.png
-Images/sprites/Island Cave.png
-Images/sprites/Island Fall.png
-Images/sprites/Island Field Office.png
-Images/sprites/Island Hut.png
 Images/sprites/Island Map.png
-Images/sprites/Island Parrot.png
-Images/sprites/Island Spring.png
-Images/sprites/Island Summer.png
-Images/sprites/Island Winter.png
-Images/sprites/Island.png
-Images/sprites/Jas.png
-Images/sprites/Jodi.png
-Images/sprites/Joja Ruins.png
-Images/sprites/JojaMart.png
-Images/sprites/Journey of the Prairie King.png
 Images/sprites/Junimo Hut.png
-Images/sprites/Junimo Kart.png
-Images/sprites/Junimo.png
-Images/sprites/Kel.png
-Images/sprites/Kent.png
-Images/sprites/Krobus Raven.png
-Images/sprites/Krobus Trenchcoat.png
-Images/sprites/Krobus.png
-Images/sprites/Language Buttons.png
-Images/sprites/Layouts Volcano.png
-Images/sprites/Leah.png
-Images/sprites/Leo.png
-Images/sprites/Leos Treehouse.png
-Images/sprites/Lewis.png
-Images/sprites/Linus.png
-Images/sprites/Logo No Background.png
-Images/sprites/Lost Items Shop Crow.png
-Images/sprites/Mail.png
-Images/sprites/Mannequins.png
+Images/sprites/Lake17.png
 Images/sprites/Map.png
-Images/sprites/MarILDA.png
-Images/sprites/Marcello.png
-Images/sprites/Mariner.png
-Images/sprites/Marlon.png
-Images/sprites/Marnie.png
 Images/sprites/Maru Comet.png
-Images/sprites/Maru Nurse Red Cross.png
-Images/sprites/Maru Nurse White Cross.png
-Images/sprites/Maru.png
-Images/sprites/Mastery Cave.png
-Images/sprites/Menu Elements.png
-Images/sprites/Mermaid House.png
-Images/sprites/Mines.png
-Images/sprites/Monsters.png
-Images/sprites/Morris.png
-Images/sprites/Movie Theater Flims.png
-Images/sprites/Movie Theater Joja.png
-Images/sprites/Movie Theater Screen.png
-Images/sprites/Movie Theater.png
-Images/sprites/Mr Qi.png
-Images/sprites/Mushroom.png
-Images/sprites/Night Market.png
 Images/sprites/Obelisks.png
-Images/sprites/Ostrich Baby.png
-Images/sprites/Ostrich.png
-Images/sprites/Outdoors Fall.png
-Images/sprites/Outdoors Spring.png
-Images/sprites/Outdoors Summer.png
-Images/sprites/Outdoors Winter.png
-Images/sprites/Pam.png
-Images/sprites/Panorama.png
-Images/sprites/Pants.png
-Images/sprites/Parrot Platform.png
-Images/sprites/Parrots.png
-Images/sprites/Pelican Town Fall.png
-Images/sprites/Pelican Town Spring.png
-Images/sprites/Pelican Town Summer.png
-Images/sprites/Pelican Town Winter.png
-Images/sprites/Penny.png
-Images/sprites/Pet Bowls.png
-Images/sprites/Pierre.png
-Images/sprites/Pierres Board.png
-Images/sprites/Pierres General Store.png
-Images/sprites/Pig.png
-Images/sprites/Piglet.png
-Images/sprites/Pirates.png
-Images/sprites/Plants CaveMines.png
-Images/sprites/Player Status List.png
-Images/sprites/Player Updated.png
-Images/sprites/Player.png
-Images/sprites/Prize Ticket Menu.png
-Images/sprites/Professor Snail.png
-Images/sprites/Qis Nut Room.png
 Images/sprites/Quartz.png
-Images/sprites/Rabbit Baby.png
-Images/sprites/Rabbit.png
-Images/sprites/Raccoon Bundle Menu.png
-Images/sprites/Raccoons Cutscene Cut-Out.png
-Images/sprites/Raccoons.png
-Images/sprites/Rain.png
-Images/sprites/Rival.png
-Images/sprites/Robin.png
-Images/sprites/Sam JojaMart.png
-Images/sprites/Sam.png
-Images/sprites/Sams Show.png
-Images/sprites/Sand Duggy.png
-Images/sprites/Sandy.png
-Images/sprites/Sea Monster Krobus.png
-Images/sprites/Sea Monster.png
-Images/sprites/Sebastian.png
-Images/sprites/Secret Notes.png
-Images/sprites/Sewer.png
-Images/sprites/Shane JojaMart.png
-Images/sprites/Shane.png
-Images/sprites/Sheds.png
-Images/sprites/Sheep Baby.png
-Images/sprites/Sheep Sheared.png
-Images/sprites/Sheep.png
-Images/sprites/Shirts.png
-Images/sprites/Special Orders.png
-Images/sprites/Squid Fest Letter.png
-Images/sprites/Stadium.png
-Images/sprites/Submarine.png
-Images/sprites/TV Channels.png
-Images/sprites/Tailoring.png
-Images/sprites/Terraria Cat.png
-Images/sprites/Text Emojis.png
-Images/sprites/The Mines Skull Cavern.png
-Images/sprites/The Stardrop Saloon.png
-Images/sprites/Title Screen.png
-Images/sprites/Toddlers.png
-Images/sprites/Tools.png
-Images/sprites/Town Interiors.png
-Images/sprites/Trash Bear.png
-Images/sprites/Trees.png
-Images/sprites/Trout Derby Letter.png
-Images/sprites/Turtle Green.png
-Images/sprites/Turtle Purple.png
-Images/sprites/Vincent.png
-Images/sprites/Volcano Dungeon.png
-Images/sprites/Wall Diggable.png
-Images/sprites/Walls & Floors.png
-Images/sprites/Weapons.png
-Images/sprites/Wedding Outfits.png
-Images/sprites/Willy.png
-Images/sprites/Willys Boat.png
-Images/sprites/Witch Hut.png
-Images/sprites/Witch Swamp.png
-Images/sprites/Wizard House.png
-Images/sprites/Wizard.png
+Images/sprites/UI/Chat Box.png
+Images/sprites/UI/Clock.png
+Images/sprites/UI/Controller Buttons.png
+Images/sprites/UI/Field Office Donations.png
+Images/sprites/UI/Fonts.png
+Images/sprites/UI/Introduction.png
+Images/sprites/UI/Language Buttons.png
+Images/sprites/UI/Logo No Background.png
+Images/sprites/UI/Mail.png
+Images/sprites/UI/Pierres Board.png
+Images/sprites/UI/Player Status List.png
+Images/sprites/UI/Secret Notes.png
+Images/sprites/UI/Special Orders.png
+Images/sprites/UI/Squid Fest Letter.png
+Images/sprites/UI/Tailoring.png
+Images/sprites/UI/Title Screen.png
+Images/sprites/UI/Trout Derby Letter.png
+Images/sprites/animals/Animal Hats.png
+Images/sprites/animals/Aquarium Fishes.png
+Images/sprites/animals/Baby Golden Chicken.png
+Images/sprites/animals/Bat.png
+Images/sprites/animals/Bear.png
+Images/sprites/animals/Birds.png
+Images/sprites/animals/Calf Brown.png
+Images/sprites/animals/Calf White.png
+Images/sprites/animals/Cat Black.png
+Images/sprites/animals/Cat Grey.png
+Images/sprites/animals/Cat New.png
+Images/sprites/animals/Cat Purple.png
+Images/sprites/animals/Cat White.png
+Images/sprites/animals/Cat.png
+Images/sprites/animals/Chick Blue.png
+Images/sprites/animals/Chick Brown.png
+Images/sprites/animals/Chick Void.png
+Images/sprites/animals/Chick White.png
+Images/sprites/animals/Chicken Blue.png
+Images/sprites/animals/Chicken Brown.png
+Images/sprites/animals/Chicken Void.png
+Images/sprites/animals/Chicken White.png
+Images/sprites/animals/Cow Brown.png
+Images/sprites/animals/Cow Photos.png
+Images/sprites/animals/Cow White.png
+Images/sprites/animals/Critters.png
+Images/sprites/animals/Desert Racers.png
+Images/sprites/animals/Dinosaur.png
+Images/sprites/animals/Dog Blonde.png
+Images/sprites/animals/Dog Brown.png
+Images/sprites/animals/Dog Dark Brown.png
+Images/sprites/animals/Dog Grey.png
+Images/sprites/animals/Dog Light Brown.png
+Images/sprites/animals/Dog Purple.png
+Images/sprites/animals/Duck.png
+Images/sprites/animals/Fishing.png
+Images/sprites/animals/Gem Birds.png
+Images/sprites/animals/Goat Baby.png
+Images/sprites/animals/Goat.png
+Images/sprites/animals/Golden Chicken.png
+Images/sprites/animals/Horse.png
+Images/sprites/animals/Island Parrot.png
+Images/sprites/animals/Ostrich Baby.png
+Images/sprites/animals/Ostrich.png
+Images/sprites/animals/Parrot Platform.png
+Images/sprites/animals/Parrots.png
+Images/sprites/animals/Pet Bowls.png
+Images/sprites/animals/Pig.png
+Images/sprites/animals/Piglet.png
+Images/sprites/animals/Rabbit Baby.png
+Images/sprites/animals/Rabbit.png
+Images/sprites/animals/Raccoons Cutscene Cut-Out.png
+Images/sprites/animals/Raccoons.png
+Images/sprites/animals/Sheep Baby.png
+Images/sprites/animals/Sheep Sheared.png
+Images/sprites/animals/Sheep.png
+Images/sprites/animals/Terraria Cat.png
+Images/sprites/animals/Trash Bear.png
+Images/sprites/animals/Turtle Green.png
+Images/sprites/animals/Turtle Purple.png
+Images/sprites/animations/Animations.png
+Images/sprites/animations/Book Animation.png
+Images/sprites/animations/Clouds.png
+Images/sprites/animations/Lost Items Shop Crow.png
+Images/sprites/animations/Rain.png
+Images/sprites/characters/Abigail.png
+Images/sprites/characters/Alex.png
+Images/sprites/characters/Babies.png
+Images/sprites/characters/Bigfoot.png
+Images/sprites/characters/Birdie.png
+Images/sprites/characters/Bouncer.png
+Images/sprites/characters/Caroline.png
+Images/sprites/characters/Clint.png
+Images/sprites/characters/Clothes Therapy Characters.png
+Images/sprites/characters/Demetrius.png
+Images/sprites/characters/Dobson.png
+Images/sprites/characters/Dwarf.png
+Images/sprites/characters/Elliot.png
+Images/sprites/characters/Emily.png
+Images/sprites/characters/Evelyn.png
+Images/sprites/characters/Farmer Base.png
+Images/sprites/characters/Fishermen.png
+Images/sprites/characters/Fizz.png
+Images/sprites/characters/George.png
+Images/sprites/characters/Gil.png
+Images/sprites/characters/Gourmand.png
+Images/sprites/characters/Governor.png
+Images/sprites/characters/Grandpa.png
+Images/sprites/characters/Gunther.png
+Images/sprites/characters/Gus.png
+Images/sprites/characters/Haley.png
+Images/sprites/characters/Harvey.png
+Images/sprites/characters/Henchman.png
+Images/sprites/characters/Jas.png
+Images/sprites/characters/Jodi.png
+Images/sprites/characters/Junimo.png
+Images/sprites/characters/Kel.png
+Images/sprites/characters/Kent.png
+Images/sprites/characters/Krobus Raven.png
+Images/sprites/characters/Krobus Trenchcoat.png
+Images/sprites/characters/Krobus.png
+Images/sprites/characters/Leah.png
+Images/sprites/characters/Leo.png
+Images/sprites/characters/Lewis.png
+Images/sprites/characters/Linus.png
+Images/sprites/characters/Mannequins.png
+Images/sprites/characters/MarILDA.png
+Images/sprites/characters/Marcello.png
+Images/sprites/characters/Mariner.png
+Images/sprites/characters/Marlon.png
+Images/sprites/characters/Marnie.png
+Images/sprites/characters/Maru Nurse Red Cross.png
+Images/sprites/characters/Maru Nurse White Cross.png
+Images/sprites/characters/Maru.png
+Images/sprites/characters/Monsters.png
+Images/sprites/characters/Morris.png
+Images/sprites/characters/Mr Qi.png
+Images/sprites/characters/Pam.png
+Images/sprites/characters/Penny.png
+Images/sprites/characters/Pierre.png
+Images/sprites/characters/Pirates.png
+Images/sprites/characters/Professor Snail.png
+Images/sprites/characters/Rival.png
+Images/sprites/characters/Robin.png
+Images/sprites/characters/Sam JojaMart.png
+Images/sprites/characters/Sam.png
+Images/sprites/characters/Sand Duggy.png
+Images/sprites/characters/Sandy.png
+Images/sprites/characters/Sea Monster Krobus.png
+Images/sprites/characters/Sea Monster.png
+Images/sprites/characters/Sebastian.png
+Images/sprites/characters/Shane JojaMart.png
+Images/sprites/characters/Shane.png
+Images/sprites/characters/Toddlers.png
+Images/sprites/characters/Vincent.png
+Images/sprites/characters/Willy.png
+Images/sprites/characters/Wizard.png
+Images/sprites/farm_things/Farm Buildings Paint Masks.png
+Images/sprites/farm_things/Farm Buildings.png
+Images/sprites/farm_things/Farm Obelisk.png
+Images/sprites/farm_things/Farmhouse.png
+Images/sprites/home_things/Answering Machine.png
+Images/sprites/home_things/Chairs & Desks.png
+Images/sprites/home_things/Furniture Front.png
+Images/sprites/home_things/TV Channels.png
+Images/sprites/home_things/Town Interiors.png
+Images/sprites/menus/Community Center Junimo.png
+Images/sprites/menus/Emote Menu.png
+Images/sprites/menus/Forge Menu.png
+Images/sprites/menus/Menu Elements.png
+Images/sprites/menus/Prize Ticket Menu.png
+Images/sprites/menus/Raccoon Bundle Menu.png
+Images/sprites/mines/Mines.png
+Images/sprites/mines/The Mines Skull Cavern.png
+Images/sprites/outfits & clothes/Accessories.png
+Images/sprites/outfits & clothes/Hairstyles.png
+Images/sprites/outfits & clothes/Hats.png
+Images/sprites/outfits & clothes/Pants.png
+Images/sprites/outfits & clothes/Player Updated.png
+Images/sprites/outfits & clothes/Player.png
+Images/sprites/outfits & clothes/Shirts.png
+Images/sprites/outfits & clothes/Wedding Outfits.png
+Images/sprites/places/Bathhouse.png
+Images/sprites/places/Board Game.png
+Images/sprites/places/Boat Journey.png
+Images/sprites/places/Boat Tunnel.png
+Images/sprites/places/Bug Land.png
+Images/sprites/places/Building Placement Tiles.png
+Images/sprites/places/Bus People.png
+Images/sprites/places/Carolines Greenhouse.png
+Images/sprites/places/Coop.png
+Images/sprites/places/Crane Game.png
+Images/sprites/places/Darkroom.png
+Images/sprites/places/Darts.png
+Images/sprites/places/Desert Festival.png
+Images/sprites/places/Desert.png
+Images/sprites/places/Elliotts House.png
+Images/sprites/places/Festivals.png
+Images/sprites/places/Fishing Derby.png
+Images/sprites/places/Greenhouse Interior.png
+Images/sprites/places/Island Cave.png
+Images/sprites/places/Island Field Office.png
+Images/sprites/places/Island Hut.png
+Images/sprites/places/Island.png
+Images/sprites/places/Joja Ruins.png
+Images/sprites/places/JojaMart.png
+Images/sprites/places/Journey of the Prairie King.png
+Images/sprites/places/Junimo Kart.png
+Images/sprites/places/Layouts Volcano.png
+Images/sprites/places/Leos Treehouse.png
+Images/sprites/places/Mastery Cave.png
+Images/sprites/places/Mermaid House.png
+Images/sprites/places/Movie Theater Flims.png
+Images/sprites/places/Movie Theater Joja.png
+Images/sprites/places/Movie Theater Screen.png
+Images/sprites/places/Movie Theater.png
+Images/sprites/places/Night Market.png
+Images/sprites/places/Pierres General Store.png
+Images/sprites/places/Qis Nut Room.png
+Images/sprites/places/Sams Show.png
+Images/sprites/places/Sewer.png
+Images/sprites/places/Stadium.png
+Images/sprites/places/Submarine.png
+Images/sprites/places/The Stardrop Saloon.png
+Images/sprites/places/Volcano Dungeon.png
+Images/sprites/places/Willys Boat.png
+Images/sprites/places/Witch Hut.png
+Images/sprites/places/Witch Swamp.png
+Images/sprites/places/Wizard House.png
+Images/sprites/places_in_sesons/Beach Fall.png
+Images/sprites/places_in_sesons/Beach Spring.png
+Images/sprites/places_in_sesons/Beach Summer.png
+Images/sprites/places_in_sesons/Beach Winter.png
+Images/sprites/places_in_sesons/Island Fall.png
+Images/sprites/places_in_sesons/Island Spring.png
+Images/sprites/places_in_sesons/Island Summer.png
+Images/sprites/places_in_sesons/Island Winter.png
+Images/sprites/places_in_sesons/Outdoors Fall.png
+Images/sprites/places_in_sesons/Outdoors Spring.png
+Images/sprites/places_in_sesons/Outdoors Summer.png
+Images/sprites/places_in_sesons/Outdoors Summer1.png
+Images/sprites/places_in_sesons/Outdoors Summer11.png
+Images/sprites/places_in_sesons/Outdoors Summer12.png
+Images/sprites/places_in_sesons/Outdoors Summer13.png
+Images/sprites/places_in_sesons/Outdoors Summer14.png
+Images/sprites/places_in_sesons/Outdoors Summer15.png
+Images/sprites/places_in_sesons/Outdoors Summer2.png
+Images/sprites/places_in_sesons/Outdoors Summer3.png
+Images/sprites/places_in_sesons/Outdoors Summer4.png
+Images/sprites/places_in_sesons/Outdoors Summer5.png
+Images/sprites/places_in_sesons/Outdoors Summer6.png
+Images/sprites/places_in_sesons/Outdoors Summer7.png
+Images/sprites/places_in_sesons/Outdoors Summer8.png
+Images/sprites/places_in_sesons/Outdoors Summer9.png
+Images/sprites/places_in_sesons/Outdoors Winter.png
+Images/sprites/places_in_sesons/Pelican Town Fall.png
+Images/sprites/places_in_sesons/Pelican Town Spring.png
+Images/sprites/places_in_sesons/Pelican Town Summer.png
+Images/sprites/places_in_sesons/Pelican Town Winter.png
+Images/sprites/trees & plants & crops/Bushes.png
+Images/sprites/trees & plants & crops/Crops.png
+Images/sprites/trees & plants & crops/Free Cactuses.png
+Images/sprites/trees & plants & crops/Fruit Trees.png
+Images/sprites/trees & plants & crops/Grass.png
+Images/sprites/trees & plants & crops/Mushroom.png
+Images/sprites/trees & plants & crops/Plants CaveMines.png
+Images/sprites/trees & plants & crops/Trees.png
+Images/sprites/walls/Wall Diggable.png
+Images/sprites/walls/Walls.png
+Images/woodenBoard.png
 Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Carry_Idle/Carry_Idle_Down-Sheet.png
 Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Carry_Idle/Carry_Idle_Down.aseprite
 Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Carry_Idle/Carry_Idle_Side-Sheet.png
@@ -3710,13 +3680,304 @@ character1/walk/sam_1.png
 character1/walk/sam_2.png
 character1/walk/sam_3.png
 character1/walk/sam_4.png
-map.tmx
 skin/flat-earth-ui.atlas
 skin/flat-earth-ui.json
 skin/flat-earth-ui.png
 skin/font-button-export.fnt
 skin/font-export.fnt
 skin/font-title-export.fnt
+sprites/Artifacts.png
+sprites/Bobbers.png
+sprites/Buff Icons.png
+sprites/Bundle Sprites.png
+sprites/CaveDoor.png
+sprites/CaveDoor2.png
+sprites/Character Backgrounds.png
+sprites/Community Center Joja.png
+sprites/Companions.png
+sprites/Concessions.png
+sprites/Craftables.png
+sprites/Dye Bench.png
+sprites/Equipment & Special Items.png
+sprites/Fireball.png
+sprites/Fish Pond.png
+sprites/Forage.png
+sprites/Furniture.png
+sprites/Gift Boxes.png
+sprites/Harvested Crops Seed Packets Minerals Food Equipment & Misc Objects.png
+sprites/Island Map.png
+sprites/Junimo Hut.png
+sprites/Lake17.png
+sprites/Map.png
+sprites/Maru Comet.png
+sprites/Obelisks.png
+sprites/Quartz.png
+sprites/UI/Chat Box.png
+sprites/UI/Clock.png
+sprites/UI/Controller Buttons.png
+sprites/UI/Field Office Donations.png
+sprites/UI/Fonts.png
+sprites/UI/Introduction.png
+sprites/UI/Language Buttons.png
+sprites/UI/Logo No Background.png
+sprites/UI/Mail.png
+sprites/UI/Pierres Board.png
+sprites/UI/Player Status List.png
+sprites/UI/Secret Notes.png
+sprites/UI/Special Orders.png
+sprites/UI/Squid Fest Letter.png
+sprites/UI/Tailoring.png
+sprites/UI/Title Screen.png
+sprites/UI/Trout Derby Letter.png
+sprites/animals/Animal Hats.png
+sprites/animals/Aquarium Fishes.png
+sprites/animals/Baby Golden Chicken.png
+sprites/animals/Bat.png
+sprites/animals/Bear.png
+sprites/animals/Birds.png
+sprites/animals/Calf Brown.png
+sprites/animals/Calf White.png
+sprites/animals/Cat Black.png
+sprites/animals/Cat Grey.png
+sprites/animals/Cat New.png
+sprites/animals/Cat Purple.png
+sprites/animals/Cat White.png
+sprites/animals/Cat.png
+sprites/animals/Chick Blue.png
+sprites/animals/Chick Brown.png
+sprites/animals/Chick Void.png
+sprites/animals/Chick White.png
+sprites/animals/Chicken Blue.png
+sprites/animals/Chicken Brown.png
+sprites/animals/Chicken Void.png
+sprites/animals/Chicken White.png
+sprites/animals/Cow Brown.png
+sprites/animals/Cow Photos.png
+sprites/animals/Cow White.png
+sprites/animals/Critters.png
+sprites/animals/Desert Racers.png
+sprites/animals/Dinosaur.png
+sprites/animals/Dog Blonde.png
+sprites/animals/Dog Brown.png
+sprites/animals/Dog Dark Brown.png
+sprites/animals/Dog Grey.png
+sprites/animals/Dog Light Brown.png
+sprites/animals/Dog Purple.png
+sprites/animals/Duck.png
+sprites/animals/Fishing.png
+sprites/animals/Gem Birds.png
+sprites/animals/Goat Baby.png
+sprites/animals/Goat.png
+sprites/animals/Golden Chicken.png
+sprites/animals/Horse.png
+sprites/animals/Island Parrot.png
+sprites/animals/Ostrich Baby.png
+sprites/animals/Ostrich.png
+sprites/animals/Parrot Platform.png
+sprites/animals/Parrots.png
+sprites/animals/Pet Bowls.png
+sprites/animals/Pig.png
+sprites/animals/Piglet.png
+sprites/animals/Rabbit Baby.png
+sprites/animals/Rabbit.png
+sprites/animals/Raccoons Cutscene Cut-Out.png
+sprites/animals/Raccoons.png
+sprites/animals/Sheep Baby.png
+sprites/animals/Sheep Sheared.png
+sprites/animals/Sheep.png
+sprites/animals/Terraria Cat.png
+sprites/animals/Trash Bear.png
+sprites/animals/Turtle Green.png
+sprites/animals/Turtle Purple.png
+sprites/animations/Animations.png
+sprites/animations/Book Animation.png
+sprites/animations/Clouds.png
+sprites/animations/Lost Items Shop Crow.png
+sprites/animations/Rain.png
+sprites/characters/Abigail.png
+sprites/characters/Alex.png
+sprites/characters/Babies.png
+sprites/characters/Bigfoot.png
+sprites/characters/Birdie.png
+sprites/characters/Bouncer.png
+sprites/characters/Caroline.png
+sprites/characters/Clint.png
+sprites/characters/Clothes Therapy Characters.png
+sprites/characters/Demetrius.png
+sprites/characters/Dobson.png
+sprites/characters/Dwarf.png
+sprites/characters/Elliot.png
+sprites/characters/Emily.png
+sprites/characters/Evelyn.png
+sprites/characters/Farmer Base.png
+sprites/characters/Fishermen.png
+sprites/characters/Fizz.png
+sprites/characters/George.png
+sprites/characters/Gil.png
+sprites/characters/Gourmand.png
+sprites/characters/Governor.png
+sprites/characters/Grandpa.png
+sprites/characters/Gunther.png
+sprites/characters/Gus.png
+sprites/characters/Haley.png
+sprites/characters/Harvey.png
+sprites/characters/Henchman.png
+sprites/characters/Jas.png
+sprites/characters/Jodi.png
+sprites/characters/Junimo.png
+sprites/characters/Kel.png
+sprites/characters/Kent.png
+sprites/characters/Krobus Raven.png
+sprites/characters/Krobus Trenchcoat.png
+sprites/characters/Krobus.png
+sprites/characters/Leah.png
+sprites/characters/Leo.png
+sprites/characters/Lewis.png
+sprites/characters/Linus.png
+sprites/characters/Mannequins.png
+sprites/characters/MarILDA.png
+sprites/characters/Marcello.png
+sprites/characters/Mariner.png
+sprites/characters/Marlon.png
+sprites/characters/Marnie.png
+sprites/characters/Maru Nurse Red Cross.png
+sprites/characters/Maru Nurse White Cross.png
+sprites/characters/Maru.png
+sprites/characters/Monsters.png
+sprites/characters/Morris.png
+sprites/characters/Mr Qi.png
+sprites/characters/Pam.png
+sprites/characters/Penny.png
+sprites/characters/Pierre.png
+sprites/characters/Pirates.png
+sprites/characters/Professor Snail.png
+sprites/characters/Rival.png
+sprites/characters/Robin.png
+sprites/characters/Sam JojaMart.png
+sprites/characters/Sam.png
+sprites/characters/Sand Duggy.png
+sprites/characters/Sandy.png
+sprites/characters/Sea Monster Krobus.png
+sprites/characters/Sea Monster.png
+sprites/characters/Sebastian.png
+sprites/characters/Shane JojaMart.png
+sprites/characters/Shane.png
+sprites/characters/Toddlers.png
+sprites/characters/Vincent.png
+sprites/characters/Willy.png
+sprites/characters/Wizard.png
+sprites/farm_things/Farm Buildings Paint Masks.png
+sprites/farm_things/Farm Buildings.png
+sprites/farm_things/Farm Obelisk.png
+sprites/farm_things/Farmhouse.png
+sprites/home_things/Answering Machine.png
+sprites/home_things/Chairs & Desks.png
+sprites/home_things/Furniture Front.png
+sprites/home_things/TV Channels.png
+sprites/home_things/Town Interiors.png
+sprites/menus/Community Center Junimo.png
+sprites/menus/Emote Menu.png
+sprites/menus/Forge Menu.png
+sprites/menus/Menu Elements.png
+sprites/menus/Prize Ticket Menu.png
+sprites/menus/Raccoon Bundle Menu.png
+sprites/mines/Mines.png
+sprites/mines/The Mines Skull Cavern.png
+sprites/outfits & clothes/Accessories.png
+sprites/outfits & clothes/Hairstyles.png
+sprites/outfits & clothes/Hats.png
+sprites/outfits & clothes/Pants.png
+sprites/outfits & clothes/Player Updated.png
+sprites/outfits & clothes/Player.png
+sprites/outfits & clothes/Shirts.png
+sprites/outfits & clothes/Wedding Outfits.png
+sprites/places/Bathhouse.png
+sprites/places/Board Game.png
+sprites/places/Boat Journey.png
+sprites/places/Boat Tunnel.png
+sprites/places/Bug Land.png
+sprites/places/Building Placement Tiles.png
+sprites/places/Bus People.png
+sprites/places/Carolines Greenhouse.png
+sprites/places/Coop.png
+sprites/places/Crane Game.png
+sprites/places/Darkroom.png
+sprites/places/Darts.png
+sprites/places/Desert Festival.png
+sprites/places/Desert.png
+sprites/places/Elliotts House.png
+sprites/places/Festivals.png
+sprites/places/Fishing Derby.png
+sprites/places/Greenhouse Interior.png
+sprites/places/Island Cave.png
+sprites/places/Island Field Office.png
+sprites/places/Island Hut.png
+sprites/places/Island.png
+sprites/places/Joja Ruins.png
+sprites/places/JojaMart.png
+sprites/places/Journey of the Prairie King.png
+sprites/places/Junimo Kart.png
+sprites/places/Layouts Volcano.png
+sprites/places/Leos Treehouse.png
+sprites/places/Mastery Cave.png
+sprites/places/Mermaid House.png
+sprites/places/Movie Theater Flims.png
+sprites/places/Movie Theater Joja.png
+sprites/places/Movie Theater Screen.png
+sprites/places/Movie Theater.png
+sprites/places/Night Market.png
+sprites/places/Pierres General Store.png
+sprites/places/Qis Nut Room.png
+sprites/places/Sams Show.png
+sprites/places/Sewer.png
+sprites/places/Stadium.png
+sprites/places/Submarine.png
+sprites/places/The Stardrop Saloon.png
+sprites/places/Volcano Dungeon.png
+sprites/places/Willys Boat.png
+sprites/places/Witch Hut.png
+sprites/places/Witch Swamp.png
+sprites/places/Wizard House.png
+sprites/places_in_sesons/Beach Fall.png
+sprites/places_in_sesons/Beach Spring.png
+sprites/places_in_sesons/Beach Summer.png
+sprites/places_in_sesons/Beach Winter.png
+sprites/places_in_sesons/Island Fall.png
+sprites/places_in_sesons/Island Spring.png
+sprites/places_in_sesons/Island Summer.png
+sprites/places_in_sesons/Island Winter.png
+sprites/places_in_sesons/Outdoors Fall.png
+sprites/places_in_sesons/Outdoors Spring.png
+sprites/places_in_sesons/Outdoors Summer.png
+sprites/places_in_sesons/Outdoors Summer1.png
+sprites/places_in_sesons/Outdoors Summer11.png
+sprites/places_in_sesons/Outdoors Summer12.png
+sprites/places_in_sesons/Outdoors Summer13.png
+sprites/places_in_sesons/Outdoors Summer14.png
+sprites/places_in_sesons/Outdoors Summer15.png
+sprites/places_in_sesons/Outdoors Summer2.png
+sprites/places_in_sesons/Outdoors Summer3.png
+sprites/places_in_sesons/Outdoors Summer4.png
+sprites/places_in_sesons/Outdoors Summer5.png
+sprites/places_in_sesons/Outdoors Summer6.png
+sprites/places_in_sesons/Outdoors Summer7.png
+sprites/places_in_sesons/Outdoors Summer8.png
+sprites/places_in_sesons/Outdoors Summer9.png
+sprites/places_in_sesons/Outdoors Winter.png
+sprites/places_in_sesons/Pelican Town Fall.png
+sprites/places_in_sesons/Pelican Town Spring.png
+sprites/places_in_sesons/Pelican Town Summer.png
+sprites/places_in_sesons/Pelican Town Winter.png
+sprites/trees & plants & crops/Bushes.png
+sprites/trees & plants & crops/Crops.png
+sprites/trees & plants & crops/Free Cactuses.png
+sprites/trees & plants & crops/Fruit Trees.png
+sprites/trees & plants & crops/Grass.png
+sprites/trees & plants & crops/Mushroom.png
+sprites/trees & plants & crops/Plants CaveMines.png
+sprites/trees & plants & crops/Trees.png
+sprites/walls/Wall Diggable.png
+sprites/walls/Walls.png
 stardew-valley.tiled-project
 stardew-valley.tiled-session
 textures/Tiling-Grass-Texture-Main.jpg
@@ -3728,3 +3989,68 @@ tiles/tileset3.tsx
 tiles/tileset4.tsx
 tiles/tileset5.tsx
 tiles/tree.tsx
+tiles1/Blacksmith.png
+tiles1/Blacksmith.tsx
+tiles1/Cabins1.png
+tiles1/Cabins1.tsx
+tiles1/Cabins2.png
+tiles1/Cabins2.tsx
+tiles1/Cabins3.png
+tiles1/Cabins3.tsx
+tiles1/Cabins4.png
+tiles1/Cabins4.tsx
+tiles1/Carpenter's_Shop.png
+tiles1/Carpenter's_Shop.tsx
+tiles1/CaveDoor.png
+tiles1/CaveDoor.tsx
+tiles1/CaveDoor2.png
+tiles1/CaveDoor2.tsx
+tiles1/Clinic.png
+tiles1/Clinic.tsx
+tiles1/Dirt Hoed.png
+tiles1/Dirt Hoed.tsx
+tiles1/Fence.png
+tiles1/Fence.tsx
+tiles1/Fence3.tsx
+tiles1/Fish_Shop.png
+tiles1/Fish_Shop.tsx
+tiles1/Jojamart.png
+tiles1/Jojamart.tsx
+tiles1/Lake.png
+tiles1/Lake.tsx
+tiles1/Lake1.png
+tiles1/Lake1.tsx
+tiles1/Lake17.png
+tiles1/Lake17.tsx
+tiles1/Lake3.png
+tiles1/Lake3.tsx
+tiles1/Lake4.png
+tiles1/Lake4.tsx
+tiles1/Lake5.png
+tiles1/Lake5.tsx
+tiles1/Lake6.png
+tiles1/Lake6.tsx
+tiles1/Lake7.png
+tiles1/Lake7.tsx
+tiles1/Lake8.png
+tiles1/Lake8.tsx
+tiles1/Pierres_shop.png
+tiles1/Pierres_shop.tsx
+tiles1/Ranch.png
+tiles1/Ranch.tsx
+tiles1/Saloon.png
+tiles1/Saloon.tsx
+tiles1/Shed.png
+tiles1/Shed.tsx
+tiles1/StonePath.png
+tiles1/StonePath.tsx
+tiles1/Wooden_Cottage.png
+tiles1/Wooden_Cottage.tsx
+tiles1/grass1.png
+tiles1/grass1.tsx
+tiles1/grass2.png
+tiles1/grass2.tsx
+tiles1/grass3.png
+tiles1/grass3.tsx
+tiles1/grass4.png
+tiles1/grass4.tsx

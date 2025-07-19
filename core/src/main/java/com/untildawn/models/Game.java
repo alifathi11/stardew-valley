@@ -1,5 +1,7 @@
 package com.untildawn.models;
 
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.untildawn.Enums.GameConsts.Seasons;
 import com.untildawn.Enums.GameConsts.WeatherStates;
 import com.untildawn.controllers.utils.GenerateRandomNumber;
@@ -34,7 +36,7 @@ public class Game {
     private UpdateByHour updaterByHour;
     private UpdateByDay updaterByDay;
     private Weather tomorrowWeather;
-
+    private TiledMap map;
 
     public Game(ArrayList<Player> gamePlayers, Map<Player, PlayerMap> playerMaps, Player currentPlayer, GameMap gameMap) {
         this.gamePlayers = gamePlayers;
@@ -50,6 +52,7 @@ public class Game {
         this.shippingBin = new ShippingBin();
         this.updaterByDay = new UpdateByDay(this);
         this.updaterByHour = new UpdateByHour(this);
+        this.map = new TmxMapLoader().load("Map1.tmx");
     }
 
     public Weather getTomorrowWeather() {
@@ -246,5 +249,9 @@ public class Game {
                 && getPlayers().get(1).isFainted()
                 && getPlayers().get(2).isFainted()
                 && getPlayers().get(3).isFainted();
+    }
+
+    public TiledMap getMap() {
+        return map;
     }
 }

@@ -3,8 +3,8 @@ package com.untildawn.Enums.MapConsts;
 import java.util.Map;
 
 public enum MapSizes {
-    MAP_ROWS(90),
-    MAP_COLS(90),
+    MAP_ROWS(100),
+    MAP_COLS(100),
     FARM_ROWS(30),
     FARM_COLS(30),
     ;

@@ -44,7 +44,7 @@ public class Main extends Game {
         gameMenuController.getGamePlayers().add(new Player(ali3, ali4.getUsername(), ali3.getGender(), new Position(0, 0)));
         gameMenuController.getGamePlayers().add(new Player(ali4, ali4.getUsername(), ali4.getGender(), new Position(0, 0)));
         gameMenuController.setNewGameMap(PrepareMap.prepareMap());
-        gameMenuController.setFarms(PrepareMap.makePlayerMaps(gameMenuController.getNewGameMap()));
+        gameMenuController.setFarms(PrepareMap.loadPlayerMaps(gameMenuController.getNewGameMap()));
         gameMenuController.createMapSelectListener(1);
         gameMenuController.createMapSelectListener(2);
         gameMenuController.createMapSelectListener(3);

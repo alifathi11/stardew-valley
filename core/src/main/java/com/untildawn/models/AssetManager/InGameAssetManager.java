@@ -12,7 +12,7 @@ public class InGameAssetManager implements GameAssetManager {
     private static InGameAssetManager inGameAssetManager;
     private Animation<Texture> characterAnimation = buildCharacterAnimation("character1", "walk");
     private Texture characterTexture = characterAnimation.getKeyFrames()[0];
-
+    private static Texture woodenBoard = new Texture(Gdx.files.internal("Images/woodenBoard.png"));
     private InGameAssetManager() {
     }
 
@@ -74,5 +74,9 @@ public class InGameAssetManager implements GameAssetManager {
         } else {
             return 0;
         }
+    }
+
+    public static Texture getWoodenBoard() {
+        return woodenBoard;
     }
 }

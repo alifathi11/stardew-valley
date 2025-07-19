@@ -18,33 +18,6 @@ public class InventoryMenu implements Screen, AppMenu {
 
     @Override
     public void handleInput(Scanner sc) {
-        String input = sc.nextLine();
-        Matcher matcher;
-        boolean matched = false;
-        for (InventoryCommands command : InventoryCommands.values()) {
-            if ((matcher = command.getMatcher(input)) != null) {
-                matched = true;
-                executeCommand(command, matcher, input);
-            }
-        }
-        if (!matched) {
-            System.out.print("Invalid command. please try again.\n");
-        }
-    }
-
-    private void executeCommand(InventoryCommands command, Matcher matcher, String input) {
-        Game game = App.getCurrentGame();
-//        this.controller = new InventoryController(this);
-        switch (command) {
-            case SWITCH_MENU:
-                controller.changeMenu();
-                break;
-            case INVENTORY_SHOW:
-                controller.showInventory(game);
-                break;
-            case INVENTORY_TRASH:
-                break;
-        }
     }
 
     public String prompt(String message) {
